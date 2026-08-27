@@ -4,6 +4,7 @@ Synthesis engine for buy-side healthcare equity research — the analyst methodo
 
 One of five plugins in the healthcare analyst suite: the engines — `cms-reimbursement` (access/payment), `clinical-catalysts` (science/trials/FDA), `provider-adoption` (prescriber/site capacity), `procedure-exposure` (codes/volumes) — produce standardized evidence briefs; this plugin synthesizes them with financial evidence into models, theses, and investable views.
 
+Built to institutional investor standards: rigorous and auditable. 
 ## Components
 
 | Type | Name | Purpose (prompt IDs carried) |
