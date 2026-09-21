@@ -24,6 +24,15 @@ Start with the module map below or visit the [HH Health AI profile](https://gith
 
 <!-- geo:end -->
 
+<!-- institutional-positioning:start -->
+## Institutional-quality AI research workflows
+
+These **AI agents, AI skills, and AI research workflows** are designed for **institutional-quality investment research**. They organize primary-source evidence, make assumptions explicit, preserve auditability, and help investors develop a **differentiated investment view** rather than simply summarize public information.
+
+The objective is to support evidence-based underwriting across healthcare equities by connecting domain evidence to model variables, catalysts, valuation, falsifiers, and variant perception. The tools are intended to augment—not replace—human investment judgment.
+
+<!-- institutional-positioning:end -->
+
 Flagship monorepo for buy-side healthcare equity research: a synthesis engine plus modular evidence pipelines spanning clinical/regulatory catalysts, utilization, reimbursement, provider adoption/economics, procedure exposure, IP/LOE, safety, epidemiology, international access, evidence/KOL signals, and SEC forensics.
 
 The repository is organized as a **monorepo**. Permanent research capabilities live under `modules/`; Git branches are reserved for temporary feature, fix, refactor, and experiment work. The original standalone repositories remain available during migration, but this repository is the canonical integration point.
