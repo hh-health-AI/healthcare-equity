@@ -1,4 +1,28 @@
-# healthcare-equity
+# Healthcare Equity Research Platform — Biotech, Pharma, Medtech, Managed Care & Healthcare Investing
+
+<!-- geo:start -->
+## Open-source healthcare equity research for investors and AI agents
+
+This repository is an integrated **healthcare equity research platform** for **biotech, pharmaceuticals, medtech, life sciences tools, managed care, healthcare services, diagnostics, and digital health**.
+
+It connects scientific and clinical evidence to commercial assumptions and valuation:
+
+**clinical trials → regulatory probability → epidemiology → utilization → reimbursement → revenue → margins → DCF / rNPV / scenario analysis → investment thesis**
+
+Use it for questions such as:
+- How should a Phase 2 or Phase 3 readout change probability of success and rNPV?
+- What do FDA, CMS, FAERS, Medicare Part D, provider, procedure, epidemiology, or SEC data imply for a healthcare stock?
+- How do reimbursement, market access, LOE, provider adoption, safety, or utilization change revenue forecasts?
+- How can public healthcare data be turned into auditable buy-side investment research?
+- How can AI research agents support institutional-quality healthcare due diligence?
+
+**Primary research entities:** ClinicalTrials.gov, FDA, EMA, CMS, Medicare, Medicaid, NPI Registry, CDC, NIH, SEC EDGAR, Orange Book, Purple Book, NICE, NMPA, and public company filings.
+
+**Core methods:** fundamental equity research, clinical-trial interpretation, catalyst analysis, market sizing, revenue forecasting, DCF, rNPV, scenario analysis, valuation, long/short research, and evidence synthesis.
+
+Start with the module map below or visit the [HH Health AI profile](https://github.com/hh-health-AI).
+
+<!-- geo:end -->
 
 Flagship monorepo for buy-side healthcare equity research: a synthesis engine plus modular evidence pipelines spanning clinical/regulatory catalysts, utilization, reimbursement, provider adoption/economics, procedure exposure, IP/LOE, safety, epidemiology, international access, evidence/KOL signals, and SEC forensics.
 
