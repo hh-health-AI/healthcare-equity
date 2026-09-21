@@ -1,8 +1,27 @@
 # healthcare-equity
 
-Synthesis engine for buy-side healthcare equity research — the analyst methodology from the Healthcare Equity Analyst Prompt Library v1.4 (94 of its 113 prompts live here; 19 live beside their data sources in the engine plugins), plus the investable-view capstone built on the Healthcare Evidence-to-Valuation Framework.
+Flagship monorepo for buy-side healthcare equity research: a synthesis engine plus modular evidence pipelines spanning clinical/regulatory catalysts, utilization, reimbursement, provider adoption/economics, procedure exposure, IP/LOE, safety, epidemiology, international access, evidence/KOL signals, and SEC forensics.
 
-One of five plugins in the healthcare analyst suite: the engines — `cms-reimbursement` (access/payment), `clinical-catalysts` (science/trials/FDA), `provider-adoption` (prescriber/site capacity), `procedure-exposure` (codes/volumes) — produce standardized evidence briefs; this plugin synthesizes them with financial evidence into models, theses, and investable views.
+The repository is organized as a **monorepo**. Permanent research capabilities live under `modules/`; Git branches are reserved for temporary feature, fix, refactor, and experiment work. The original standalone repositories remain available during migration, but this repository is the canonical integration point.
+
+## Monorepo modules
+
+| Layer | Module | Primary research question |
+|---|---|---|
+| Clinical / regulatory | [clinical-catalysts](modules/clinical-catalysts/) | What changes approval probability, label, timing, or clinical differentiation? |
+| Evidence / KOL | [evidence-catalysts](modules/evidence-catalysts/) | How are publications, guidelines, abstracts, and KOL signals evolving? |
+| Safety | [fda-safety-signals](modules/fda-safety-signals/) | Are FDA/FAERS/MAUDE signals changing the risk profile? |
+| Utilization | [rx-utilization](modules/rx-utilization/) | What do prescribing, state utilization, and launch proxies say about demand? |
+| Epidemiology | [epi-demand](modules/epi-demand/) | What population and disease-burden evidence drives the demand funnel? |
+| Reimbursement | [cms-reimbursement](modules/cms-reimbursement/) | How do coverage, payment, IRA, and MA policy affect economics? |
+| Provider adoption | [provider-adoption](modules/provider-adoption/) | Is site/prescriber capacity translating into adoption? |
+| Provider economics | [provider-economics](modules/provider-economics/) | What do hospital, MA, and nonprofit economics imply for customers/payors? |
+| Procedure exposure | [procedure-exposure](modules/procedure-exposure/) | How do codes and procedure volumes map into addressable exposure? |
+| IP / exclusivity | [ip-exclusivity](modules/ip-exclusivity/) | When and how can LOE, biosimilars, or PTAB events alter the revenue curve? |
+| International access | [global-access](modules/global-access/) | How do ex-US HTA, pricing, and approvals affect launch and value? |
+| Financial forensics | [sec-forensics](modules/sec-forensics/) | What do SEC filings, insider activity, and accounting signals imply? |
+
+These evidence modules feed the core synthesis layer in this repository: models, theses, scenario analysis, portfolio framing, and the investable-view capstone.
 
 Built to institutional investor standards: rigorous and auditable. 
 ## Components
