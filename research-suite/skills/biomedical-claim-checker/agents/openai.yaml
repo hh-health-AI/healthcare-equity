@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biomedical Claim Checker"
+  short_description: "Help with Biomedical Claim Checker tasks"
+  default_prompt: "Use $biomedical-claim-checker to check biomedical claims against source passages."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biotech Catalyst Radar"
+  short_description: "Help with Biotech Catalyst Radar tasks"
+  default_prompt: "Use $biotech-catalyst-radar to track trial changes with dated source snapshots."

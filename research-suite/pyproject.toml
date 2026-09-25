@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hh-healthcare-research"
+version = "0.1.0"
+description = "Nine evidence-traceable healthcare research skills and deterministic research utilities"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "HH Health AI"}]
+dependencies = []
+readme = "README.md"
+
+[project.optional-dependencies]
+mcp = ["mcp>=1.12,<2"]
+dev = ["PyYAML>=6,<7"]
+
+[project.scripts]
+hh-research = "hh_research.cli:main"
+hh-healthcare-mcp = "hh_research.mcp_server:main"
+
+[project.urls]
+Repository = "https://github.com/hh-health-AI/healthcare-equity"
+Issues = "https://github.com/hh-health-AI/healthcare-equity/issues"
+
+[tool.setuptools.packages.find]
+include = ["hh_research*"]

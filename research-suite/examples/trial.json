@@ -1,0 +1,52 @@
+{
+  "synthetic": true,
+  "trial_id": "SYNTHETIC-DEMO-001",
+  "documents": [
+    {
+      "id": "D1",
+      "kind": "registry",
+      "trial_id": "SYNTHETIC-DEMO-001",
+      "url": "https://example.org/synthetic-D1",
+      "vintage": "2026-01-01",
+      "fields": {
+        "primary_endpoints": [
+          "Event rate at 12 months"
+        ],
+        "sample_size": 400,
+        "analysis_population": "intention-to-treat",
+        "masking": "double blind",
+        "comparator": "placebo"
+      }
+    },
+    {
+      "id": "D2",
+      "kind": "publication",
+      "trial_id": "SYNTHETIC-DEMO-001",
+      "url": "https://example.org/synthetic-D2",
+      "vintage": "2026-09-20",
+      "fields": {
+        "primary_endpoints": [
+          "Event rate at 12 months"
+        ],
+        "sample_size": 398,
+        "analysis_population": "modified intention-to-treat",
+        "masking": "double blind",
+        "comparator": "placebo"
+      }
+    },
+    {
+      "id": "D3",
+      "kind": "press-release",
+      "trial_id": "SYNTHETIC-DEMO-001",
+      "url": "https://example.org/synthetic-D3",
+      "vintage": "2026-09-21",
+      "fields": {
+        "primary_endpoints": [
+          "Response rate at 6 months"
+        ],
+        "sample_size": 398,
+        "analysis_population": null
+      }
+    }
+  ]
+}

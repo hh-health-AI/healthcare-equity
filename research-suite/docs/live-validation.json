@@ -1,0 +1,122 @@
+{
+  "run_at": "2026-09-25T16:44:53.235818+00:00",
+  "scope": "Representative endpoint/coverage checks only; not exhaustive validation or clinical accuracy evaluation",
+  "checks": [
+    {
+      "name": "exact_trial",
+      "status": "pass",
+      "returned": 1,
+      "total_reported": 1,
+      "complete": true,
+      "provenance": [
+        {
+          "url": "https://clinicaltrials.gov/api/v2/studies/NCT04280705",
+          "retrieved_at": "2026-09-25T16:44:09.442525+00:00",
+          "response_sha256": "96787d42e8bd34eb76650e149c3cf28d2b1b0b4d24a348b54747f7b42270896f"
+        }
+      ]
+    },
+    {
+      "name": "capped_trial_search",
+      "status": "pass",
+      "returned": 2,
+      "total_reported": 35266,
+      "complete": false,
+      "provenance": [
+        {
+          "url": "https://clinicaltrials.gov/api/v2/studies?query.term=diabetes&pageSize=2&countTotal=true&format=json",
+          "retrieved_at": "2026-09-25T16:44:14.057646+00:00",
+          "response_sha256": "38694bbcc8fe7dea812163a719ffb6cb9efc8b51c8f9c38b02a4404330cf3024"
+        }
+      ]
+    },
+    {
+      "name": "pubmed_exact_pmid",
+      "status": "pass",
+      "returned": 1,
+      "total_reported": 1,
+      "complete": true,
+      "provenance": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=32445440%5Buid%5D&retmode=json&retmax=1&tool=hh-healthcare-research",
+          "retrieved_at": "2026-09-25T16:44:19.579755+00:00",
+          "response_sha256": "71081183d46d355705f747f441f571a8026c243015e0f00affff42b24247ef6b"
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32445440&retmode=xml&tool=hh-healthcare-research",
+          "retrieved_at": "2026-09-25T16:44:25.394052+00:00",
+          "response_sha256": "59d0b1e46503494ecb4cdf78e6cd4f92960b77536a38f0aaa7391b8446b1d408"
+        }
+      ]
+    },
+    {
+      "name": "capped_pubmed_search",
+      "status": "pass",
+      "returned": 2,
+      "total_reported": 4969,
+      "complete": false,
+      "provenance": [
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=remdesivir&retmode=json&retmax=2&tool=hh-healthcare-research",
+          "retrieved_at": "2026-09-25T16:44:30.659672+00:00",
+          "response_sha256": "e293cf2cea7e164fe1b0ebbaca338a13d03809521dacf073bef68e3e4442ea85"
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=42779127%2C42771651&retmode=xml&tool=hh-healthcare-research",
+          "retrieved_at": "2026-09-25T16:44:35.897056+00:00",
+          "response_sha256": "cff73bb425588107c9db7e9e085b5db1b131d6dbf26e4be3df69b3fc3e31d793"
+        }
+      ]
+    },
+    {
+      "name": "openfda_label",
+      "status": "pass",
+      "returned": 2,
+      "total_reported": 5,
+      "complete": false,
+      "provenance": [
+        {
+          "url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22semaglutide%22&limit=2",
+          "retrieved_at": "2026-09-25T16:44:42.160944+00:00",
+          "response_sha256": "d038848e01dcfd4d306625f8c2cf89d400f7ea0720e7e6a1ab07eaa87dbc7c13"
+        }
+      ]
+    },
+    {
+      "name": "cms_catalog",
+      "status": "pass",
+      "returned": 13,
+      "total_reported": 13,
+      "complete": true,
+      "provenance": [
+        {
+          "url": "https://data.cms.gov/data.json",
+          "retrieved_at": "2026-09-25T16:44:48.235335+00:00",
+          "response_sha256": "fde533444c0e2d6b1e8a016d09869abc359ac9caf82e404f15bbc86bb1bb3ee5"
+        }
+      ]
+    },
+    {
+      "name": "cms_sample",
+      "status": "pass",
+      "returned": 2,
+      "complete": false,
+      "dataset": {
+        "title": "Medicare Part D Prescribers - by Provider and Drug",
+        "distribution_title": "Medicare Part D Prescribers - by Provider and Drug : 2024-12-01",
+        "dataset_id": "9552739e-3d05-4c1b-8eff-ecabf391e2e5",
+        "url": "https://data.cms.gov/data-api/v1/dataset/9552739e-3d05-4c1b-8eff-ecabf391e2e5/data",
+        "modified": "2026-05-21",
+        "temporal": "2024-01-01/2024-12-31",
+        "dictionary": "https://data.cms.gov/data-api/v1/dataset/9552739e-3d05-4c1b-8eff-ecabf391e2e5/dictionary"
+      },
+      "provenance": [
+        {
+          "url": "https://data.cms.gov/data-api/v1/dataset/9552739e-3d05-4c1b-8eff-ecabf391e2e5/data?size=2&offset=0",
+          "retrieved_at": "2026-09-25T16:44:53.235770+00:00",
+          "response_sha256": "fd48b6b6eb19cb1ab35f1ede521bade5146be0a78dc80ea41d85383700661885"
+        }
+      ]
+    }
+  ]
+}
