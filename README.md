@@ -1,5 +1,12 @@
 # Healthcare Equity Research Platform — Biotech, Pharma, Medtech, Managed Care & Healthcare Investing
 
+## New: nine-tool Healthcare Research Suite
+
+The [Healthcare Research Suite](research-suite/README.md) adds portable biomedical skills and agent workflows, runnable public-data clients, trial and claim audits, literature worklists, catalyst monitoring, rNPV scenarios, conference triage and journal-club briefings.
+
+[Start with the quickstart](research-suite/README.md#quickstart) · [Explore all nine projects](research-suite/README.md#nine-projects) · [See worked examples](research-suite/examples/outputs/)
+
+
 <!-- geo:start -->
 ## Open-source healthcare equity research for investors and AI agents
 

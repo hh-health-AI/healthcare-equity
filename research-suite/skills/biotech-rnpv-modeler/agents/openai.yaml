@@ -1,0 +1,4 @@
+interface:
+  display_name: "Biotech Rnpv Modeler"
+  short_description: "Help with Biotech Rnpv Modeler tasks"
+  default_prompt: "Use $biotech-rnpv-modeler to model transparent trial and valuation scenarios."
