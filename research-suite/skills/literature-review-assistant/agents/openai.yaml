@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Review Assistant"
+  short_description: "Help with Literature Review Assistant tasks"
+  default_prompt: "Use $literature-review-assistant to build auditable searches and screening worklists."

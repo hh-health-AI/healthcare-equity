@@ -1,0 +1,39 @@
+{
+  "synthetic": true,
+  "search_log": {
+    "purpose": "Fictional deduplication example, not a real search",
+    "database": "synthetic fixture",
+    "query": "DEMO condition AND DEMO intervention",
+    "searched_at": "2026-09-25T12:00:00Z",
+    "records_identified": 5,
+    "cap": "none in synthetic fixture"
+  },
+  "records": [
+    {
+      "id": "import-a-1",
+      "title": "Synthetic treatment trial",
+      "doi": "10.0000/demo-a",
+      "decision": "include"
+    },
+    {
+      "id": "import-b-1",
+      "title": "Synthetic treatment trial",
+      "doi": "https://doi.org/10.0000/DEMO-A"
+    },
+    {
+      "id": "import-a-2",
+      "title": "Synthetic observational cohort",
+      "decision": "exclude",
+      "reason": "Wrong study design under the stated teaching criteria"
+    },
+    {
+      "id": "import-a-3",
+      "title": "Similar synthetic title",
+      "decision": "uncertain"
+    },
+    {
+      "id": "import-b-3",
+      "title": "Similar synthetic title"
+    }
+  ]
+}

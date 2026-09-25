@@ -1,0 +1,41 @@
+{
+  "public_records": [
+    {
+      "id": "DEMO-A",
+      "title": "Fictional first cohort report",
+      "source_url": "https://example.org/demo-a",
+      "public": true,
+      "public_at": "2026-09-20T12:00:00Z",
+      "material_level": "abstract",
+      "trial_id": "DEMO-TRIAL",
+      "cohort_id": "A",
+      "data_cutoff": "2026-03-01",
+      "new_evidence": "Initial fictional report"
+    },
+    {
+      "id": "DEMO-B",
+      "title": "Fictional longer follow-up",
+      "source_url": "https://example.org/demo-b",
+      "public": true,
+      "public_at": "2026-09-24T12:00:00Z",
+      "material_level": "poster",
+      "trial_id": "DEMO-TRIAL",
+      "cohort_id": "A",
+      "data_cutoff": "2026-06-01",
+      "new_evidence": "Longer follow-up in potentially overlapping patients"
+    }
+  ],
+  "blocked": [
+    {
+      "id": "DEMO-C",
+      "reason": "Public availability not established as of the cutoff"
+    }
+  ],
+  "cohort_groups": {
+    "DEMO-TRIAL / A": [
+      "DEMO-A",
+      "DEMO-B"
+    ]
+  },
+  "markdown": "# Conference evidence triage\n\n**SYNTHETIC DEMONSTRATION — not clinical or investment evidence.**\n\nGenerated: 2026-09-25T16:51:01.893859+00:00\n\nInput SHA-256: `7e78cf21b631a96daf5a0e0bd9b9c447d2357c6d39e316397a5373732a398eb9`\n\n| ID | Title | Material | Trial/cohort | What is new (supplied) | Source |\n| --- | --- | --- | --- | --- | --- |\n| DEMO-A | Fictional first cohort report | abstract | DEMO-TRIAL / A | Initial fictional report | https://example.org/demo-a |\n| DEMO-B | Fictional longer follow-up | poster | DEMO-TRIAL / A | Longer follow-up in potentially overlapping patients | https://example.org/demo-b |\n\nWithheld records: 1. Their content is excluded from this report.\n\n| Potential overlapping cohort | Records |\n| --- | --- |\n| DEMO-TRIAL / A | [\"DEMO-A\", \"DEMO-B\"] |\n\nConfirm enrollment dates, cohort identifiers and data cutoffs before linking reports. Title-only material cannot support efficacy or safety conclusions. Abstract-to-poster changes need full source verification. Do not pool overlapping patients.\n"
+}

@@ -1,0 +1,102 @@
+{
+  "trial_id": "SYNTHETIC-DEMO-001",
+  "findings": [
+    {
+      "field": "primary_endpoints",
+      "assessment": "Difference: inspect source wording and timing",
+      "values": {
+        "D1": [
+          "Event rate at 12 months"
+        ],
+        "D2": [
+          "Event rate at 12 months"
+        ],
+        "D3": [
+          "Response rate at 6 months"
+        ]
+      }
+    },
+    {
+      "field": "secondary_endpoints",
+      "assessment": "Not reported in any supplied extraction",
+      "values": {
+        "D1": null,
+        "D2": null,
+        "D3": null
+      }
+    },
+    {
+      "field": "population",
+      "assessment": "Not reported in any supplied extraction",
+      "values": {
+        "D1": null,
+        "D2": null,
+        "D3": null
+      }
+    },
+    {
+      "field": "sample_size",
+      "assessment": "Difference: inspect source wording and timing",
+      "values": {
+        "D1": 400,
+        "D2": 398,
+        "D3": 398
+      }
+    },
+    {
+      "field": "analysis_population",
+      "assessment": "Missing in at least one extraction; available extractions also differ",
+      "values": {
+        "D1": "intention-to-treat",
+        "D2": "modified intention-to-treat",
+        "D3": null
+      }
+    },
+    {
+      "field": "masking",
+      "assessment": "Missing in at least one extraction",
+      "values": {
+        "D1": "double blind",
+        "D2": "double blind",
+        "D3": null
+      }
+    },
+    {
+      "field": "comparator",
+      "assessment": "Missing in at least one extraction",
+      "values": {
+        "D1": "placebo",
+        "D2": "placebo",
+        "D3": null
+      }
+    },
+    {
+      "field": "follow_up",
+      "assessment": "Not reported in any supplied extraction",
+      "values": {
+        "D1": null,
+        "D2": null,
+        "D3": null
+      }
+    },
+    {
+      "field": "primary_completion",
+      "assessment": "Not reported in any supplied extraction",
+      "values": {
+        "D1": null,
+        "D2": null,
+        "D3": null
+      }
+    },
+    {
+      "field": "status",
+      "assessment": "Not reported in any supplied extraction",
+      "values": {
+        "D1": null,
+        "D2": null,
+        "D3": null
+      }
+    }
+  ],
+  "markdown": "# Clinical trial comparison\n\n**SYNTHETIC DEMONSTRATION — not clinical or investment evidence.**\n\nGenerated: 2026-09-25T16:51:01.885647+00:00\n\nInput SHA-256: `c2545d827b6f62210f88ff5c28397dbb934c3d39817d875b00aae35158138bbf`\n\n| Field | D1 | D2 | D3 | Assessment |\n| --- | --- | --- | --- | --- |\n| primary_endpoints | [\"Event rate at 12 months\"] | [\"Event rate at 12 months\"] | [\"Response rate at 6 months\"] | Difference: inspect source wording and timing |\n| secondary_endpoints | Not reported | Not reported | Not reported | Not reported in any supplied extraction |\n| population | Not reported | Not reported | Not reported | Not reported in any supplied extraction |\n| sample_size | 400 | 398 | 398 | Difference: inspect source wording and timing |\n| analysis_population | intention-to-treat | modified intention-to-treat | Not reported | Missing in at least one extraction; available extractions also differ |\n| masking | double blind | double blind | Not reported | Missing in at least one extraction |\n| comparator | placebo | placebo | Not reported | Missing in at least one extraction |\n| follow_up | Not reported | Not reported | Not reported | Not reported in any supplied extraction |\n| primary_completion | Not reported | Not reported | Not reported | Not reported in any supplied extraction |\n| status | Not reported | Not reported | Not reported | Not reported in any supplied extraction |\n\nDifferences are textual/structured discrepancies, not proof of outcome switching or misconduct. Establish the prespecified protocol and SAP versions, timing relative to unblinding, estimand, multiplicity plan, missing-data handling and source completeness. A nonsignificant result does not demonstrate equivalence. Cross-trial comparisons do not establish superiority.\n\n| Document | Type | Vintage | Source |\n| --- | --- | --- | --- |\n| D1 | registry | 2026-01-01 | https://example.org/synthetic-D1 |\n| D2 | publication | 2026-09-20 | https://example.org/synthetic-D2 |\n| D3 | press-release | 2026-09-21 | https://example.org/synthetic-D3 |\n"
+}

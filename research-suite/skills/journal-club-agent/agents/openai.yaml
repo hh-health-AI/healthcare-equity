@@ -1,0 +1,4 @@
+interface:
+  display_name: "Journal Club Agent"
+  short_description: "Help with Journal Club Agent tasks"
+  default_prompt: "Use $journal-club-agent to create source-linked study briefings and slides."

@@ -1,0 +1,55 @@
+{
+  "records": [
+    {
+      "id": "import-a-1",
+      "title": "Synthetic treatment trial",
+      "doi": "10.0000/demo-a",
+      "decision": "include"
+    },
+    {
+      "id": "import-a-2",
+      "title": "Synthetic observational cohort",
+      "decision": "exclude",
+      "reason": "Wrong study design under the stated teaching criteria"
+    },
+    {
+      "id": "import-a-3",
+      "title": "Similar synthetic title",
+      "decision": "uncertain"
+    },
+    {
+      "id": "import-b-3",
+      "title": "Similar synthetic title"
+    }
+  ],
+  "duplicates": [
+    {
+      "removed": "import-b-1",
+      "retained": "import-a-1",
+      "basis": "shared DOI/PMID",
+      "record": {
+        "id": "import-b-1",
+        "title": "Synthetic treatment trial",
+        "doi": "https://doi.org/10.0000/DEMO-A"
+      }
+    }
+  ],
+  "identifier_conflicts": [],
+  "screening_conflicts": [],
+  "title_matches_for_review": [
+    [
+      "import-a-3",
+      "import-b-3"
+    ]
+  ],
+  "counts": {
+    "imported": 5,
+    "duplicates_removed": 1,
+    "unique_records": 4,
+    "include": 1,
+    "exclude": 1,
+    "uncertain": 1,
+    "unscreened": 1
+  },
+  "markdown": "# Literature review worklist\n\n**SYNTHETIC DEMONSTRATION — not clinical or investment evidence.**\n\nGenerated: 2026-09-25T16:51:01.889671+00:00\n\nInput SHA-256: `42bd3a8afbdd07ceee300afcf700e44e3934a158a30b43623f09c3de18d53d69`\n\n| Metric | Count |\n| --- | --- |\n| imported | 5 |\n| duplicates_removed | 1 |\n| unique_records | 4 |\n| include | 1 |\n| exclude | 1 |\n| uncertain | 1 |\n| unscreened | 1 |\n\n| Record | Title | Decision | Reason |\n| --- | --- | --- | --- |\n| import-a-1 | Synthetic treatment trial | include | Not supplied |\n| import-a-2 | Synthetic observational cohort | exclude | Wrong study design under the stated teaching criteria |\n| import-a-3 | Similar synthetic title | uncertain | Not supplied |\n| import-b-3 | Similar synthetic title | unscreened | Not supplied |\n\nThese are record-level worklist counts, not a validated PRISMA flow diagram. Title matches and conflicting identifiers are retained for review. Multiple reports from one trial must be linked at study level before synthesis. A PubMed-only search is not a complete systematic review.\n\n## Search log\n\n| Field | Value |\n| --- | --- |\n| purpose | Fictional deduplication example, not a real search |\n| database | synthetic fixture |\n| query | DEMO condition AND DEMO intervention |\n| searched_at | 2026-09-25T12:00:00Z |\n| records_identified | 5 |\n| cap | none in synthetic fixture |\n"
+}
