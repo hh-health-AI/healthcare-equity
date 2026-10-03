@@ -1,0 +1,23 @@
+{
+  "synthetic": true,
+  "source": "CMS sample demonstration",
+  "query": {
+    "max_records": 2
+  },
+  "returned": 2,
+  "total_reported": null,
+  "complete": false,
+  "records": [
+    {
+      "fictional_product": "DEMO",
+      "count": 10
+    },
+    {
+      "fictional_product": "DEMO",
+      "count": 20
+    }
+  ],
+  "limitations": [
+    "Synthetic sample, not a complete population; do not compute market shares."
+  ]
+}

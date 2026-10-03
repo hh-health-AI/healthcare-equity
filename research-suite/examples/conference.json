@@ -1,0 +1,38 @@
+{
+  "synthetic": true,
+  "as_of": "2026-09-25T12:00:00Z",
+  "abstracts": [
+    {
+      "id": "DEMO-A",
+      "title": "Fictional first cohort report",
+      "source_url": "https://example.org/demo-a",
+      "public": true,
+      "public_at": "2026-09-20T12:00:00Z",
+      "material_level": "abstract",
+      "trial_id": "DEMO-TRIAL",
+      "cohort_id": "A",
+      "data_cutoff": "2026-03-01",
+      "new_evidence": "Initial fictional report"
+    },
+    {
+      "id": "DEMO-B",
+      "title": "Fictional longer follow-up",
+      "source_url": "https://example.org/demo-b",
+      "public": true,
+      "public_at": "2026-09-24T12:00:00Z",
+      "material_level": "poster",
+      "trial_id": "DEMO-TRIAL",
+      "cohort_id": "A",
+      "data_cutoff": "2026-06-01",
+      "new_evidence": "Longer follow-up in potentially overlapping patients"
+    },
+    {
+      "id": "DEMO-C",
+      "title": "Future embargoed fictional material",
+      "source_url": "https://example.org/demo-c",
+      "public": false,
+      "public_at": "2026-09-30T12:00:00Z",
+      "material_level": "abstract"
+    }
+  ]
+}

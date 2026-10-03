@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clinical Trial Analyst"
+  short_description: "Help with Clinical Trial Analyst tasks"
+  default_prompt: "Use $clinical-trial-analyst to compare registry, paper and press-release claims."

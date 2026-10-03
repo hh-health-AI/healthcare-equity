@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conference Evidence Agent"
+  short_description: "Help with Conference Evidence Agent tasks"
+  default_prompt: "Use $conference-evidence-agent to triage public abstracts and overlapping cohorts."

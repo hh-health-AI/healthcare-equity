@@ -1,0 +1,70 @@
+{
+  "synthetic": true,
+  "question": "Does the fictional DEMO trial establish benefit?",
+  "sources": [
+    {
+      "id": "S1",
+      "title": "SYNTHETIC DEMO trial report",
+      "url": "https://example.org/synthetic-trial",
+      "retrieved_at": "2026-09-25T12:00:00Z",
+      "vintage": "2026-09-20",
+      "kind": "synthetic-publication",
+      "locator": "Synthetic results table 2",
+      "excerpt": "The primary outcome was 20% versus 25%; risk ratio 0.80 (95% CI 0.60\u20131.07).",
+      "status": "synthetic"
+    },
+    {
+      "id": "S2",
+      "title": "SYNTHETIC DEMO press release",
+      "url": "https://example.org/synthetic-release",
+      "retrieved_at": "2026-09-25T12:00:00Z",
+      "vintage": "2026-09-21",
+      "kind": "synthetic-press-release",
+      "locator": "Synthetic headline",
+      "excerpt": "Treatment is proven to improve the primary outcome.",
+      "status": "synthetic"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "text": "The point estimate favored treatment, but the confidence interval included no effect.",
+      "verdict": "supported",
+      "source_ids": [
+        "S1"
+      ],
+      "rationale": "For a risk ratio, 1 is the null; the interval includes 1."
+    },
+    {
+      "id": "C2",
+      "text": "The fictional study proves benefit on its primary outcome.",
+      "verdict": "unsupported",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "rationale": "The quoted interval does not exclude the null; the available evidence does not establish the stated certainty."
+    }
+  ],
+  "methods": [
+    "Synthetic teaching case; no literature search or clinical inference."
+  ],
+  "limitations": [
+    "Fictional example: no actual trial, patient population or efficacy evidence.",
+    "Only a simplified effect estimate is supplied."
+  ],
+  "open_questions": [
+    "What were the prespecified hypothesis and multiplicity rules?"
+  ],
+  "model_impact": [],
+  "slides": {
+    "1": "Fictional teaching question: how should an imprecise risk-ratio estimate be interpreted? [S1]",
+    "2": "Synthetic randomized-trial scenario; allocation methods are not supplied.",
+    "3": "Fictional treatment versus control; dose and background therapy are not supplied.",
+    "4": "Primary event outcome; estimand and multiplicity details require source review.",
+    "5": "20% versus 25%; RR 0.80, 95% CI 0.60\u20131.07. The interval includes the null. [S1]",
+    "6": "Harms and missing-data details are absent; no safety conclusion is justified.",
+    "7": "Applicability cannot be established without population and methods details.",
+    "8": "The headline overstates certainty; review protocol, full methods and complete results. [S1, S2]"
+  }
+}

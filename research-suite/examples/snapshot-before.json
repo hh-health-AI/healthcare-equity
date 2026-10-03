@@ -1,0 +1,27 @@
+{
+  "synthetic": true,
+  "schema_version": "1.0",
+  "scope": {
+    "source": "synthetic",
+    "ids": [
+      "SYNTHETIC-001"
+    ]
+  },
+  "as_of": "2026-09-01T12:00:00Z",
+  "complete": true,
+  "records": [
+    {
+      "id": "SYNTHETIC-001",
+      "url": "https://example.org/synthetic-registry",
+      "status": "RECRUITING",
+      "sample_size": {
+        "count": 300,
+        "type": "ESTIMATED"
+      },
+      "primary_completion": {
+        "date": "2027-03",
+        "type": "ESTIMATED"
+      }
+    }
+  ]
+}

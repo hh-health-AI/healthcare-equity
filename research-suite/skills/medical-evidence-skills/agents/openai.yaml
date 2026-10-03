@@ -1,0 +1,4 @@
+interface:
+  display_name: "Medical Evidence Skills"
+  short_description: "Help with Medical Evidence Skills tasks"
+  default_prompt: "Use $medical-evidence-skills to search, appraise and synthesize medical evidence."
