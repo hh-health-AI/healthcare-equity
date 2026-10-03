@@ -24,12 +24,12 @@ From `Healthcare_Evidence_to_Valuation_Framework.xlsx` — "Convert clinical, re
 | Bull | — | — | — | Superior conversion with profitable economics |
 | **Expected value** | Σ = 1.00 | | Σ(p × v) | Probability check must pass |
 
-Scenario tree: Clinical/technical evidence → **CORE GATE CLEARS?** (clinical/technical + regulatory threshold) — No/major delay → Bear · Yes → **COMMERCIAL CONVERSION?** (access × adoption × realized economics) — weak/uneconomic → Bear · normal → Base · superior/profitable → Bull. Terminal leaves mutually exclusive; probabilities sum to 100%; every evidence update must change probability, timing, units, price, duration, margin, or capital.
+Scenario tree: Clinical/technical evidence → **CORE GATE CLEARS?** (clinical/technical + regulatory threshold) — No/major delay → Bear · Yes → **COMMERCIAL CONVERSION?** (access × adoption × realized economics) — weak/uneconomic → Bear · normal → Base · superior/profitable → Bull. Terminal leaves mutually exclusive; probabilities sum to 100%; Every evidence update must document a model implication: CHANGE, NO_CHANGE, UNCERTAINTY_ONLY, or NEEDS_DATA. State the affected assumption, prior and proposed values (or explicitly unavailable), rationale, source/locator, and next observable. Do not force a numerical change or double-count evidence already in the model.
 
 ## Variant-perception test (score each leg; all five required)
 
 1. Disagreement is an explicit market-implied variable — evidence: reverse-engineered PoA, units, MCR, NRR, utilization or margin.
-2. Evidence directly changes that variable — evidence: causal bridge from fact to assumption.
+2. Evidence supports a change or a reasoned decision to retain that variable — evidence: causal bridge from fact to assumption.
 3. The difference matters after probability weighting — evidence: expected-value impact exceeds uncertainty and friction.
 4. A catalyst can resolve the disagreement — evidence: dated trial, regulatory, reimbursement or operating update.
 5. The thesis has an observable falsifier — evidence: predefined observation that forces re-underwriting.

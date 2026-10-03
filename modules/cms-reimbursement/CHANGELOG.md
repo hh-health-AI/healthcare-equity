@@ -1,6 +1,6 @@
 # Changelog — HH-health-AI
 
-**HH-health-AI** is the standalone distribution of the `cms-reimbursement` plugin. Versions track the canonical copy in the `claude-healthcare-analyst-suite` monorepo (`github.com/<your-github-username>/claude-healthcare-analyst-suite`); this file carries the plugin-relevant slice of the suite changelog.
+This public repository is maintained on GitHub. Historical entries below describe earlier packaging; current installation and maintenance instructions are in README.md.
 
 ## [0.1.3] — 2026-08-26
 

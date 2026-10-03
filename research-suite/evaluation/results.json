@@ -1,0 +1,49 @@
+{
+  "benchmark_version": 1,
+  "dataset": "Small author-designed synthetic regression set; not held out or independently adjudicated",
+  "groups": {
+    "EvidenceTests": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0
+    },
+    "TrialTests": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0,
+      "skipped": 0
+    },
+    "DataTests": {
+      "total": 11,
+      "passed": 11,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ValuationTests": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "trial_field_exact_match": {
+    "passed": 6,
+    "total": 6,
+    "fields": {
+      "sample_size": true,
+      "masking": true,
+      "primary_endpoints": true,
+      "primary_completion": true,
+      "analysis_population": true,
+      "follow_up": true
+    }
+  },
+  "claim_entailment_probe": {
+    "false_claims": 1,
+    "accepted_by_structural_validator": 1,
+    "interpretation": "Known limitation: citation presence and valid schema do not establish claim support. Semantic accuracy is NOT MEASURED."
+  },
+  "live_endpoint_accuracy": "NOT_MEASURED",
+  "clinical_accuracy": "NOT_MEASURED"
+}

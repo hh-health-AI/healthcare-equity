@@ -1,0 +1,442 @@
+[
+  {
+    "source_id": "S01",
+    "sector": "Pharmaceuticals",
+    "company": "Eli Lilly",
+    "period": "2026-07 / Q2 2026",
+    "title": "Retatrutide trials and Lilly Q2 results",
+    "urls": [
+      "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-successful-two-additional",
+      "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full"
+    ],
+    "source_class": "Company primary sources",
+    "used_for": "Efficacy, discontinuation, submission timing, volume and price",
+    "case_id": "C01",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S02",
+    "sector": "Pharmaceuticals",
+    "company": "Merck",
+    "period": "2025 / Q2 2026",
+    "title": "FDA Qlex approval and Merck Q2 results",
+    "urls": [
+      "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-and-berahyaluronidase-alfa-pmph-subcutaneous-injection",
+      "https://www.merck.com/news/merck-highlights-key-regulatory-and-clinical-milestones-across-broad-diverse-pipeline/"
+    ],
+    "source_class": "Regulator and company",
+    "used_for": "PK comparability, administration and sales",
+    "case_id": "C02",
+    "audit_date": "2026-10-03",
+    "status": "VERIFIED_SCOPE_ONLY",
+    "locator": "FDA approval announcement, Efficacy and Safety, paragraphs 1–3",
+    "verified_statement": "FDA approval on 2025-09-19; Study MK-3475A-D77 randomized 377 patients; dual primary endpoints assess PK exposure. This does not establish superior efficacy.",
+    "note": "Only the statement and locator below were checked; other case claims remain unverified."
+  },
+  {
+    "source_id": "S03",
+    "sector": "Biotechnology",
+    "company": "Alnylam",
+    "period": "HELIOS-B / Q2 2026",
+    "title": "HELIOS-B and Alnylam Q2 results",
+    "urls": [
+      "https://investors.alnylam.com/press-release?id=28411",
+      "https://investors.alnylam.com/press-release?id=29986"
+    ],
+    "source_class": "Company primary sources",
+    "used_for": "Mortality outcomes and commercial guidance",
+    "case_id": "C03",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S04",
+    "sector": "Biotechnology",
+    "company": "Vertex",
+    "period": "Phase 3 / Q2 2026",
+    "title": "VX-548 program and Vertex Q2 results",
+    "urls": [
+      "https://investors.vrtx.com/news-releases/news-release-details/vertex-announces-positive-results-vx-548-phase-3-program",
+      "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+    ],
+    "source_class": "Company primary sources",
+    "used_for": "Comparative results, prescriptions, revenue and access",
+    "case_id": "C04",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S05",
+    "sector": "Biotechnology",
+    "company": "argenx",
+    "period": "2025–2026",
+    "title": "Prefilled syringe and gMG label expansion",
+    "urls": [
+      "https://argenx.com/news/2025/press-release-3059774",
+      "https://argenx.com/news/2026/press-release-3291372"
+    ],
+    "source_class": "Company primary sources",
+    "used_for": "Self-administration and eligible serotypes",
+    "case_id": "C05",
+    "audit_date": "2026-10-03",
+    "status": "VERIFIED_SCOPE_ONLY",
+    "locator": "2025 announcement, paragraph beginning “VYVGART Hytrulo prefilled syringe”; 2026 announcement, approval headline and serotype discussion",
+    "verified_statement": "Company reports 20–30-second self-injection after training and expansion to all adult gMG serotypes.",
+    "note": "Only the statement and locator below were checked; other case claims remain unverified."
+  },
+  {
+    "source_id": "S06",
+    "sector": "Medical technology",
+    "company": "Intuitive Surgical",
+    "period": "Q2 2026",
+    "title": "Intuitive Surgical Q2 results",
+    "urls": [
+      "https://investor.intuitivesurgical.com/news-releases/news-release-details/intuitive-announces-second-quarter-earnings-6/"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Procedures, installed base and recurring revenue",
+    "case_id": "C06",
+    "audit_date": "2026-10-03",
+    "status": "VERIFIED_SCOPE_ONLY",
+    "locator": "Q2 Highlights, bullets 1 and 3; Q2 Financial Summary, instruments and accessories paragraph",
+    "verified_statement": "Q2 2026 combined procedures grew 16%, da Vinci procedures 15%, Ion procedures 36%; da Vinci ending installed base grew 12%; I&A revenue grew 18%. These do not establish utilization growth per average active system.",
+    "note": "Only the statement and locator below were checked; other case claims remain unverified."
+  },
+  {
+    "source_id": "S07",
+    "sector": "Medical technology",
+    "company": "Dexcom",
+    "period": "2026",
+    "title": "Dexcom CONNECT study",
+    "urls": [
+      "https://investors.dexcom.com/news/news-details/2026/Dexcom-CONNECT-Study-The-Most-Significant-Clinical-Study-Demonstrating-CGM-Benefits-for-People-with-Type-2-Diabetes-Not-Using-Insulin/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "A1c, time in range and sensor use",
+    "case_id": "C07",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S08",
+    "sector": "Diagnostics",
+    "company": "Natera",
+    "period": "Q2 2026",
+    "title": "Natera Q2 results",
+    "urls": [
+      "https://investor.natera.com/news/news-details/2026/Natera-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Revenue, tests and true-up",
+    "case_id": "C08",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S09",
+    "sector": "Diagnostics",
+    "company": "Guardant Health",
+    "period": "FDA / Q2 2026",
+    "title": "Shield approval letter, FDA SSED and Guardant Q2 results",
+    "urls": [
+      "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230009A.pdf",
+      "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230009B.pdf",
+      "https://investors.guardanthealth.com/press-releases/press-releases/2026/Guardant-Health-Reports-Second-Quarter-2026-Financial-Results-and-Increases-2026-Revenue-Guidance/default.aspx"
+    ],
+    "source_class": "Regulator and company",
+    "used_for": "Sensitivity, stage/lesion performance, post-approval study, volume and cash burn",
+    "case_id": "C09",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S10",
+    "sector": "Life-science tools",
+    "company": "Danaher",
+    "period": "Q2 2026",
+    "title": "Danaher Q2 results",
+    "urls": [
+      "https://investors.danaher.com/2026-07-21-Danaher-Reports-Second-Quarter-2026-Results"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Bioprocess orders and project timing",
+    "case_id": "C10",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S11",
+    "sector": "Life-science tools",
+    "company": "Illumina",
+    "period": "Q2 2026",
+    "title": "Illumina prepared remarks",
+    "urls": [
+      "https://investor.illumina.com/static-files/393df851-e597-4564-b113-6bb5b80e9003"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Placements, consumables and platform transition",
+    "case_id": "C11",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S12",
+    "sector": "CRO / CDMO",
+    "company": "Medpace",
+    "period": "Q2 2026",
+    "title": "Medpace Q2 results",
+    "urls": [
+      "https://investor.medpace.com/news-releases/news-release-details/medpace-holdings-inc-reports-second-quarter-2026-results/"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Awards, book-to-bill, backlog and conversion",
+    "case_id": "C12",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S13",
+    "sector": "CRO / CDMO",
+    "company": "Lonza",
+    "period": "H1 2026",
+    "title": "Lonza H1 results",
+    "urls": [
+      "https://www.lonza.com/news/2026-07-22-06-30"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Growth, EBITDA margin, phasing and capex",
+    "case_id": "C13",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S14",
+    "sector": "Providers / services",
+    "company": "HCA Healthcare",
+    "period": "Q2 2026",
+    "title": "HCA Q2 results",
+    "urls": [
+      "https://investor.hcahealthcare.com/news/news-details/2026/HCA-Healthcare-Reports-Second-Quarter-2026-Results/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Admissions, revenue/case, surgery and payer items",
+    "case_id": "C14",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S15",
+    "sector": "Providers / services",
+    "company": "Option Care Health",
+    "period": "Q2 2026",
+    "title": "Option Care Q2 results",
+    "urls": [
+      "https://investors.optioncarehealth.com/news-releases/news-release-details/option-care-health-announces-financial-results-second-quarter-5"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Revenue, gross profit and EBITDA",
+    "case_id": "C15",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S16",
+    "sector": "Managed care",
+    "company": "UnitedHealth Group",
+    "period": "Q2 2026",
+    "title": "UnitedHealth Q2 results",
+    "urls": [
+      "https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2026/unh-reports-second-quarter-2026-results.pdf"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "MCR and reserve development",
+    "case_id": "C16",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S17",
+    "sector": "Managed care",
+    "company": "Humana",
+    "period": "Q2 2026",
+    "title": "Humana Q2 results",
+    "urls": [
+      "https://humana.gcs-web.com/static-files/12c1ba3e-c307-42ff-9602-65887686405f"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Benefit ratio and member cohorts",
+    "case_id": "C17",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S18",
+    "sector": "Distribution / PBM",
+    "company": "Cencora",
+    "period": "Q3 FY2026",
+    "title": "Cencora Q3 results",
+    "urls": [
+      "https://investor.cencora.com/news/news-details/2026/Cencora-Reports-Fiscal-2026-Third-Quarter-Results/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Revenue, gross profit, GLP-1 mix and FCF",
+    "case_id": "C18",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S19",
+    "sector": "Distribution / PBM",
+    "company": "CVS Health",
+    "period": "Q2 2026",
+    "title": "CVS Q2 results",
+    "urls": [
+      "https://investors.cvshealth.com/news/news-details/2026/CVS-HEALTH-CORPORATION-REPORTS-STRONG-SECOND-QUARTER-2026-RESULTS-AND-RAISES-FULL-YEAR-2026-GUIDANCE/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Health Services revenue, claims and economics",
+    "case_id": "C19",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S20",
+    "sector": "Health technology",
+    "company": "Veeva Systems",
+    "period": "Q1 FY2027",
+    "title": "Veeva Q1 results",
+    "urls": [
+      "https://ir.veeva.com/news/news-details/2026/Veeva-Announces-Fiscal-2027-First-Quarter-Results/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Subscription growth, CRM go-lives and AI rollout",
+    "case_id": "C20",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S21",
+    "sector": "Health technology",
+    "company": "Doximity",
+    "period": "Q1 FY2027",
+    "title": "Doximity results and Form 10-Q",
+    "urls": [
+      "https://investors.doximity.com/news/news-details/2026/Doximity-Announces-Fiscal-2027-First-Quarter-Financial-Results/default.aspx",
+      "https://www.sec.gov/Archives/edgar/data/1516513/000151651326000040/docs-20260630.htm"
+    ],
+    "source_class": "Company and filing",
+    "used_for": "Engagement, NRR, EBITDA, FCF and margin",
+    "case_id": "C21",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S22",
+    "sector": "Consumer / animal health",
+    "company": "Haleon",
+    "period": "H1 2026",
+    "title": "Haleon H1 results",
+    "urls": [
+      "https://www.haleon.com/news/press-releases/financial/2026/2026-half-year-results"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Organic growth, price, volume/mix and share",
+    "case_id": "C22",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S23",
+    "sector": "Consumer / animal health",
+    "company": "Zoetis",
+    "period": "Q2 2026",
+    "title": "Zoetis Q2 results",
+    "urls": [
+      "https://investor.zoetis.com/news/news-details/2026/Zoetis-Announces-Second-Quarter-2026-Results/default.aspx"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Companion-animal and livestock performance",
+    "case_id": "C23",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  },
+  {
+    "source_id": "S24",
+    "sector": "Consumer / animal health",
+    "company": "IDEXX Laboratories",
+    "period": "Q2 2026",
+    "title": "IDEXX Q2 results",
+    "urls": [
+      "https://ir.idexx.com/news-events/press-releases/detail/414/idexx-laboratories-announces-second-quarter-results"
+    ],
+    "source_class": "Company primary source",
+    "used_for": "Installed base, consumables and placements",
+    "case_id": "C24",
+    "audit_date": "2026-10-03",
+    "status": "NEEDS_VERIFICATION",
+    "locator": null,
+    "verified_statement": null,
+    "note": "Workbook source mapping recovered; numeric claims and precise locators still require primary-document review. Link availability is not verification."
+  }
+]

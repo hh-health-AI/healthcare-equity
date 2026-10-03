@@ -1,6 +1,6 @@
 # Evidence Translation — Clinical/Regulatory Rows (from the project framework)
 
-The clinical, regulatory, and manufacturing rows of `Healthcare_Evidence_to_Valuation_Framework.xlsx` ("Every adjective must move an explicit probability, timing, unit, price, duration, margin or capital assumption"). Master copy: healthcare-equity plugin.
+The clinical, regulatory, and manufacturing rows of `Healthcare_Evidence_to_Valuation_Framework.xlsx` ("Every update documents CHANGE, NO_CHANGE, UNCERTAINTY_ONLY or NEEDS_DATA, with rationale; numerical changes are not mandatory"). Master copy: healthcare-equity plugin.
 
 | Evidence | Model variables | Modeling instruction | NOT automatic | Observable follow-up |
 |---|---|---|---|---|

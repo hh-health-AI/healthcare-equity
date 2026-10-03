@@ -137,33 +137,27 @@ flowchart TD
 
 *Blue = skills · green = data sources & stores · amber (dashed) = agents · pink = evidence outputs · violet = suite handoffs.*
 
-<!-- standalone-install:start -->
 ## Installation
 
-This standalone distribution is published as **HH-healthcare-equity**; the plugin inside keeps its suite id `healthcare-equity`. Two ways to install — **pick one**, not both (both distribute the same plugin under the same name):
+The runnable Python package is maintained in [hh-health-AI/healthcare-equity](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite). Python 3.10+:
 
-**Standalone (this repo):**
-
-```shell
-/plugin marketplace add <your-github-username>/HH-healthcare-equity
-/plugin install healthcare-equity@HH-healthcare-equity
+```sh
+git clone https://github.com/hh-health-AI/healthcare-equity.git
+cd healthcare-equity/research-suite
+python -m venv .venv
+. .venv/bin/activate
+python -m pip install .
+python scripts/run_demo.py
 ```
 
-**As part of the five-plugin suite (recommended if you want the full evidence→investable-view chain):**
+The demo writes nine synthetic reports to `outputs/`. See the [package README](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite) for CLI commands, optional MCP setup, and copying skills into a host. The instructions in this repository can also be read directly. Marketplace installation is not advertised: the required marketplace manifests are not shipped here.
 
-```shell
-/plugin marketplace add <your-github-username>/claude-healthcare-analyst-suite
-/plugin install healthcare-equity@healthcare-analyst-suite
-```
-
-Updates: `/plugin marketplace update HH-healthcare-equity` (standalone) or `/plugin marketplace update healthcare-analyst-suite` (suite). If you switch sources later, uninstall the plugin first, then remove the old marketplace.
-<!-- standalone-install:end -->
 
 ## Setup
 
-- **No MCP servers by design** — this plugin consumes the engines' connectors (install all five together), the Quartr connector for transcripts/filings, and web/EDGAR. Optional depth layer: the Rhizome AI connector for FDA/EMA primary-document research (routed via the CLAUDE.md connector map); the breadth-vs-depth buying taxonomy lives in `references/data-stack-map.md`.
+- **Synthesis instructions** — these can use separately configured evidence connectors; the Python research suite includes an optional MCP server. This workflow consumes the engines' connectors, the Quartr connector for transcripts/filings, and web/EDGAR. Optional depth layer: the Rhizome AI connector for FDA/EMA primary-document research (routed via the CLAUDE.md connector map); the breadth-vs-depth buying taxonomy lives in `references/data-stack-map.md`.
 - Excel builds hand off to model-builder / financial-analysis; earnings model updates to earnings-reviewer.
-- Uninstall the old `healthcare`, `cms-coverage`, `npi-registry`, and deprecated `pubmed` plugins after installing the suite.
+
 
 ## Usage
 
@@ -172,4 +166,11 @@ Say what you'd say to a junior analyst: "initiate on [TICKER]", "preview the pri
 ## Smoke test
 
 Ask: **"Run the sell-discipline scorecard on [TICKER]; here is my thesis: …"** — pass: six 0–3 scores with the banded verdict and a confidence score. Then ask: **"Build the investable view for [TICKER]"** — pass: five layer briefs (or declared skips) with openable citations, a scenario set whose probabilities sum to 1.00 with a ≥5% unknown-unknown residual, and the template sentence with a dated catalyst and falsifier.
-The universal pass condition, per the suite contract: an output must **move a model variable with an openable citation** — an output that merely informs, or cites without resolving, fails.
+Every evidence update must document a model implication: CHANGE, NO_CHANGE, UNCERTAINTY_ONLY, or NEEDS_DATA. State the affected assumption, prior and proposed values (or explicitly unavailable), rationale, source/locator, and next observable. Do not force a numerical change or double-count evidence already in the model.
+
+## Reviewable evidence and reliability
+
+- [24-case source audit](skills/model-valuation/references/case-source-audit.md): explicit verified scope and outstanding checks.
+- [Reliability evaluation](research-suite/evaluation/README.md): reproducible checks and known failure boundaries.
+- [Model implication contract and NO_CHANGE example](docs/MODEL_IMPLICATIONS.md).
+- [Maintenance and module provenance](docs/MAINTENANCE.md).

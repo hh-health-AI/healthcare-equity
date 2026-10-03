@@ -13,11 +13,11 @@ Evidence has entered valuation only when it changes probability, timing, units, 
 
 ## Evidence Translation Rules (all 8)
 
-*Every adjective must move an explicit probability, timing, unit, price, duration, margin or capital assumption.*
+Every evidence update must document a model implication: CHANGE, NO_CHANGE, UNCERTAINTY_ONLY, or NEEDS_DATA. State the affected assumption, prior and proposed values (or explicitly unavailable), rationale, source/locator, and next observable. Do not force a numerical change or double-count evidence already in the model.
 
 | Evidence | Model variables | Modeling instruction | NOT automatic | Observable follow-up |
 |---|---|---|---|---|
-| Better efficacy vs placebo | Approval probability; minimum clinical utility | Move PoA and/or regulatory timing | Peak share, premium price or superior line of therapy | Regulatory feedback; filing acceptance; label wording |
+| Better efficacy vs placebo | Approval probability; minimum clinical utility | Assess PoA and/or regulatory timing; retain the prior when already reflected | Peak share, premium price or superior line of therapy | Regulatory feedback; filing acceptance; label wording |
 | Better efficacy vs active comparator | Line of therapy; peak share; adoption speed; persistence | Map endpoint advantage to segment-specific prescribing behavior | Manufacturing probability or automatic payer preference | New-to-brand share; guideline placement; switching |
 | Better safety or tolerability | Eligible population; discontinuation; monitoring burden; persistence | Translate adverse events into label, discontinuation and care burden | Diagnosis rate or biological efficacy | Dose intensity; monitoring; real-world persistence |
 | Easier administration | Initiation; site of care; throughput; persistence | Model format conversion, chair capacity, home use and service cost | Biological efficacy or incremental TAM | Format mix; starts; refill persistence; site economics |
@@ -69,6 +69,6 @@ Evidence has entered valuation only when it changes probability, timing, units, 
 | Financial | What cash remains after delivery and reinvestment? | Contribution margin; capex; working capital; dilution | Unit economics, capacity, cash burn, leverage, runway |
 | Valuation | What does the current price already assume? | Implied PoA; units; MCR; NRR; utilization or margin | Reverse DCF/rNPV and consensus bridge |
 
-**Variant-perception test (score each):** disagreement is an explicit market-implied variable · evidence directly changes that variable · the difference matters after probability weighting · a catalyst can resolve the disagreement · the thesis has an observable falsifier.
+**Variant-perception test (score each):** disagreement is an explicit market-implied variable · evidence supports a change or a reasoned decision to retain that variable · the difference matters after probability weighting · a catalyst can resolve the disagreement · the thesis has an observable falsifier.
 
-**Template sentence:** *"At the current price, the market appears to imply [X]. Evidence [E] changes model variable [Y] from [A] to [B]. That produces [Δ revenue/margin/FCF/rNPV] under the base case. Catalyst [C] should resolve the disagreement within [time horizon]. Observation [F] would falsify the thesis."*
+**Template sentence:** *"At the current price, the market appears to imply [X]. Evidence [E] gives implication [status] for variable [Y]: [A] → [B], because [rationale]. That produces [Δ revenue/margin/FCF/rNPV] under the base case. Catalyst [C] should resolve the disagreement within [time horizon]. Observation [F] would falsify the thesis."*
