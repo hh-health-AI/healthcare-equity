@@ -1,0 +1,143 @@
+{
+  "synthetic": true,
+  "as_of": "2026-09-25",
+  "currency": "USD",
+  "units": "millions (shares also in millions)",
+  "scenarios": [
+    {
+      "name": "bear",
+      "discount_rate": 0.14,
+      "cashflows": [
+        {
+          "year": 0,
+          "kind": "development",
+          "cashflow": -10,
+          "probability": 1,
+          "assumption": "Synthetic committed development spend"
+        },
+        {
+          "year": 1,
+          "kind": "development",
+          "cashflow": -20,
+          "probability": 0.7,
+          "assumption": "Synthetic 70% probability of incurring the next stage cost"
+        },
+        {
+          "year": 3,
+          "kind": "commercial",
+          "cashflow": 30,
+          "probability": 0.2,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.2"
+        },
+        {
+          "year": 4,
+          "kind": "commercial",
+          "cashflow": 70,
+          "probability": 0.2,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.2"
+        },
+        {
+          "year": 5,
+          "kind": "commercial",
+          "cashflow": 90,
+          "probability": 0.2,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.2"
+        }
+      ],
+      "cash": 25,
+      "debt": 5,
+      "unallocated_overhead_pv": 4,
+      "diluted_shares": 10
+    },
+    {
+      "name": "base",
+      "discount_rate": 0.12,
+      "cashflows": [
+        {
+          "year": 0,
+          "kind": "development",
+          "cashflow": -10,
+          "probability": 1,
+          "assumption": "Synthetic committed development spend"
+        },
+        {
+          "year": 1,
+          "kind": "development",
+          "cashflow": -20,
+          "probability": 0.7,
+          "assumption": "Synthetic 70% probability of incurring the next stage cost"
+        },
+        {
+          "year": 3,
+          "kind": "commercial",
+          "cashflow": 50,
+          "probability": 0.4,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.4"
+        },
+        {
+          "year": 4,
+          "kind": "commercial",
+          "cashflow": 110,
+          "probability": 0.4,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.4"
+        },
+        {
+          "year": 5,
+          "kind": "commercial",
+          "cashflow": 160,
+          "probability": 0.4,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.4"
+        }
+      ],
+      "cash": 25,
+      "debt": 5,
+      "unallocated_overhead_pv": 4,
+      "diluted_shares": 10
+    },
+    {
+      "name": "bull",
+      "discount_rate": 0.1,
+      "cashflows": [
+        {
+          "year": 0,
+          "kind": "development",
+          "cashflow": -10,
+          "probability": 1,
+          "assumption": "Synthetic committed development spend"
+        },
+        {
+          "year": 1,
+          "kind": "development",
+          "cashflow": -20,
+          "probability": 0.7,
+          "assumption": "Synthetic 70% probability of incurring the next stage cost"
+        },
+        {
+          "year": 3,
+          "kind": "commercial",
+          "cashflow": 80,
+          "probability": 0.6,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.6"
+        },
+        {
+          "year": 4,
+          "kind": "commercial",
+          "cashflow": 160,
+          "probability": 0.6,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.6"
+        },
+        {
+          "year": 5,
+          "kind": "commercial",
+          "cashflow": 240,
+          "probability": 0.6,
+          "assumption": "Synthetic after-tax unlevered cash flow; unconditional commercial probability 0.6"
+        }
+      ],
+      "cash": 25,
+      "debt": 5,
+      "unallocated_overhead_pv": 4,
+      "diluted_shares": 10
+    }
+  ]
+}

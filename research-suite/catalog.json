@@ -1,0 +1,77 @@
+{
+  "version": "0.1.0",
+  "projects": [
+    {
+      "id": "medical-evidence-skills",
+      "name": "Medical Evidence Skills",
+      "description": "Search, appraise and synthesize medical evidence",
+      "skill": "skills/medical-evidence-skills",
+      "agent": "agents/medical-evidence-skills.md",
+      "guide": "docs/medical-evidence-skills.md"
+    },
+    {
+      "id": "clinical-trial-analyst",
+      "name": "Clinical Trial Analyst",
+      "description": "Compare registry, paper and press-release claims",
+      "skill": "skills/clinical-trial-analyst",
+      "agent": "agents/clinical-trial-analyst.md",
+      "guide": "docs/clinical-trial-analyst.md"
+    },
+    {
+      "id": "biomedical-claim-checker",
+      "name": "Biomedical Claim Checker",
+      "description": "Check biomedical claims against source passages",
+      "skill": "skills/biomedical-claim-checker",
+      "agent": "agents/biomedical-claim-checker.md",
+      "guide": "docs/biomedical-claim-checker.md"
+    },
+    {
+      "id": "biotech-catalyst-radar",
+      "name": "Biotech Catalyst Radar",
+      "description": "Track trial changes with dated source snapshots",
+      "skill": "skills/biotech-catalyst-radar",
+      "agent": "agents/biotech-catalyst-radar.md",
+      "guide": "docs/biotech-catalyst-radar.md"
+    },
+    {
+      "id": "literature-review-assistant",
+      "name": "Literature Review Assistant",
+      "description": "Build auditable searches and screening worklists",
+      "skill": "skills/literature-review-assistant",
+      "agent": "agents/literature-review-assistant.md",
+      "guide": "docs/literature-review-assistant.md"
+    },
+    {
+      "id": "healthcare-public-data",
+      "name": "Healthcare Public Data Toolkit",
+      "description": "Query public health data with coverage metadata",
+      "skill": "skills/healthcare-public-data",
+      "agent": "agents/healthcare-public-data.md",
+      "guide": "docs/healthcare-public-data.md"
+    },
+    {
+      "id": "biotech-rnpv-modeler",
+      "name": "Biotech rNPV Modeler",
+      "description": "Model transparent trial and valuation scenarios",
+      "skill": "skills/biotech-rnpv-modeler",
+      "agent": "agents/biotech-rnpv-modeler.md",
+      "guide": "docs/biotech-rnpv-modeler.md"
+    },
+    {
+      "id": "conference-evidence-agent",
+      "name": "Conference Evidence Agent",
+      "description": "Triage public abstracts and overlapping cohorts",
+      "skill": "skills/conference-evidence-agent",
+      "agent": "agents/conference-evidence-agent.md",
+      "guide": "docs/conference-evidence-agent.md"
+    },
+    {
+      "id": "journal-club-agent",
+      "name": "Journal Club Agent",
+      "description": "Create source-linked study briefings and slides",
+      "skill": "skills/journal-club-agent",
+      "agent": "agents/journal-club-agent.md",
+      "guide": "docs/journal-club-agent.md"
+    }
+  ]
+}

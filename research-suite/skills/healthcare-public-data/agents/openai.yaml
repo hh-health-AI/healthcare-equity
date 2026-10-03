@@ -1,0 +1,4 @@
+interface:
+  display_name: "Healthcare Public Data"
+  short_description: "Help with Healthcare Public Data tasks"
+  default_prompt: "Use $healthcare-public-data to query public health data with coverage metadata."
