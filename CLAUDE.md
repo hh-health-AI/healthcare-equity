@@ -42,13 +42,15 @@ EVIDENCE BRIEF
 Layer:         clinical | regulatory | commercial | competitive | financial
 Finding:       what the primary source says — citation, retrieval date, file/data vintage
 Coverage:      what was searched, roughly how many documents/records, and the known gaps
-Moves:         the explicit model variables this moves (probability, timing, units, price, duration/retention, margin, capital)
+Implication:   CHANGE | NO_CHANGE | UNCERTAINTY_ONLY | NEEDS_DATA
+Assumption:    affected variable; prior → proposed (or unavailable); rationale
+Evidence:      source and locator; what is already reflected in the model
 Not automatic: what this evidence does NOT license you to infer
 Follow-up:     the observable that would confirm or refute it
 Confidence:    0.00–1.00
 ```
 
-This operationalizes the Evidence Translation rule: *every adjective must move an explicit probability, timing, unit, price, duration, margin, or capital assumption* — and evidence has entered valuation only when it changes one of those. The investable-view skill consumes briefs in this shape from any plugin.
+Every evidence update must document a model implication: CHANGE, NO_CHANGE, UNCERTAINTY_ONLY, or NEEDS_DATA. State the affected assumption, prior and proposed values (or explicitly unavailable), rationale, source/locator, and next observable. Do not force a numerical change or double-count evidence already in the model.
 
 ## Connector routing map
 

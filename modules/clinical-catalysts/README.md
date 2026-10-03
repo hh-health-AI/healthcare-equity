@@ -74,27 +74,21 @@ flowchart TD
 
 *Blue = skills · green = data sources & stores · amber (dashed) = agents · pink = evidence outputs · violet = suite handoffs.*
 
-<!-- standalone-install:start -->
 ## Installation
 
-This standalone distribution is published as **HH-clinical-catalysts**; the plugin inside keeps its suite id `clinical-catalysts`. Two ways to install — **pick one**, not both (both distribute the same plugin under the same name):
+The runnable Python package is maintained in [hh-health-AI/healthcare-equity](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite). Python 3.10+:
 
-**Standalone (this repo):**
-
-```shell
-/plugin marketplace add <your-github-username>/HH-clinical-catalysts
-/plugin install clinical-catalysts@HH-clinical-catalysts
+```sh
+git clone https://github.com/hh-health-AI/healthcare-equity.git
+cd healthcare-equity/research-suite
+python -m venv .venv
+. .venv/bin/activate
+python -m pip install .
+python scripts/run_demo.py
 ```
 
-**As part of the five-plugin suite (recommended if you want the full evidence→investable-view chain):**
+The demo writes nine synthetic reports to `outputs/`. See the [package README](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite) for CLI commands, optional MCP setup, and copying skills into a host. The instructions in this repository can also be read directly. Marketplace installation is not advertised: the required marketplace manifests are not shipped here.
 
-```shell
-/plugin marketplace add <your-github-username>/claude-healthcare-analyst-suite
-/plugin install clinical-catalysts@healthcare-analyst-suite
-```
-
-Updates: `/plugin marketplace update HH-clinical-catalysts` (standalone) or `/plugin marketplace update healthcare-analyst-suite` (suite). If you switch sources later, uninstall the plugin first, then remove the old marketplace.
-<!-- standalone-install:end -->
 
 ## Setup
 
@@ -117,5 +111,5 @@ Updates: `/plugin marketplace update HH-clinical-catalysts` (standalone) or `/pl
 ## Smoke test
 
 Ask: **"Build a 90-day catalyst calendar for [two or three covered tickers]."**
-Pass: dated events carrying NCT IDs and registry timestamps (plus PDUFA/AdCom sources), with sponsor-guidance vs registry dates distinguished; deep-dived events end with an EVIDENCE BRIEF whose citations open. The output must move model variables (timing/probability), not merely list news.
+Pass: dated events carrying NCT IDs and registry timestamps (plus PDUFA/AdCom sources), with sponsor-guidance vs registry dates distinguished; deep-dived events end with an EVIDENCE BRIEF whose citations open. The output must document CHANGE, NO_CHANGE, UNCERTAINTY_ONLY or NEEDS_DATA for timing/probability, with rationale and a next observable.
 Fail tell: event dates without NCT IDs or openable citations mean the Clinical Trials connector was not called.

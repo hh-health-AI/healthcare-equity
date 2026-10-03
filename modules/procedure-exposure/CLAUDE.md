@@ -15,7 +15,9 @@ EVIDENCE BRIEF
 Layer:         commercial (volume / exposure)
 Finding:       what the primary source says — citation, retrieval date, data vintage
 Coverage:      what was searched, roughly how many documents/records, and the known gaps
-Moves:         the explicit model variables this moves (probability, timing, units, price, duration/retention, margin, capital)
+Implication:   CHANGE | NO_CHANGE | UNCERTAINTY_ONLY | NEEDS_DATA
+Assumption:    affected variable; prior → proposed (or unavailable); rationale
+Evidence:      source and locator; what is already reflected in the model
 Not automatic: what this evidence does NOT license you to infer
 Follow-up:     the observable that would confirm or refute it
 Confidence:    0.00–1.00
@@ -88,3 +90,7 @@ flowchart TD
 5. Citations opened — every load-bearing citation verified to resolve.
 
 **Evidence ledger.** Every skill that emits an EVIDENCE BRIEF also saves it as a dated markdown file under `~/.claude/data/procedure-exposure/briefs/` (e.g. `briefs/DXCM-coverage-2026-08-25.md`), and monitoring agents keep matched-cohort state under `~/.claude/data/procedure-exposure/snapshots/` — diff against the stored snapshot, never against memory. If writes are refused, add `~/.claude/data` to `sandbox.filesystem.allowWrite` in `~/.claude/settings.json` once. The ledger is what the investable-view capstone, the watchers, and the sell-discipline post-mortems audit.
+
+## Model implication contract
+
+Every evidence update must document a model implication: CHANGE, NO_CHANGE, UNCERTAINTY_ONLY, or NEEDS_DATA. State the affected assumption, prior and proposed values (or explicitly unavailable), rationale, source/locator, and next observable. Do not force a numerical change or double-count evidence already in the model.

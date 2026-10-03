@@ -36,12 +36,12 @@ Every project includes a portable `SKILL.md`, host-facing metadata, methodology,
 
 ## Quickstart
 
-These instructions select the implementation branch so this preview can be used before merge.
+These instructions use the public main branch.
 
 Python 3.10+; the core package uses only the Python standard library at runtime.
 
 ```bash
-git clone --branch feat/healthcare-research-suite-nine-tools https://github.com/hh-health-AI/healthcare-equity.git
+git clone https://github.com/hh-health-AI/healthcare-equity.git
 cd healthcare-equity/research-suite
 python3 -m venv .venv
 # macOS / Linux
