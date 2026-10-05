@@ -1,0 +1,234 @@
+{
+  "package_name": "hh-health-ai-research",
+  "version": "0.1.0",
+  "review_date": "2026-10-04",
+  "source_repository": "https://github.com/hh-health-AI/healthcare-equity",
+  "source_branch": "main",
+  "retrieval_method": "Authorized GitHub connector; individual file reads",
+  "atomic_commit_checkout": false,
+  "packaging_mode": "Adapted workflow edition, not a full repository export",
+  "sources": [
+    {
+      "path": "README.md",
+      "git_blob_sha": "ea4b2da4d034e0badd85de516ef933950e3ff794",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/README.md",
+      "use": "Canonical module and investment workflow map"
+    },
+    {
+      "path": "CLAUDE.md",
+      "git_blob_sha": "9d0326f9d0282d42c90f8f66eca7524f9f2b4f3f",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/CLAUDE.md",
+      "use": "Standing evidence rules; host-specific persistence and permission instructions not ported"
+    },
+    {
+      "path": "LICENSE",
+      "git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/LICENSE",
+      "use": "Original MIT copyright and permission notice retained"
+    },
+    {
+      "path": "skills/investable-view/SKILL.md",
+      "git_blob_sha": "89db5a3ad050c7ad9143acb2695a4c9271f3b79b",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/skills/investable-view/SKILL.md",
+      "use": "Adapted capstone"
+    },
+    {
+      "path": "research-suite/README.md",
+      "git_blob_sha": "54604fcac27234c46df40385f8ac1d82c709a9b5",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/README.md",
+      "use": "Suite scope, runtime distinction and limits"
+    },
+    {
+      "path": "research-suite/skills/medical-evidence-skills/SKILL.md",
+      "git_blob_sha": "6188ea956cb4c86ecefb66d9cfd3cbc8b7a26d13",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/medical-evidence-skills/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/clinical-trial-analyst/SKILL.md",
+      "git_blob_sha": "1ebbafe36702b64925604aa6d37b89d2d6877d6b",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/clinical-trial-analyst/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/biomedical-claim-checker/SKILL.md",
+      "git_blob_sha": "ec0cfd44cb64aed4f2bcec50f901b73258a64cfe",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/biomedical-claim-checker/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/biotech-catalyst-radar/SKILL.md",
+      "git_blob_sha": "0ef0a11b4392f2e89ce22de593c5ddc1c1cbac08",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/biotech-catalyst-radar/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/literature-review-assistant/SKILL.md",
+      "git_blob_sha": "c78a45dd0f284b0b8ae4c32a6890521a4a8de06c",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/literature-review-assistant/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/healthcare-public-data/SKILL.md",
+      "git_blob_sha": "c4ae7558850fe656d39868ea11675cc3832ad83a",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/healthcare-public-data/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/biotech-rnpv-modeler/SKILL.md",
+      "git_blob_sha": "ce2c364483c9e95f11cfd197ddaf419f4bc0a9d1",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/biotech-rnpv-modeler/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/conference-evidence-agent/SKILL.md",
+      "git_blob_sha": "2d4593b9299bcd1dffb0b7924e8e44b60fc8343f",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/conference-evidence-agent/SKILL.md",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/journal-club-agent/SKILL.md",
+      "git_blob_sha": "4b92ea73c3304700188374fe7c85720ab93efa96",
+      "url": "https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/skills/journal-club-agent/SKILL.md",
+      "use": "Adapted individual workflow"
+    }
+  ],
+  "skills": [
+    {
+      "name": "hh-health-ai",
+      "title": "HH Health AI Research",
+      "description": "Use for an explicit HH Health AI request, a cross-domain healthcare research question, or help choosing among the bundled evidence, trial, valuation and investment workflows. Route narrowly; do not activate all modules for a simple question.",
+      "source_paths": [
+        "README.md",
+        "CLAUDE.md",
+        "research-suite/README.md"
+      ]
+    },
+    {
+      "name": "healthcare-equity",
+      "title": "Healthcare Equity Research",
+      "description": "Use for healthcare company initiation, earnings analysis, valuation framing, thesis development, screens, portfolio research, management meetings, sell discipline, international exposure, investment communication or stewardship. Use the dedicated capstone for a full investable view.",
+      "source_paths": [
+        "README.md",
+        "CLAUDE.md"
+      ]
+    },
+    {
+      "name": "investable-view",
+      "title": "Investable View",
+      "description": "Use to build a falsifiable healthcare investment view from clinical, regulatory, commercial, competitive and financial evidence; assemble an underwriting thesis with explicit model implications, scenarios and market-implied expectations.",
+      "source_paths": [
+        "skills/investable-view/SKILL.md",
+        "CLAUDE.md",
+        "README.md"
+      ]
+    },
+    {
+      "name": "evidence-modules",
+      "title": "Healthcare Evidence Modules",
+      "description": "Use for healthcare reimbursement, clinical catalysts, utilization, epidemiology, provider adoption or economics, procedure exposure, safety, IP/exclusivity, international access, publications or SEC forensics. Produce source-bounded evidence briefs and model implications, not a generic overview.",
+      "source_paths": [
+        "README.md",
+        "CLAUDE.md"
+      ]
+    },
+    {
+      "name": "medical-evidence-skills",
+      "title": "Medical Evidence Skills",
+      "description": "Use for a biomedical evidence question, PICO search, evidence table, critical appraisal, conflicting-evidence synthesis or plain-language explanation. Preserve source passages and uncertainty; do not turn research support into a personalized treatment decision.",
+      "source_paths": [
+        "research-suite/skills/medical-evidence-skills/SKILL.md",
+        "research-suite/README.md"
+      ]
+    },
+    {
+      "name": "clinical-trial-analyst",
+      "title": "Clinical Trial Analyst",
+      "description": "Use to interpret a trial or readout and reconcile registry, protocol, publication and press release; examine endpoints, multiplicity, missing data, safety and applicability. Extract evidence before comparing and never infer misconduct solely from a textual discrepancy.",
+      "source_paths": [
+        "research-suite/skills/clinical-trial-analyst/SKILL.md"
+      ]
+    },
+    {
+      "name": "biomedical-claim-checker",
+      "title": "Biomedical Claim Checker",
+      "description": "Use to audit whether medical or scientific claims are supported by their citations, verify references, assess AI-generated biomedical text or identify overstatement in a press release. Evaluate source validity and entailment, not just identifier existence.",
+      "source_paths": [
+        "research-suite/skills/biomedical-claim-checker/SKILL.md"
+      ]
+    },
+    {
+      "name": "biotech-catalyst-radar",
+      "title": "Biotech Catalyst Radar",
+      "description": "Use for a defined biotech trial watchlist, registry-version comparisons, catalyst calendars or changed enrollment, status and completion estimates. Distinguish registry dates, sponsor readout guidance and regulatory decision dates; do not imply unscheduled background monitoring.",
+      "source_paths": [
+        "research-suite/skills/biotech-catalyst-radar/SKILL.md"
+      ]
+    },
+    {
+      "name": "literature-review-assistant",
+      "title": "Literature Review Assistant",
+      "description": "Use for biomedical literature searches, deduplication, screening worklists, study extraction, evidence maps and systematic-review preparation. Preserve search logs and review decisions; do not label a capped or single-database retrieval comprehensive.",
+      "source_paths": [
+        "research-suite/skills/literature-review-assistant/SKILL.md"
+      ]
+    },
+    {
+      "name": "healthcare-public-data",
+      "title": "Healthcare Public Data",
+      "description": "Use to retrieve official biomedical or healthcare public records, choose between ClinicalTrials.gov, PubMed, FDA and CMS sources, inspect data vintage and query completeness, or explain the optional upstream local CLI/MCP setup. Never equate a sample or missing result with the full market or absence of events.",
+      "source_paths": [
+        "research-suite/skills/healthcare-public-data/SKILL.md",
+        "research-suite/README.md"
+      ]
+    },
+    {
+      "name": "biotech-rnpv-modeler",
+      "title": "Biotech rNPV Modeler",
+      "description": "Use to construct or audit biotech risk-adjusted NPV, development-cost timing, commercial cash flows, outcome scenarios and equity-value bridges. Require explicit probability and unit assumptions; avoid double weighting and do not present scenarios as validated forecasts or personal trading instructions.",
+      "source_paths": [
+        "research-suite/skills/biotech-rnpv-modeler/SKILL.md"
+      ]
+    },
+    {
+      "name": "conference-evidence-agent",
+      "title": "Conference Evidence Agent",
+      "description": "Use to analyze public medical-conference abstracts, posters and presentations, identify incremental evidence and reconcile overlapping cohorts. Verify public availability as of a timezone-aware cutoff and respect embargoes and access restrictions.",
+      "source_paths": [
+        "research-suite/skills/conference-evidence-agent/SKILL.md"
+      ]
+    },
+    {
+      "name": "journal-club-agent",
+      "title": "Journal Club Agent",
+      "description": "Use to prepare a journal club, critical-appraisal discussion guide or eight-slide medical research briefing. Read the actual study and methods, preserve evidence boundaries, and distinguish a Markdown outline from an exported presentation file.",
+      "source_paths": [
+        "research-suite/skills/journal-club-agent/SKILL.md"
+      ]
+    }
+  ],
+  "evidence_modules": [
+    "clinical-catalysts",
+    "evidence-catalysts",
+    "fda-safety-signals",
+    "rx-utilization",
+    "epi-demand",
+    "cms-reimbursement",
+    "provider-adoption",
+    "provider-economics",
+    "procedure-exposure",
+    "ip-exclusivity",
+    "global-access",
+    "sec-forensics"
+  ],
+  "excluded": [
+    "Full upstream prompt libraries and module subskills",
+    "Python CLI implementation, examples and tests",
+    "Local stdio MCP server",
+    "Hosted MCP endpoint",
+    "Paid-data licenses",
+    "Automatic schedules or messages",
+    "Private connection credentials and account identifiers"
+  ],
+  "validation_scope": "Static manifest/frontmatter/references/archive validation and synthetic specification checks; no live data, clinical validation, original Python test suite or host-level end-to-end workflow test."
+}

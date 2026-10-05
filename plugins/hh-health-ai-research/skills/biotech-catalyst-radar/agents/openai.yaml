@@ -1,0 +1,5 @@
+interface:
+  display_name: Biotech Catalyst Radar
+  short_description: Biotech Catalyst Radar
+  default_prompt: Use Biotech Catalyst Radar to analyze the supplied research question
+    with sources, assumptions and limitations.

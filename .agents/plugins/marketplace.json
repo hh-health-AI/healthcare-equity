@@ -1,0 +1,20 @@
+{
+  "name": "hh-health-ai",
+  "interface": {
+    "displayName": "HH Health AI"
+  },
+  "plugins": [
+    {
+      "name": "hh-health-ai-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/hh-health-ai-research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
