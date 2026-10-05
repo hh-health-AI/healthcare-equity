@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "hh-health-ai-research",
+  "version": "0.1.0",
+  "description": "Healthcare evidence and equity research workflows adapted from the HH Health AI repositories: biomedical appraisal, twelve evidence modules, and evidence-to-valuation synthesis.",
+  "author": {
+    "name": "HH Health AI"
+  },
+  "repository": "https://github.com/hh-health-AI/healthcare-equity",
+  "homepage": "https://github.com/hh-health-AI/healthcare-equity",
+  "license": "MIT",
+  "keywords": [
+    "healthcare",
+    "biotech",
+    "clinical-trials",
+    "evidence",
+    "reimbursement",
+    "valuation"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "HH Health AI Research",
+        "shortDescription": "Healthcare evidence to value",
+        "longDescription": "A private workflow edition of the HH Health AI research platform. Thirteen skills coordinate nine biomedical research workflows, twelve healthcare evidence modules, and investment synthesis. Uses the host's available tools and user-provided documents, with source citations, explicit model implications, scenarios and falsifiers. This package does not deploy the upstream Python package or local MCP server, supply paid data, or activate background monitoring.",
+        "developerName": "HH Health AI",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "Build an evidence-backed investable view for a healthcare company, with explicit assumptions, scenarios, catalysts and falsifiers.",
+          "Compare a clinical-trial readout with its registry and publication; identify supported claims and unresolved gaps.",
+          "Assess reimbursement, utilization and provider adoption for a healthcare product, showing the implications for the revenue model."
+        ]
+      }
+    }
+  }
+}

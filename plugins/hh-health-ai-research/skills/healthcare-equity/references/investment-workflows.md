@@ -1,0 +1,20 @@
+# Investment workflow adaptations
+
+These twelve entry points follow the canonical repository's component map. They are not verbatim imports of every prompt recipe. Scope specialized requests to the corresponding upstream skill when its exact methodology is required.
+
+| Entry point | Work to perform | Minimum decision-useful output |
+|---|---|---|
+| initiate | Establish company economics, material products, competitive context, cash and financing needs; identify the evidence that matters most. | Business/revenue map, investment questions, primary-source evidence plan and initial scenarios. |
+| earnings | Determine whether the user needs a preview, live triage or post-print analysis. Reconcile actuals with dated prior guidance and available estimates. Separate price, volume, mix, FX, acquisitions and accounting effects where supported. | Actual/prior/expectation bridge, revised guidance assumptions, thesis impact and open call questions. |
+| model-valuation | Select DCF, rNPV, SOTP or a justified comparative framework. Reconcile enterprise-to-equity value, cash, debt, overhead and diluted shares. Show revenue units and sensitivity drivers. | Reproducible inputs, formulas, scenarios, financing treatment and evidence-to-model change log. |
+| thesis | Articulate the disputed variable, benchmark, mechanism and resolving catalyst. Steel-man the other side and conduct a premortem. | Falsifiable thesis, strongest countercase, early warning indicators and what would change the view. |
+| screen-themes | Define universe and exclusions, then test a differentiated economic hypothesis. Separate evidence-backed filters from subjective judgment. Do not claim an exhaustive screen without data coverage. | Auditable candidates, coverage limits, scoring rationale, rejected hypotheses and next evidence. |
+| portfolio | Use supplied or explicitly authorized holdings. Examine concentration, correlated catalysts, factor/financing exposures, and scenario losses. Interpret reported ownership with reporting lags and coverage limitations. | Exposure and catalyst map, risk scenarios and decision tradeoffs; no automatic transactions. |
+| meetings-experts | Prioritize questions that could change a material assumption. Prepare a public-information briefing and explicit disconfirming questions. | Agenda, evidence gaps, allowed question guide and follow-up evidence plan; no solicitation of MNPI. |
+| sell-discipline | Compare the original thesis with actual evidence, valuation, opportunity cost and predetermined exit conditions. Distinguish thesis impairment from price movement. | Dated thesis scorecard and evidence-backed hold/review/exit considerations. Retrieve the original rubric before claiming its exact six-score bands; otherwise label any new rubric as custom. |
+| international | Separate regulatory approval, HTA assessment, price negotiation, reimbursement and commercial launch in each geography. Account for local eligibility and access restrictions. | Country-level access/timing/net-price assumptions and evidence gaps; route deep work to global-access. |
+| comms-compliance | Translate the analysis for IC, LP or generalist audiences without removing its uncertainties. Separate public facts, opinion and confidential inputs. | A source-backed draft with balanced risks and disclosure/MNPI review flags. Do not claim legal compliance certification or distribute it without authorization. |
+| esg-stewardship | Focus on financially or operationally material access, safety, governance, workforce or environmental mechanisms. | Evidence, mechanism, engagement question and observable progress measure; avoid unsupported ratings. |
+| investable-view | Combine material evidence layers into an explicit economic disagreement, probability-weighted scenarios and falsifier. | Use the dedicated Investable View skill rather than replacing the capstone with a company summary. |
+
+The upstream workflow family lives under skills/<entry-point>/SKILL.md in hh-health-AI/healthcare-equity. Exact recipes, scoring thresholds and reference tables must be read before being attributed to the original methodology.

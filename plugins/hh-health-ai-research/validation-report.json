@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "scope": "Static package validation only",
+  "skill_count": 13,
+  "module_count": 12,
+  "reviewed_source_count": 14,
+  "relative_links_checked": 67,
+  "acceptance_specs": 12,
+  "live_workflow_tests_run": false,
+  "package_name": "hh-health-ai-research",
+  "version": "0.1.0",
+  "yaml_frontmatter": "PASS",
+  "yaml_ui_metadata": "PASS",
+  "portable_manifest_schema": "PASS",
+  "interface_checks": {
+    "short_description_characters": 28,
+    "default_prompts": 3
+  },
+  "no_live_data_or_runtime_tests": true,
+  "static_scan_limits": "Structural and heuristic checks; not a comprehensive security audit or a clinical/investment validation.",
+  "source_retrieval": "Individual authorized GitHub file reads; not an atomic checkout."
+}

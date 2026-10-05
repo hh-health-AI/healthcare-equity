@@ -1,0 +1,5 @@
+interface:
+  display_name: Medical Evidence Skills
+  short_description: Medical Evidence Skills
+  default_prompt: Use Medical Evidence Skills to analyze the supplied research question
+    with sources, assumptions and limitations.
