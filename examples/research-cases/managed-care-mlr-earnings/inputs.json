@@ -1,0 +1,47 @@
+{
+  "case_id": "managed-care-mlr-earnings",
+  "company": "UnitedHealth Group",
+  "ticker": "UNH",
+  "analysis_date": "2026-10-08",
+  "reporting_period": "Three months ended 2026-06-30",
+  "source_release_date": "2026-07-16",
+  "observation_scope": "Consolidated UnitedHealth Group; not UnitedHealthcare segment alone",
+  "observations": {
+    "premium_revenue_usd_million": {"value": 86956, "statement_id": "UNH-Q2-2026-01"},
+    "medical_costs_usd_million": {"value": 75358, "statement_id": "UNH-Q2-2026-02"},
+    "reported_mcr_percent": {"value": 86.7, "statement_id": "UNH-Q2-2026-03"},
+    "net_favorable_medical_development_usd_million": {"value": 860, "statement_id": "UNH-Q2-2026-04"},
+    "earnings_before_income_taxes_usd_million": {"value": 6968, "statement_id": "UNH-Q2-2026-05"},
+    "income_tax_provision_usd_million": {"value": 1298, "statement_id": "UNH-Q2-2026-06"},
+    "net_earnings_usd_million": {"value": 5670, "statement_id": "UNH-Q2-2026-07"},
+    "noncontrolling_earnings_usd_million": {"value": 186, "statement_id": "UNH-Q2-2026-08"},
+    "common_shareholder_earnings_usd_million": {"value": 5484, "statement_id": "UNH-Q2-2026-09"},
+    "diluted_weighted_average_shares_million": {"value": 906, "statement_id": "UNH-Q2-2026-10"},
+    "reported_diluted_eps_usd": {"value": 6.04, "statement_id": "UNH-Q2-2026-11"},
+    "fy2026_adjusted_eps_guidance_low_usd": {"value": 19.5, "statement_id": "UNH-FY-2026-01"},
+    "fy2026_adjusted_eps_guidance_high_usd": {"value": 20.0, "statement_id": "UNH-FY-2026-01"}
+  },
+  "assumptions": {
+    "scenario_mcr_change_basis_points": [-100, -50, 0, 50, 100],
+    "marginal_tax_rate_method": "reported_quarter_tax_provision_divided_by_reported_quarter_pretax_earnings",
+    "premium_revenue_held_constant": true,
+    "nonmedical_costs_interest_and_other_items_held_constant": true,
+    "noncontrolling_earnings_held_constant": true,
+    "diluted_shares_held_constant": true,
+    "all_incremental_medical_cost_change_attributed_to_common_shareholders_after_tax": true,
+    "eps_anchor_method": "reported_diluted_eps_plus_modeled_incremental_aftertax_earnings_divided_by_rounded_reported_diluted_shares",
+    "reserve_addback_method": "add_all_net_favorable_development_back_to_quarterly_medical_costs",
+    "illustrative_share_prices_usd": [300, 350, 400],
+    "illustrative_forward_adjusted_pe_multiple": 18,
+    "market_price_verified": false,
+    "consensus_verified": false
+  },
+  "limitations": [
+    "One-quarter static sensitivity; no annualization, repricing response, enrollment response, seasonality or dynamic reserve projection.",
+    "Reported effective tax rate is used as an assumed marginal tax rate; actual tax effects can differ.",
+    "Reserve addback is a no-development proxy, not a pure current-quarter service-cost estimate; the source says most development concerns 2026 dates of service.",
+    "Published amounts and diluted shares are rounded; the release also notes a diluted EPS numerator reduction for forward share repurchase contracts. Exact EPS numerator is not available here.",
+    "Guidance is the issuer outlook dated 2026-07-16, not an assertion that it remains unchanged as of the analysis date.",
+    "Illustrative prices and P/E are analyst-selected conditional hurdles, not an observed market price or consensus valuation."
+  ]
+}

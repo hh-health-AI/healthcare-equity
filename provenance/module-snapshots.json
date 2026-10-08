@@ -1,0 +1,1763 @@
+{
+  "schema_version": 1,
+  "module_count_expected": 12,
+  "review_date": "2026-10-08",
+  "retrieval_method": "Atomic shallow Git clones of each specialist default branch; recorded actual HEAD and Git blobs; bytes compared without copying changes.",
+  "policy": "Frozen snapshot with exact documented differences, not a declaration that whole repositories are synchronized. New local bytes or upstream commits must be reviewed explicitly.",
+  "modules": [
+    {
+      "name": "clinical-catalysts",
+      "upstream_repository": "hh-health-AI/clinical-catalysts",
+      "upstream_branch": "main",
+      "upstream_commit": "80a76c4708179cdab81460ce3ce7658bb52130a4",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "2c94c23f18af78a73e1b4cd8f07692f6e66da327f817820f7e643e7e155723eb",
+          "upstream_git_blob_sha": "d500291a42dbb6ff679977d2cd65e3a09de6600e",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bundled_sha256": "14806ee00cb612751807a35c801cee9f05e388cb2a71dead8530a32683bb2624",
+          "upstream_sha256": "14806ee00cb612751807a35c801cee9f05e388cb2a71dead8530a32683bb2624",
+          "upstream_git_blob_sha": "9857c45373aedc5e0e8fb9669f2b91a12f9484f8",
+          "comparison": "identical"
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "83ae821219a34ae9edd18f2220710eb9653fb6e0894a044db72d9a8eaf3b9478",
+          "upstream_sha256": "83ae821219a34ae9edd18f2220710eb9653fb6e0894a044db72d9a8eaf3b9478",
+          "upstream_git_blob_sha": "c1e3e997937e4164ad29b357cef6887f1402a240",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "b14f0f5f05d970ca740e95d3a084627b52fee7b6c3e8258c4dbf8c02080fb756",
+          "upstream_sha256": "232a7db71f5d3db741725bc6b1fecc16b58d71a2b9a7e42fec4504d99cb1f418",
+          "upstream_git_blob_sha": "3ea05dfa49e95ca481da091fe63fa9ee745d005a",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains a concise module heading, omits the standalone promotional/search-positioning prefix, and uses an integrated-directory introduction linking back to the standalone source; the remaining operational body is unchanged."
+        },
+        {
+          "path": "agents/readout-watcher.md",
+          "bundled_sha256": "12bf01063e6e841314a81aac6df22efab5b948ad3f85a7b8fc7d384613d9c926",
+          "upstream_sha256": "12bf01063e6e841314a81aac6df22efab5b948ad3f85a7b8fc7d384613d9c926",
+          "upstream_git_blob_sha": "f5408173b60f0c2ad001aff8a775b56770d0457d",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/base-rates.md",
+          "bundled_sha256": "2f0c2522132728383febc31621daabbf8885b78f715b022540d3301698f78f5b",
+          "upstream_sha256": "2f0c2522132728383febc31621daabbf8885b78f715b022540d3301698f78f5b",
+          "upstream_git_blob_sha": "97571d1bf2cd55fcdc44fe15ad9f650d918a3e86",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/combination-products.md",
+          "bundled_sha256": "6f11ef6b928c0e4d006e82c6b4c3c450dc0dca5ada01df0e20b15aa6579822c8",
+          "upstream_sha256": "6f11ef6b928c0e4d006e82c6b4c3c450dc0dca5ada01df0e20b15aa6579822c8",
+          "upstream_git_blob_sha": "6559b190953da2e4c324c0d1a37907297c197c22",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/crl-risk-rubric.md",
+          "bundled_sha256": "8f9f1bd8406d6291ab9d36c82154927a6bfaa3276b9f362ede0c1fc81ded8ff5",
+          "upstream_sha256": "8f9f1bd8406d6291ab9d36c82154927a6bfaa3276b9f362ede0c1fc81ded8ff5",
+          "upstream_git_blob_sha": "2b73c4f3d66f67271b0dd15e3cffb61667c501e1",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/device-development-checkpoints.md",
+          "bundled_sha256": "8947c6538eaf19f2c411e2550b1f46416754aba011acd244c30868fe97081a53",
+          "upstream_sha256": "8947c6538eaf19f2c411e2550b1f46416754aba011acd244c30868fe97081a53",
+          "upstream_git_blob_sha": "8af71079c515b6fc7809db1e02cfa6f226784931",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/endpoint-precedents.md",
+          "bundled_sha256": "c72594310af9e84121d44badf26a2c2187a8040fa84ef54740096be752840abd",
+          "upstream_sha256": "c72594310af9e84121d44badf26a2c2187a8040fa84ef54740096be752840abd",
+          "upstream_git_blob_sha": "9139bdf85a438560ff387346c8ff3550b4fcbb0b",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-translation-clinical.md",
+          "bundled_sha256": "a78c24eb6b717163c48b30d38c7d356e7d13cde9ac0ceb399ff2e81496a4749e",
+          "upstream_sha256": "a78c24eb6b717163c48b30d38c7d356e7d13cde9ac0ceb399ff2e81496a4749e",
+          "upstream_git_blob_sha": "4b0fc2ce01179ffbbd7274d733dcd328286f8f64",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/fda-pathways-fto.md",
+          "bundled_sha256": "043ee62b74bb04fceae542816858300942ff1562ea6bee6c9c740f94394f8309",
+          "upstream_sha256": "043ee62b74bb04fceae542816858300942ff1562ea6bee6c9c740f94394f8309",
+          "upstream_git_blob_sha": "16a6783c6cd9bc470398b9eb1f993184a809bb40",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/quality-escalation-ladder.md",
+          "bundled_sha256": "b2f41e5d04d499372a35a52983a79bcb867e1e6e5435fb17419ddb9ef80e34ea",
+          "upstream_sha256": "b2f41e5d04d499372a35a52983a79bcb867e1e6e5435fb17419ddb9ef80e34ea",
+          "upstream_git_blob_sha": "c7baa2f983f09a7ac6f1d8c30e96bc253fd231ba",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/sync-from-suite.sh",
+          "bundled_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_git_blob_sha": "754678d0a4dfdf2630f08a85ea37407998e54476",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/adcom-label/SKILL.md",
+          "bundled_sha256": "bae18882eba248b35e938fc761dea6d52273d3c5e53edcf55e72f60a20378765",
+          "upstream_sha256": "bae18882eba248b35e938fc761dea6d52273d3c5e53edcf55e72f60a20378765",
+          "upstream_git_blob_sha": "962e3b7127f50ee596a462c94dec0b8db45b2d33",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/adcom-label/references/prompts.md",
+          "bundled_sha256": "c48026f6d653cba534d0dea71fb1df165ffaf007e99b1b6a508da04fb6edbc35",
+          "upstream_sha256": "c48026f6d653cba534d0dea71fb1df165ffaf007e99b1b6a508da04fb6edbc35",
+          "upstream_git_blob_sha": "b5d9bf3fda0fcca40482f85ad5b8777ef8880bd2",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/catalyst-calendar/SKILL.md",
+          "bundled_sha256": "1768306090ebb958ac0e6b476d251b0d4c2f476e4d7bf3d9479a01fa6a096ddc",
+          "upstream_sha256": "1768306090ebb958ac0e6b476d251b0d4c2f476e4d7bf3d9479a01fa6a096ddc",
+          "upstream_git_blob_sha": "6b3ed49bf49824777e009cefb2c4e263ff0420fa",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/catalyst-calendar/references/prompts.md",
+          "bundled_sha256": "c7a40d1e42b705dbed82dd80f257e2e65659a10902f2ee4d9153cd41218f67a7",
+          "upstream_sha256": "c7a40d1e42b705dbed82dd80f257e2e65659a10902f2ee4d9153cd41218f67a7",
+          "upstream_git_blob_sha": "16cc82447486d00f63fe2d3324767bbe01391a80",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/device-diligence/SKILL.md",
+          "bundled_sha256": "91d7bc7895d9dbe1db89d4e09710625dddc74f3a3d08aabd0993e422138633b1",
+          "upstream_sha256": "91d7bc7895d9dbe1db89d4e09710625dddc74f3a3d08aabd0993e422138633b1",
+          "upstream_git_blob_sha": "62e9cc7e34585b0f2acb4667f348795e4111fcc6",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/device-diligence/references/prompts.md",
+          "bundled_sha256": "8fb95b4f0a110df43e89b2c3cca5acefe854a960d33f868fb4d68e0db3a60e9c",
+          "upstream_sha256": "8fb95b4f0a110df43e89b2c3cca5acefe854a960d33f868fb4d68e0db3a60e9c",
+          "upstream_git_blob_sha": "7be7c9ce3596bb96bc85568e42bab02842ab3a61",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/literature-kol/SKILL.md",
+          "bundled_sha256": "0500b4f5eb6f32cfdff884d7138b52d206968804a54181d1a39f97292b7c44a6",
+          "upstream_sha256": "0500b4f5eb6f32cfdff884d7138b52d206968804a54181d1a39f97292b7c44a6",
+          "upstream_git_blob_sha": "60c4dd0e4b16415432ff6b9e39110108e92d3873",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/literature-kol/references/prompts.md",
+          "bundled_sha256": "4171fef40df4b120c6526f554755235aeffabb865bd378688230da4015ca72e0",
+          "upstream_sha256": "4171fef40df4b120c6526f554755235aeffabb865bd378688230da4015ca72e0",
+          "upstream_git_blob_sha": "8ce1213a8ced0167afd18e7916b998453ef6f89d",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/pipeline-landscape/SKILL.md",
+          "bundled_sha256": "d0cd8e5ebafae432be8b81c4f63f1b5ec0a543524500ce12560e7d2f94252b7b",
+          "upstream_sha256": "d0cd8e5ebafae432be8b81c4f63f1b5ec0a543524500ce12560e7d2f94252b7b",
+          "upstream_git_blob_sha": "62d8cff0e2b49047759c3e2b0d60b767d65ffb1c",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/precedent-pack/SKILL.md",
+          "bundled_sha256": "7a361ac16811cda767aaf233ccbc8fa4e3082944323a162013c4ee616dd9b46b",
+          "upstream_sha256": "7a361ac16811cda767aaf233ccbc8fa4e3082944323a162013c4ee616dd9b46b",
+          "upstream_git_blob_sha": "5db782991d80c37f47e0ace210a93e8eacad2481",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/quality-signals/SKILL.md",
+          "bundled_sha256": "3b52cad0abebf21aa8d1d13d8ed1eb2a25e7466665aba7bbe8f8626c508907d8",
+          "upstream_sha256": "3b52cad0abebf21aa8d1d13d8ed1eb2a25e7466665aba7bbe8f8626c508907d8",
+          "upstream_git_blob_sha": "10a0ad8f6514aecb167ed2ac009bb8e4a46b320d",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/readout-handicap/SKILL.md",
+          "bundled_sha256": "6068340783599e9e64009a3707cfe69f4ea562ad62d7358d7e9de48581240464",
+          "upstream_sha256": "6068340783599e9e64009a3707cfe69f4ea562ad62d7358d7e9de48581240464",
+          "upstream_git_blob_sha": "d6afb20a1083754a420c3601d92e368e6a36d25c",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/readout-handicap/references/prompts.md",
+          "bundled_sha256": "c3e61bee942b6653d52d77ccbf86cbc1db9f45f5043cd755ce825342166bdbb5",
+          "upstream_sha256": "c3e61bee942b6653d52d77ccbf86cbc1db9f45f5043cd755ce825342166bdbb5",
+          "upstream_git_blob_sha": "088a1c1fe321e06f4e8a832e57413e82f2e4afb1",
+          "comparison": "identical"
+        }
+      ],
+      "previous_observed_commit": "79f4ee36a354bde78cb7adb1329912bff354d48b"
+    },
+    {
+      "name": "cms-reimbursement",
+      "upstream_repository": "hh-health-AI/cms-reimbursement",
+      "upstream_branch": "main",
+      "upstream_commit": "1fec2da95df5f8f83be61bd39cf4fca83785af14",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "4ac84008b79cc12979fb012abd83e9007b94587019ae7ddd18aacca657822b2e",
+          "upstream_git_blob_sha": "48d92cdfb633f7d98686aa0cc7c95ffa3a2ad222",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bundled_sha256": "ae06930c787568c46b70e60f1a05a6d4155167ff235e6702cb0d96ddd012c07d",
+          "upstream_sha256": "ae06930c787568c46b70e60f1a05a6d4155167ff235e6702cb0d96ddd012c07d",
+          "upstream_git_blob_sha": "7139284f8bf2267c92fbd395bcf8545650ff0b22",
+          "comparison": "identical"
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "47dab49fcbb63e9b6a3efb5c780eb6d055edc64f8d605372adfbd5863e10f131",
+          "upstream_sha256": "47dab49fcbb63e9b6a3efb5c780eb6d055edc64f8d605372adfbd5863e10f131",
+          "upstream_git_blob_sha": "47c83d9e66fd60b630d3e511aace609cc46fc51e",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": "0756ad5c89d36563a3aa6c9c25614aeeb1e239c9869de668e053b13b23b1f398",
+          "upstream_sha256": "0756ad5c89d36563a3aa6c9c25614aeeb1e239c9869de668e053b13b23b1f398",
+          "upstream_git_blob_sha": "3f7d3672b6858835f8bc01c97b8df3a5c220dcb8",
+          "comparison": "identical"
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "ef04e90954272b83e0027f3174f69152319c3b417cb09f3e0a9e2baeca0f1ce4",
+          "upstream_sha256": "f5c8347204703c6c5df39c420152061a68f6c9117b0fe770277a8a693acc124a",
+          "upstream_git_blob_sha": "931d5d6a1a625fd79c26b589aa3ac85b2f89fc96",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains a concise heading, omits the standalone promotional/search-positioning prefix, and uses an integrated-directory introduction linking to the standalone source. Its smoke test requires documenting a model implication rather than forcing a model-variable move, consistent with the flagship CHANGE/NO_CHANGE/UNCERTAINTY_ONLY/NEEDS_DATA contract; all other operational text is unchanged."
+        },
+        {
+          "path": "agents/rule-watcher.md",
+          "bundled_sha256": "173ce5ce77b3fd579e7fa2e4ae983457b38d8368f9e6b4834baddf19a3c3f727",
+          "upstream_sha256": "173ce5ce77b3fd579e7fa2e4ae983457b38d8368f9e6b4834baddf19a3c3f727",
+          "upstream_git_blob_sha": "ae9993fc60ca9447ab22d020efc2b4d8ea2df4af",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/metrics-payor.md",
+          "bundled_sha256": "91074f2d8d777983e9585deca8757be4b4de11d1a39d932f18eec259f962b79b",
+          "upstream_sha256": "91074f2d8d777983e9585deca8757be4b4de11d1a39d932f18eec259f962b79b",
+          "upstream_git_blob_sha": "c3f7ba288dd7e5a6ececb60e484b0e32bf010b8d",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/payor-economics-primer.md",
+          "bundled_sha256": "a4a091f149a02cdd41804700a5aa8f0a3e883800c6c912c804aa05348e624058",
+          "upstream_sha256": "a4a091f149a02cdd41804700a5aa8f0a3e883800c6c912c804aa05348e624058",
+          "upstream_git_blob_sha": "d54ed37ce1e0c6037a2d3cbff1d14b7b440ec80d",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/payor-glossary.md",
+          "bundled_sha256": "af4f9571eab961a3dd43c13abe6482c2830a264862f5c5bbfffc0387a7ecaa3c",
+          "upstream_sha256": "af4f9571eab961a3dd43c13abe6482c2830a264862f5c5bbfffc0387a7ecaa3c",
+          "upstream_git_blob_sha": "3bdab6133390cba565dd2e3ec442b3b528f696da",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/sync-from-suite.sh",
+          "bundled_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_git_blob_sha": "754678d0a4dfdf2630f08a85ea37407998e54476",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/coverage-check/SKILL.md",
+          "bundled_sha256": "727654068d3a40354bb1198827bf87c3719f3e7b4062eef79c37353e4106a3b6",
+          "upstream_sha256": "727654068d3a40354bb1198827bf87c3719f3e7b4062eef79c37353e4106a3b6",
+          "upstream_git_blob_sha": "eb0e689b3e9cb3bc69510f9232c0a933bc7b5301",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/drug-pricing-ira/SKILL.md",
+          "bundled_sha256": "94257e11cc7e59e57b86dc14a807e8446d2d21e3815636cc2c86afb4329a6120",
+          "upstream_sha256": "94257e11cc7e59e57b86dc14a807e8446d2d21e3815636cc2c86afb4329a6120",
+          "upstream_git_blob_sha": "3ef276b101b1365c1cd788fc9cc314f5449886f6",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/drug-pricing-ira/references/prompts.md",
+          "bundled_sha256": "9eb7c7c7a68c995cbf47dca44568b19da4f1f0ba40e878cabf03292a5e977492",
+          "upstream_sha256": "9eb7c7c7a68c995cbf47dca44568b19da4f1f0ba40e878cabf03292a5e977492",
+          "upstream_git_blob_sha": "8868fe08327505535f3fd6314dc74d5d68ef188a",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ma-bid-cycle/SKILL.md",
+          "bundled_sha256": "72d22753ae86df03c1503914c19bac215d386eff4d66cd15ce32e9e59627d2b3",
+          "upstream_sha256": "72d22753ae86df03c1503914c19bac215d386eff4d66cd15ce32e9e59627d2b3",
+          "upstream_git_blob_sha": "c611750667e1001a233d2d0e98430f3348c4f141",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ma-bid-cycle/references/prompts.md",
+          "bundled_sha256": "316fe404fd6c52b79cc8350f04edf0d2c1e7813084f553bdc45d392476625a08",
+          "upstream_sha256": "316fe404fd6c52b79cc8350f04edf0d2c1e7813084f553bdc45d392476625a08",
+          "upstream_git_blob_sha": "66c2a22ebb4136a4407556198bbdbafe51e53737",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/reimbursement-impact/SKILL.md",
+          "bundled_sha256": "0c30210a8cd3944f6e5e3d20deb3398c3da3f1fef52c6578059cea4c7a5eaff7",
+          "upstream_sha256": "0c30210a8cd3944f6e5e3d20deb3398c3da3f1fef52c6578059cea4c7a5eaff7",
+          "upstream_git_blob_sha": "1bb863c6cb6a9db8ea0a88f6f801f8280a0320dd",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/reimbursement-impact/references/prompts.md",
+          "bundled_sha256": "d7ec8a5160f09c2f39558e6bf5d3964a23f6ca770bc70545eeaacc44cea22aa1",
+          "upstream_sha256": "d7ec8a5160f09c2f39558e6bf5d3964a23f6ca770bc70545eeaacc44cea22aa1",
+          "upstream_git_blob_sha": "470a60333b586920bad8a0e7304face257b4b386",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/rule-cycle-calendar/SKILL.md",
+          "bundled_sha256": "edbb7f37b374ad7694a72b3f1b64e604e2d1cac3295a7b78bd62f39515386a52",
+          "upstream_sha256": "edbb7f37b374ad7694a72b3f1b64e604e2d1cac3295a7b78bd62f39515386a52",
+          "upstream_git_blob_sha": "9961e7a562fd1b41aa12431d568328b733083234",
+          "comparison": "identical"
+        }
+      ],
+      "previous_observed_commit": "06ee1f72e3a6911b79076b99502b1acd9c17c431"
+    },
+    {
+      "name": "epi-demand",
+      "upstream_repository": "hh-health-AI/epi-demand",
+      "upstream_branch": "main",
+      "upstream_commit": "d2f884902f4d38ff7a038cea315ff460168d3e79",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "6861937f157cab89ba397448852262c966627e65f9acc2132e1fa820f7762d86",
+          "upstream_git_blob_sha": "cf5fb162e28740a47bd3ccf83d8613b4ae73d517",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "0cd145c79ab36c9952b5ed20b698eadd21e8a6b713a3ad1eba8cac69efbbc9ea",
+          "upstream_sha256": "0cd145c79ab36c9952b5ed20b698eadd21e8a6b713a3ad1eba8cac69efbbc9ea",
+          "upstream_git_blob_sha": "a3b0290a9f6db975e5bc150c6140b3787552d4e9",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "9421af71006e3eec665e68794b3d8a37394f52d816b3b6990da2fa39f266148f",
+          "upstream_sha256": "994f40d3724b64f0d6f494f6adae182c1d3f63ef3293dc44947469d6e658df8c",
+          "upstream_git_blob_sha": "0d8ca88c6ed8979a622f67606d29fbbf1b91e24d",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/demand-watcher.md",
+          "bundled_sha256": "eef646f241287898c698eb3908c26cf877a20487f5bafe0d661736aba975a1ce",
+          "upstream_sha256": "eef646f241287898c698eb3908c26cf877a20487f5bafe0d661736aba975a1ce",
+          "upstream_git_blob_sha": "88af57db449c3243e922cd3bcca47165db340683",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "363a1b4822e021e6e3b176d65257bcc66d97d10f4e3bd83e4f5e614e816f3aa3",
+          "upstream_sha256": "363a1b4822e021e6e3b176d65257bcc66d97d10f4e3bd83e4f5e614e816f3aa3",
+          "upstream_git_blob_sha": "2ea46bebde444450afc09c9c407742dc3ba30243",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/cdc_wonder.py",
+          "bundled_sha256": "389edb90dfdea513ae9039a13ba82e8ee07345bbe13a348775bc3973c4326c41",
+          "upstream_sha256": "389edb90dfdea513ae9039a13ba82e8ee07345bbe13a348775bc3973c4326c41",
+          "upstream_git_blob_sha": "a5843658d093667822e39bc0af84c426de396993",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/mcp_launch.sh",
+          "bundled_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_git_blob_sha": "53e74cc69a96be0b509209707916ad4b2c7974de",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/nih_reporter.py",
+          "bundled_sha256": "c33bbe476866f7e0f5c865124ab1adab1383113ca82880d3c30b0a0c142e1382",
+          "upstream_sha256": "c33bbe476866f7e0f5c865124ab1adab1383113ca82880d3c30b0a0c142e1382",
+          "upstream_git_blob_sha": "d44dcf3583f97fe82f390e0d717c2dd71e063d46",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/surveillance.py",
+          "bundled_sha256": "c2d3ec010414022dac2fc96b6adf59216d72a48a095f8d4e6bb027d3a453359d",
+          "upstream_sha256": "c2d3ec010414022dac2fc96b6adf59216d72a48a095f8d4e6bb027d3a453359d",
+          "upstream_git_blob_sha": "832334f46664fe288eb0111963b9a18d2f201296",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/epi-demand-funnel/SKILL.md",
+          "bundled_sha256": "d842a78310ec10552a65e51310bb3bc88e8fa497934ea7a005cffd6ae480df2c",
+          "upstream_sha256": "d842a78310ec10552a65e51310bb3bc88e8fa497934ea7a005cffd6ae480df2c",
+          "upstream_git_blob_sha": "8ecd927aae50f59fdc0c16d9ee24af5dd0686372",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/epi-demand-funnel/references/funnel-sources.md",
+          "bundled_sha256": "d40b7442029867ed38487532a7e2ffd61f8bc4fc40cf039d4a148cc0bd1357a8",
+          "upstream_sha256": "d40b7442029867ed38487532a7e2ffd61f8bc4fc40cf039d4a148cc0bd1357a8",
+          "upstream_git_blob_sha": "bcdecb8f6a0501072618771cf6efc3f0106f8e70",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/nih-reporter-endmarket/SKILL.md",
+          "bundled_sha256": "950ec723235c1e29a4ffcfac58124d7dd96718d0dcb703cbb84323588c5614a1",
+          "upstream_sha256": "950ec723235c1e29a4ffcfac58124d7dd96718d0dcb703cbb84323588c5614a1",
+          "upstream_git_blob_sha": "a33e211602dd2fa7dc2ceeef0606d7ab382cc5ac",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/respiratory-surveillance/SKILL.md",
+          "bundled_sha256": "f0a4dac342ab067b52c34eeb72142945a7c3c5081236a2dbb6b1b49a840e867d",
+          "upstream_sha256": "f0a4dac342ab067b52c34eeb72142945a7c3c5081236a2dbb6b1b49a840e867d",
+          "upstream_git_blob_sha": "6ad468a80cc63401ad5403c0afc78c39c58c3fe6",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "evidence-catalysts",
+      "upstream_repository": "hh-health-AI/evidence-catalysts",
+      "upstream_branch": "main",
+      "upstream_commit": "2a8e509dceb2c29cd7c27471a388749815dc43ec",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "ab4d932598b9581e9e399bb652945f0e07217117990d11a707b01e146d550619",
+          "upstream_git_blob_sha": "3b281e61184203eac1e9a142c543410b7b846a2e",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "d51f2669b8e10a3d46bc2c443ab9e151ea19206971d152e5d54e823d1edb9c94",
+          "upstream_sha256": "d51f2669b8e10a3d46bc2c443ab9e151ea19206971d152e5d54e823d1edb9c94",
+          "upstream_git_blob_sha": "1d6d7fbecf670ccbc69a560b6682a19b0557dfd7",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "3b7b6712b1077d9e1856eeb1fba1e598b800d6e20992ac453bb8085b4095aa15",
+          "upstream_sha256": "fe05ed6552ace34ea36e904c5ca16307cc0cff9116d5151e6b4dfc7e8fb83283",
+          "upstream_git_blob_sha": "e6383f69a8e04532607456e594c9bd4d7884f205",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/guideline-watcher.md",
+          "bundled_sha256": "31199a9527b547d91c0a33ef5f995ec140d8ba5dd6d3d574faeba866224a57c5",
+          "upstream_sha256": "31199a9527b547d91c0a33ef5f995ec140d8ba5dd6d3d574faeba866224a57c5",
+          "upstream_git_blob_sha": "0c2fdd3e79f8b6d8429a35a53a810c1ffe8fd8a6",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "c4fc68f2805868e4a5ef445ce7e0ece2eac86931fa231b34d51967852a465d35",
+          "upstream_sha256": "c4fc68f2805868e4a5ef445ce7e0ece2eac86931fa231b34d51967852a465d35",
+          "upstream_git_blob_sha": "a56f0c9a584b286b35a84b3afa666be9fbb2dae3",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/openalex_kol.py",
+          "bundled_sha256": "6fca8c5059ed173c89d9743bf2e7ab80124f74ffee1e74f6d427f3488bee7985",
+          "upstream_sha256": "6fca8c5059ed173c89d9743bf2e7ab80124f74ffee1e74f6d427f3488bee7985",
+          "upstream_git_blob_sha": "61a1badb742780a3d0b0a5d15fe9e8ef786f10d2",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/page_snapshot_diff.py",
+          "bundled_sha256": "2c96bfe3063c267e932794d29cd23bd89e846de20affb7ec87eb0230df21bd86",
+          "upstream_sha256": "2c96bfe3063c267e932794d29cd23bd89e846de20affb7ec87eb0230df21bd86",
+          "upstream_git_blob_sha": "969bf50085f2aa370a095c57e9785d99950cd106",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/conference-abstract-handicap/SKILL.md",
+          "bundled_sha256": "0a4327401c691933e1a467e483ed52951c46de96cee87be1a60a60deac11e26f",
+          "upstream_sha256": "0a4327401c691933e1a467e483ed52951c46de96cee87be1a60a60deac11e26f",
+          "upstream_git_blob_sha": "8e38898a5177e5e22192b7a38b0c064d6e4e8fe7",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/conference-abstract-handicap/references/abstract-checklist.md",
+          "bundled_sha256": "f78135e280b9e47c0da101ca0cb45da53be11d0ef3ba545d133c32b74380e847",
+          "upstream_sha256": "f78135e280b9e47c0da101ca0cb45da53be11d0ef3ba545d133c32b74380e847",
+          "upstream_git_blob_sha": "69a79576e243d07841c698ba00dd67a0268d9df4",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/guideline-inclusion/SKILL.md",
+          "bundled_sha256": "72757a3c003d0ab0eac47cc4de93b7e6dbb97d19efed816eac99b22103ae4031",
+          "upstream_sha256": "72757a3c003d0ab0eac47cc4de93b7e6dbb97d19efed816eac99b22103ae4031",
+          "upstream_git_blob_sha": "8c9618121ded782819f7d99d07f860e9d1336a97",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/guideline-inclusion/references/guideline-bodies.md",
+          "bundled_sha256": "70d976fe228ffdafd3efc50c8274ce33e7ae2c563bd5ba1c48f5b694617a2cf0",
+          "upstream_sha256": "70d976fe228ffdafd3efc50c8274ce33e7ae2c563bd5ba1c48f5b694617a2cf0",
+          "upstream_git_blob_sha": "1c352eb9b3f6823cdfe480c8887ba2183b2fedfc",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/kol-citation-velocity/SKILL.md",
+          "bundled_sha256": "7390533eec29c08bd02c8135ace33d3b58c8fecfc49f66377f5a9a4c0c284e88",
+          "upstream_sha256": "7390533eec29c08bd02c8135ace33d3b58c8fecfc49f66377f5a9a4c0c284e88",
+          "upstream_git_blob_sha": "9ff584edef7e96fead1ab101fbaf45f5c44cf38b",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "fda-safety-signals",
+      "upstream_repository": "hh-health-AI/fda-safety-signals",
+      "upstream_branch": "main",
+      "upstream_commit": "a0c61039dd3c3caa28d644e2605cd62c5d33a4b8",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "b0ffc6e2bc612d512550af632000e5b4e091130f7ca6e366dafea2df8b9d1248",
+          "upstream_git_blob_sha": "04ffb059f1f4a5ca28faaddd2fd0202fbadb10cd",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "883b78d4a67256877cc191a02ec6e6bf6ddb9ddcb197cb6358cde21a7d26af2a",
+          "upstream_sha256": "883b78d4a67256877cc191a02ec6e6bf6ddb9ddcb197cb6358cde21a7d26af2a",
+          "upstream_git_blob_sha": "bbe84c7daeb9e48d2a0010821a5f256a59f104ea",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "2157736071c24ca34da150434642e4d6442995f2979d07bcf1d5e0091af04124",
+          "upstream_sha256": "6cd4d2d07f7ab4bcf9edbdde67cbcfe2e78ec38e64405c538a8574f93b1299cf",
+          "upstream_git_blob_sha": "831a29da01248db197b012b9a03a07901c223176",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/safety-watcher.md",
+          "bundled_sha256": "90495d8257cf195f4d5a0f20bffabd174d1d317bcf42fde3a266a6b6e9dc5679",
+          "upstream_sha256": "90495d8257cf195f4d5a0f20bffabd174d1d317bcf42fde3a266a6b6e9dc5679",
+          "upstream_git_blob_sha": "5d1c0e4b3c6acfc848b0165e81d8d8de7e549e10",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "6fc5e4295e93a1b3cd4603bcacd9442f7a2cadd255c6456a45d2fd785395c9c6",
+          "upstream_sha256": "6fc5e4295e93a1b3cd4603bcacd9442f7a2cadd255c6456a45d2fd785395c9c6",
+          "upstream_git_blob_sha": "06b34e7161c7228f00547f8e5ae45586eb5c648b",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/faers_disproportionality.py",
+          "bundled_sha256": "1a2c46760fc186d17aceb88d2933ca764101241c5da0777a1bb367078c35a17d",
+          "upstream_sha256": "1a2c46760fc186d17aceb88d2933ca764101241c5da0777a1bb367078c35a17d",
+          "upstream_git_blob_sha": "3ad1c40e5268c12676ccedfdfb31db5405616ac2",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/mcp_launch.sh",
+          "bundled_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_git_blob_sha": "53e74cc69a96be0b509209707916ad4b2c7974de",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/openfda_query.py",
+          "bundled_sha256": "144d5641b3d0a3d5f7ff17da8c85ee628cc8836ed69b8e74a52be8c5f3df00b8",
+          "upstream_sha256": "144d5641b3d0a3d5f7ff17da8c85ee628cc8836ed69b8e74a52be8c5f3df00b8",
+          "upstream_git_blob_sha": "fb37b992186bac966ec3393991de3e4e9af220a2",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/crl-tracker/SKILL.md",
+          "bundled_sha256": "91a08ab5efc6bc0c9d69bf3994075bf68964332421951817924f8df95d751735",
+          "upstream_sha256": "91a08ab5efc6bc0c9d69bf3994075bf68964332421951817924f8df95d751735",
+          "upstream_git_blob_sha": "cb7c00f2770e16ad3581379d126a52cd5e0ed67e",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/faers-safety-scan/SKILL.md",
+          "bundled_sha256": "edfc569542ee4004d819fa60bb3d252f252631fbc6608642c97285c5b2cf147a",
+          "upstream_sha256": "edfc569542ee4004d819fa60bb3d252f252631fbc6608642c97285c5b2cf147a",
+          "upstream_git_blob_sha": "db53eaf8807d633f74b4b5db99d02d54017da546",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/faers-safety-scan/references/disproportionality.md",
+          "bundled_sha256": "e47e7ad4ef2312ab5d5e67fe6b87ec28433bada562024ea8fc7c6088ed6530ea",
+          "upstream_sha256": "e47e7ad4ef2312ab5d5e67fe6b87ec28433bada562024ea8fc7c6088ed6530ea",
+          "upstream_git_blob_sha": "db496e2020366a5a42699de7a0eaf167ab075f12",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/maude-recall-risk/SKILL.md",
+          "bundled_sha256": "c551f7a5ea855aba575c39bd95e726c1c84c20940db288c91b1e36db2c853dae",
+          "upstream_sha256": "c551f7a5ea855aba575c39bd95e726c1c84c20940db288c91b1e36db2c853dae",
+          "upstream_git_blob_sha": "45e612a76f96015a4cf2d97a1f0a5d41e284b5dd",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/maude-recall-risk/references/maude-mechanics.md",
+          "bundled_sha256": "f5cf98ee871e62c78e4e91020db7316d395739064bf29adcd094197aa3b319a4",
+          "upstream_sha256": "f5cf98ee871e62c78e4e91020db7316d395739064bf29adcd094197aa3b319a4",
+          "upstream_git_blob_sha": "cbaadb47e012994fa9c2ce1d8d7956118a625489",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "global-access",
+      "upstream_repository": "hh-health-AI/global-access",
+      "upstream_branch": "main",
+      "upstream_commit": "be7aff8f6236009763cc31271c3842b7011f0a1b",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "9c06241054e5f65ced9b3a02fc63f4986e264049d1f675484ce3cc72cdc380f9",
+          "upstream_git_blob_sha": "90a8017dda3fd8d03a0dda9bcfed4ad3c5129f84",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "6db30bf42eb3ebb6e5fe70a9567e85cff2161ec854a1eeb02da9a84421e3302b",
+          "upstream_sha256": "6db30bf42eb3ebb6e5fe70a9567e85cff2161ec854a1eeb02da9a84421e3302b",
+          "upstream_git_blob_sha": "2ea1a98ed15acf1a62b5ec10821e3389a0a67514",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "84b4d1f17b78257f8fe93ad09a6356481d8ad9e08af8efd4f9ea2693e11a2481",
+          "upstream_sha256": "570c6784db40de4d08cabc194fff198513041bd2e1a160dbbd2d2ab6a8d4cf76",
+          "upstream_git_blob_sha": "8be3ba9651c90f6ea7b95d2afb868ecf1cedba8d",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/access-watcher.md",
+          "bundled_sha256": "2307828e1be5009d4343347ef2bdab385884fd80544eab5a042a0a689a917290",
+          "upstream_sha256": "2307828e1be5009d4343347ef2bdab385884fd80544eab5a042a0a689a917290",
+          "upstream_git_blob_sha": "c4a04ffa1f28aa6126df5424e25acde2772f2d28",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "dd6729a9782ea1f0399619f4dfb1dd78aa36014e357cca059abd4fdbbe7911ad",
+          "upstream_sha256": "dd6729a9782ea1f0399619f4dfb1dd78aa36014e357cca059abd4fdbbe7911ad",
+          "upstream_git_blob_sha": "f0ef20f8b83a31a8c741a1163b2df13321037284",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/hta_tracker.py",
+          "bundled_sha256": "b2a877ceb6a8a91079a9d8f60823f5f5d09d8f966fb5ec208236ec87a88855cd",
+          "upstream_sha256": "b2a877ceb6a8a91079a9d8f60823f5f5d09d8f966fb5ec208236ec87a88855cd",
+          "upstream_git_blob_sha": "5c758871a85857167d0fd82bacfabb44b16b2770",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/mcp_launch.sh",
+          "bundled_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_git_blob_sha": "53e74cc69a96be0b509209707916ad4b2c7974de",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/page_snapshot_diff.py",
+          "bundled_sha256": "2c96bfe3063c267e932794d29cd23bd89e846de20affb7ec87eb0230df21bd86",
+          "upstream_sha256": "2c96bfe3063c267e932794d29cd23bd89e846de20affb7ec87eb0230df21bd86",
+          "upstream_git_blob_sha": "969bf50085f2aa370a095c57e9785d99950cd106",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ema-nice-hta/SKILL.md",
+          "bundled_sha256": "effa8f1779d4dd1cbc785c96e3fe22577755282ac905bcffa9db9366d2c9c8e9",
+          "upstream_sha256": "effa8f1779d4dd1cbc785c96e3fe22577755282ac905bcffa9db9366d2c9c8e9",
+          "upstream_git_blob_sha": "532f09c628a6f64851943c60909434b70fe39e59",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ema-nice-hta/references/hta-mechanics.md",
+          "bundled_sha256": "6fef729b36e653ff6d64ade96b13df75d69c390319d9bf82df08003623dcf80c",
+          "upstream_sha256": "6fef729b36e653ff6d64ade96b13df75d69c390319d9bf82df08003623dcf80c",
+          "upstream_git_blob_sha": "b61ee7685f583e1a7dacb2809fd372c9ab9c8e51",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/japan-nhi-cycle/SKILL.md",
+          "bundled_sha256": "a3606556cef81e74542cd3f9d799aab600bc76eea732e1e11d65074d551371d2",
+          "upstream_sha256": "a3606556cef81e74542cd3f9d799aab600bc76eea732e1e11d65074d551371d2",
+          "upstream_git_blob_sha": "075837f2a284db356857f528fb1a4380ebcab5cb",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/nmpa-nrdl-tracker/SKILL.md",
+          "bundled_sha256": "2581630f9e424bc1e9bde0f55cb31945a053af9db5e2a3bb4d164a3e460a7007",
+          "upstream_sha256": "2581630f9e424bc1e9bde0f55cb31945a053af9db5e2a3bb4d164a3e460a7007",
+          "upstream_git_blob_sha": "6a4983142d72d83c92285677b50d7a3880cf67a9",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/nmpa-nrdl-tracker/references/china-mechanics.md",
+          "bundled_sha256": "4213bd3d79773023e964074e6702dca18eb7443ffe08da81c7c5b925a1367691",
+          "upstream_sha256": "4213bd3d79773023e964074e6702dca18eb7443ffe08da81c7c5b925a1367691",
+          "upstream_git_blob_sha": "5920a0659cc4737eee23401288c05f71a892a100",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "ip-exclusivity",
+      "upstream_repository": "hh-health-AI/ip-exclusivity",
+      "upstream_branch": "main",
+      "upstream_commit": "67a66ffaea783e3bbc8de601c26bce6429d15f48",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "5ce0414d69798fbfeabacd40e55dc1dc155671c11611416f15d2a3c206309d81",
+          "upstream_git_blob_sha": "79f04d0ce9d97a0e057dd863be4dc9ba3ce7d394",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "239c828de26300f648e72f4b3f327c9ba85f334d67ea302722d06aa2d4d3d36b",
+          "upstream_sha256": "239c828de26300f648e72f4b3f327c9ba85f334d67ea302722d06aa2d4d3d36b",
+          "upstream_git_blob_sha": "f64d8db591e6880c5850829c9068980a2da6c27d",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "da3bfb18975efba621a8a61f7455604bf141b50d0170ca47c5cf190c7fb65cb5",
+          "upstream_sha256": "f8e21d1b88185cabeea4a09da490461e7c958f76c5f00982fd465c87ccbd5881",
+          "upstream_git_blob_sha": "34756e042629bf002af59c6b4c4102da126fb0a6",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/loe-watcher.md",
+          "bundled_sha256": "c89e0e68b11abef057a81d23f84288ed74eec8286d82d04025ce41f1410e7a39",
+          "upstream_sha256": "c89e0e68b11abef057a81d23f84288ed74eec8286d82d04025ce41f1410e7a39",
+          "upstream_git_blob_sha": "13bf14170e7ab6eadcf441f3ea2179a7948c2271",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "36d6c54e1a3ab12e6fa9a83db2f7a6dbd2f890bbbddcb5f9063ecd7ced31deeb",
+          "upstream_sha256": "36d6c54e1a3ab12e6fa9a83db2f7a6dbd2f890bbbddcb5f9063ecd7ced31deeb",
+          "upstream_git_blob_sha": "8a08f66fb625b9a3f0c9a685118fb36e668a2ce5",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/orange_book_loe.py",
+          "bundled_sha256": "1b2ce5fcb3d12d3c2066483f48c746eb59c018057ca6ce2c91f7d54da3b992fa",
+          "upstream_sha256": "1b2ce5fcb3d12d3c2066483f48c746eb59c018057ca6ce2c91f7d54da3b992fa",
+          "upstream_git_blob_sha": "32898bd97e69bbfc5fc1cc151f0ff77c3e5d68be",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/ptab_search.py",
+          "bundled_sha256": "7c09189ebb6f37c0aa51f41992bf0d0746f87a58703e6d4803ba9df29d75cdf5",
+          "upstream_sha256": "7c09189ebb6f37c0aa51f41992bf0d0746f87a58703e6d4803ba9df29d75cdf5",
+          "upstream_git_blob_sha": "67b092ae167335bc01c662b08ce59e7eeb898485",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/purple_book.py",
+          "bundled_sha256": "00a37b9aa9b76d7b98fceeafca3959c314ccca05d4a64ac35a2e68fb7d13c6d1",
+          "upstream_sha256": "00a37b9aa9b76d7b98fceeafca3959c314ccca05d4a64ac35a2e68fb7d13c6d1",
+          "upstream_git_blob_sha": "9d9eeb87ca33b3ef73bec3fdfaf14a7cf0cad557",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/biosimilar-erosion/SKILL.md",
+          "bundled_sha256": "fff0cbb895931adcf0f8c1e5d886709419b1493fcc2c1ffdc6156893591459e3",
+          "upstream_sha256": "fff0cbb895931adcf0f8c1e5d886709419b1493fcc2c1ffdc6156893591459e3",
+          "upstream_git_blob_sha": "e73f0568828dce38ce5ac061cf2231e5ee5346ee",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/biosimilar-erosion/references/erosion-analogues.md",
+          "bundled_sha256": "c424c8d41273a00fd928aa54a9c87457dc0f061ca29402332dac836798c09db3",
+          "upstream_sha256": "c424c8d41273a00fd928aa54a9c87457dc0f061ca29402332dac836798c09db3",
+          "upstream_git_blob_sha": "f96860349bff508d2e90df1a73bd8f43b2f857e0",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/orange-book-loe/SKILL.md",
+          "bundled_sha256": "c36223327c11cb7af341781364878b48b975420e0c23a6c2c51e3e7cc1f83415",
+          "upstream_sha256": "c36223327c11cb7af341781364878b48b975420e0c23a6c2c51e3e7cc1f83415",
+          "upstream_git_blob_sha": "ca016c02f4b9437d3c42e152b74f5ee0ec4d64d4",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/orange-book-loe/references/exclusivity-mechanics.md",
+          "bundled_sha256": "f3f7df720f83cf38da62578e0e9d28ae5fb86b8fd55bfb94d4ec9060b051e4f1",
+          "upstream_sha256": "f3f7df720f83cf38da62578e0e9d28ae5fb86b8fd55bfb94d4ec9060b051e4f1",
+          "upstream_git_blob_sha": "197139e1551d6080ba4f44e7f396d2dbe0a9183a",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ptab-ipr-monitor/SKILL.md",
+          "bundled_sha256": "7073c526724bf1861e3fef15e40f6f6bfb7a1d3204b7e95cd14109221fce813d",
+          "upstream_sha256": "7073c526724bf1861e3fef15e40f6f6bfb7a1d3204b7e95cd14109221fce813d",
+          "upstream_git_blob_sha": "53c2d5790ec5264f2a6f0bd0ae613a8e8d5fa924",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "procedure-exposure",
+      "upstream_repository": "hh-health-AI/procedure-exposure",
+      "upstream_branch": "main",
+      "upstream_commit": "1897de4e656f5c65162ee0217878457d0651cb64",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "c24b85e59cba8bf4805b9cce6d9b630b542cc63951c94bc3e9411e82526d95f2",
+          "upstream_git_blob_sha": "535870f51781fc7a97e6c2f2f0070b3ce56441c5",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bundled_sha256": "f42ca0768c8cbf5e56df621ceb6a975c140b63c106ae8a3da5679c56c0bd1eef",
+          "upstream_sha256": "f42ca0768c8cbf5e56df621ceb6a975c140b63c106ae8a3da5679c56c0bd1eef",
+          "upstream_git_blob_sha": "2e3a0226b84250cd0d08982ef1fc8ed1b2767c3e",
+          "comparison": "identical"
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "1e5afc4abc7b40665aee71f02dec2b6290f478e154ef58e36790fc67da9d1398",
+          "upstream_sha256": "1e5afc4abc7b40665aee71f02dec2b6290f478e154ef58e36790fc67da9d1398",
+          "upstream_git_blob_sha": "ee2a21645606dac927a0e96d0cc9065adce1215d",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "1ec3fc4d3f9620c495d100026f03244e297ee5bc2cf0c74dd1c3e5e6e2891ab3",
+          "upstream_sha256": "f7ed4d42fc10b0ff444d0f94d0fa74ceb058b334228c950cf8e82b6796d4444c",
+          "upstream_git_blob_sha": "db110d4b3b6e886dc337c01a6c3c0901322f5d0c",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains a concise module heading, omits the standalone promotional/search-positioning prefix, and uses an integrated-directory introduction linking back to the standalone source; the remaining operational body is unchanged."
+        },
+        {
+          "path": "agents/code-update-watcher.md",
+          "bundled_sha256": "c3cd90aa16560fa9889f0ae3b8c4d7088cce882f03d5eff5be982ae300f93bf1",
+          "upstream_sha256": "c3cd90aa16560fa9889f0ae3b8c4d7088cce882f03d5eff5be982ae300f93bf1",
+          "upstream_git_blob_sha": "623964a0991e51e9232d5cd9487893e01c394cbb",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/coding-systems-primer.md",
+          "bundled_sha256": "61fc669052557ab08ea5e72e38d05065cd69e025c7f6dd6033a908339fa737fc",
+          "upstream_sha256": "61fc669052557ab08ea5e72e38d05065cd69e025c7f6dd6033a908339fa737fc",
+          "upstream_git_blob_sha": "1d60fe9c7ebe4ad8a4f239f065e81133796e4c11",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/funnel-discipline.md",
+          "bundled_sha256": "efc1b8917371b786d474e441056ef7b6a0f3dea027924b08e5a20b9129072daa",
+          "upstream_sha256": "efc1b8917371b786d474e441056ef7b6a0f3dea027924b08e5a20b9129072daa",
+          "upstream_git_blob_sha": "125449bf9e5f07eeac06f88a5ff3a08a59b9dc2d",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/sync-from-suite.sh",
+          "bundled_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_git_blob_sha": "754678d0a4dfdf2630f08a85ea37407998e54476",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/code-shift-monitor/SKILL.md",
+          "bundled_sha256": "31cf11fc94b241f9098c92391d7549689e3a83502f20341e0230cce9eff39023",
+          "upstream_sha256": "31cf11fc94b241f9098c92391d7549689e3a83502f20341e0230cce9eff39023",
+          "upstream_git_blob_sha": "721a0f062c190bb5b030c20e57c72d1495af0540",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/epi-funnel-input/SKILL.md",
+          "bundled_sha256": "806576eaa444f59613a50ef65d9d390371ecc432d094b6f4d4d6f4be96e2a5b4",
+          "upstream_sha256": "806576eaa444f59613a50ef65d9d390371ecc432d094b6f4d4d6f4be96e2a5b4",
+          "upstream_git_blob_sha": "d99f14e986a0c7981ed08024e014c2aa2be71b7a",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/exposure-map/SKILL.md",
+          "bundled_sha256": "5b4314b3799865abd5076e05164e42b77e68e0b0479265f2fcb2472d4283126c",
+          "upstream_sha256": "5b4314b3799865abd5076e05164e42b77e68e0b0479265f2fcb2472d4283126c",
+          "upstream_git_blob_sha": "1e7ce85ccca4f466bbc3027c11944ef4d3e39097",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/procedure-volume-tracker/SKILL.md",
+          "bundled_sha256": "a9c5d6055ab4223feaf344921ec838819a9bbc3143c86be1f7f93493198035c4",
+          "upstream_sha256": "a9c5d6055ab4223feaf344921ec838819a9bbc3143c86be1f7f93493198035c4",
+          "upstream_git_blob_sha": "c2b25b584c7821cb2472e5669c4f18904d122dee",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/procedure-volume-tracker/references/prompts.md",
+          "bundled_sha256": "d8e417dc28722a6a38da96b03a488ea57be21533a2131d6d052146d3082e685b",
+          "upstream_sha256": "d8e417dc28722a6a38da96b03a488ea57be21533a2131d6d052146d3082e685b",
+          "upstream_git_blob_sha": "9fef70de0383b669ad94e306cdec4c84a8aa3cf1",
+          "comparison": "identical"
+        }
+      ],
+      "previous_observed_commit": "1c8ab07886c4efb149c97875ca94dcb57d69468c"
+    },
+    {
+      "name": "provider-adoption",
+      "upstream_repository": "hh-health-AI/provider-adoption",
+      "upstream_branch": "main",
+      "upstream_commit": "25f7d4597bd80ba6772d96bf5af997aa794ec37b",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "f655b18b963223096727d37e127cbdad13a24b8963fb28d1fa558c6836cd1894",
+          "upstream_git_blob_sha": "c7d2d11bdc1f69ead51a0aac1e1060166bcc208b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CHANGELOG.md",
+          "bundled_sha256": "b3df9319971efb64b16c51cd9598b5dd9128830851ad6171a94e0ffa97895e38",
+          "upstream_sha256": "9dc94e082eef99d7e16b67251eaf9bed16658879a2de38a7a4cd33ecc69fb40a",
+          "upstream_git_blob_sha": "0d5e2afc09650a3f1b7d48da9e9e9a527012b259",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled changelog replaces the stale external-suite placeholder introduction with current public GitHub maintenance guidance; historical version entries are unchanged."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "5bc5f3b3d70afb1cf8874715ea36dc88ac986d673d8de826cd67c28bdb547b4a",
+          "upstream_sha256": "5bc5f3b3d70afb1cf8874715ea36dc88ac986d673d8de826cd67c28bdb547b4a",
+          "upstream_git_blob_sha": "7e364fd4fe7cd6d9a241c016239e257ec9e44cde",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "f499fccffd76283de0f2a4aafd286b386274d2320c1aa71046149fc75d2d468b",
+          "upstream_sha256": "81219446bc4ed116a781354c3fd9f2460899a6cce3253e853766d8cc9d617dd7",
+          "upstream_git_blob_sha": "1d1656e24af1ac128f3eb1c72631cf591e534b22",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains a concise module heading, omits the standalone promotional/search-positioning prefix, and uses an integrated-directory introduction linking back to the standalone source; the remaining operational body is unchanged."
+        },
+        {
+          "path": "agents/footprint-refresh.md",
+          "bundled_sha256": "07f6f82e28563f3833e8b2223afbfaf04dc7c97154dc850ab44fd39df1da71ad",
+          "upstream_sha256": "07f6f82e28563f3833e8b2223afbfaf04dc7c97154dc850ab44fd39df1da71ad",
+          "upstream_git_blob_sha": "7e1ffc3b4b416af03de02b76f383b1e7a470ee92",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/adoption-scurve-vignettes.md",
+          "bundled_sha256": "9409392934d41016ea19c5ebe00eeaa0975969b93a48b51a8287f583bc7e5e33",
+          "upstream_sha256": "9409392934d41016ea19c5ebe00eeaa0975969b93a48b51a8287f583bc7e5e33",
+          "upstream_git_blob_sha": "c19ba94d042df4795f76dcf22fa413b1bdc83f9b",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/metrics-adoption.md",
+          "bundled_sha256": "7416f6fd9a81da133bc0f62f98015c468ab708e8d5dc4cc002ae6dd355422461",
+          "upstream_sha256": "7416f6fd9a81da133bc0f62f98015c468ab708e8d5dc4cc002ae6dd355422461",
+          "upstream_git_blob_sha": "44a731218392e780e2c5500866f22de2627b3920",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/npi-data-notes.md",
+          "bundled_sha256": "cec7f91159da176df8314b8d3105466380f945c383db65a20599bb503b5d47fa",
+          "upstream_sha256": "cec7f91159da176df8314b8d3105466380f945c383db65a20599bb503b5d47fa",
+          "upstream_git_blob_sha": "ceb862657a0bced2dc13b019e7145d0e3f56cb72",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/usability-adoption-checklist.md",
+          "bundled_sha256": "b6437c6732f6eb9c7d090b27d7af742eead5e701b78766aa7898f7618f3c1598",
+          "upstream_sha256": "b6437c6732f6eb9c7d090b27d7af742eead5e701b78766aa7898f7618f3c1598",
+          "upstream_git_blob_sha": "6ca5f7066a7bda7f78fa74128f82945625e4e660",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/sync-from-suite.sh",
+          "bundled_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_sha256": "e1597d236b915af1589df6e45dd9b7f10dd74717a199fa3ae5d4c5c1c324661c",
+          "upstream_git_blob_sha": "754678d0a4dfdf2630f08a85ea37407998e54476",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/channel-check-prep/SKILL.md",
+          "bundled_sha256": "ee81fd6353ce0621a5132db91381fcaab08e05284b12f5b75f7e2516b9076d46",
+          "upstream_sha256": "ee81fd6353ce0621a5132db91381fcaab08e05284b12f5b75f7e2516b9076d46",
+          "upstream_git_blob_sha": "7fb4308af9355d3b4abbe214bb21063549a0e4ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/kol-site-map/SKILL.md",
+          "bundled_sha256": "bef2073fe3c34440a74b41149f1d65c94844ca7a95d0b235e20fb004550db476",
+          "upstream_sha256": "bef2073fe3c34440a74b41149f1d65c94844ca7a95d0b235e20fb004550db476",
+          "upstream_git_blob_sha": "a0cf231540b04c52480f4969e5872499159e082d",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/provider-footprint/SKILL.md",
+          "bundled_sha256": "e94fed13f35aa9c5c0c16fe33cc324671712f9876eb2ce9fa3ff20def581ee75",
+          "upstream_sha256": "e94fed13f35aa9c5c0c16fe33cc324671712f9876eb2ce9fa3ff20def581ee75",
+          "upstream_git_blob_sha": "56ed21ffe2b286b9e3b6c3b07677cb11f67aa0ba",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/site-adoption-tracker/SKILL.md",
+          "bundled_sha256": "7b4f9508af68e9839f3aae895310c2c2dbb829668d2d8e54ba3317e050fbf09a",
+          "upstream_sha256": "7b4f9508af68e9839f3aae895310c2c2dbb829668d2d8e54ba3317e050fbf09a",
+          "upstream_git_blob_sha": "1306c98908d79b9f0d4ce24d7e0cfc2d34d8d055",
+          "comparison": "identical"
+        }
+      ],
+      "previous_observed_commit": "f63e5d876172dfcdb6c38ff9d25f4f12d96ccd94"
+    },
+    {
+      "name": "provider-economics",
+      "upstream_repository": "hh-health-AI/provider-economics",
+      "upstream_branch": "main",
+      "upstream_commit": "c71def10acdf3050d2973cde4468e85ac77edff5",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "19c9e3ff425f87ea42a2e6e978eec830402617781d2ff1b293d185ac4ad9020e",
+          "upstream_git_blob_sha": "77aa66b896e1df3d5a5a9b1a443dbe46004375f3",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "bb8b9dc9132ef79c2c5876230b9086ca9e10f44010c30db0807d969e593e8feb",
+          "upstream_sha256": "bb8b9dc9132ef79c2c5876230b9086ca9e10f44010c30db0807d969e593e8feb",
+          "upstream_git_blob_sha": "420562555502f68f9857adcc5ba0c74cc51277ce",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "0bb6ebcdc69bbec1079ab29981e93d5067d3be427354a40b3ede8659d4914d7a",
+          "upstream_sha256": "96b309098c9ef87e9a0f20ee611e8ffa1bdcb8a1dd211ae608e0dea43ea68dc5",
+          "upstream_git_blob_sha": "029cf6083bacb9ebc6b0fc2ba4d1c912f0d4f614",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/provider-watcher.md",
+          "bundled_sha256": "3d9131cd480dd831e229e4e570fe3f44dbba72020474f012cfdb5ef2861ba52c",
+          "upstream_sha256": "3d9131cd480dd831e229e4e570fe3f44dbba72020474f012cfdb5ef2861ba52c",
+          "upstream_git_blob_sha": "06b0c45cb37402bdd2baccc77cdebdc27c01f915",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "866b24b22eda896da98ae3524d07e56f2f3d72f2f2010a054e6a4ab0684e5b1e",
+          "upstream_sha256": "866b24b22eda896da98ae3524d07e56f2f3d72f2f2010a054e6a4ab0684e5b1e",
+          "upstream_git_blob_sha": "a78d72642fddbbfec162b64c5b96e405ee1c0bb7",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/hcris_extract.py",
+          "bundled_sha256": "c78f29f26ad833ec1dac1e1e3c634d82d41e419d7d0e64c694ba896bf39b8bae",
+          "upstream_sha256": "c78f29f26ad833ec1dac1e1e3c634d82d41e419d7d0e64c694ba896bf39b8bae",
+          "upstream_git_blob_sha": "4b4ec0c196460c741c9879b2b3e9e9b0485ba473",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/ma_enrollment.py",
+          "bundled_sha256": "9e6dec1f8065020a37dbb27f50d507b3516df06413b92b8e9185e768740b55f6",
+          "upstream_sha256": "9e6dec1f8065020a37dbb27f50d507b3516df06413b92b8e9185e768740b55f6",
+          "upstream_git_blob_sha": "b1d260e52eaacbb2540e97943baccabc8bb757ae",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/propublica_990.py",
+          "bundled_sha256": "dbbd51e8823ffa6d654e10bfa539a254086073f07ad4615d2fedeb6938ed89ee",
+          "upstream_sha256": "dbbd51e8823ffa6d654e10bfa539a254086073f07ad4615d2fedeb6938ed89ee",
+          "upstream_git_blob_sha": "9bc50c46c946f254235ddd452bfb9bfd83093040",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/hospital-margin-forensics/SKILL.md",
+          "bundled_sha256": "0b974447a69038bc4e04b59995dceb4fe1f94e6b7b65130f6029542eede24e99",
+          "upstream_sha256": "0b974447a69038bc4e04b59995dceb4fe1f94e6b7b65130f6029542eede24e99",
+          "upstream_git_blob_sha": "0131f5f6718e04c82e9193506e97929a4a560cea",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/hospital-margin-forensics/references/hcris-codemap.md",
+          "bundled_sha256": "deecdd0c24ba29d2955878d19cb41cd2c8b18b3567af5004845a873bb1654340",
+          "upstream_sha256": "deecdd0c24ba29d2955878d19cb41cd2c8b18b3567af5004845a873bb1654340",
+          "upstream_git_blob_sha": "478dfe72a3164b8c7a84c583ab76a5040a49707e",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ma-margin-normalization/SKILL.md",
+          "bundled_sha256": "44b9da98f0ac24f30e55742989131701499a3ed19cffe763d543dd76190e68ee",
+          "upstream_sha256": "44b9da98f0ac24f30e55742989131701499a3ed19cffe763d543dd76190e68ee",
+          "upstream_git_blob_sha": "b19ac45261ddad9154c95640e2b82703d0c7a306",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ma-margin-normalization/references/ma-mechanics.md",
+          "bundled_sha256": "e28145c0e5f3d59495163c21db0bb8fef169f4badf71f73e57772b53c2e11a23",
+          "upstream_sha256": "e28145c0e5f3d59495163c21db0bb8fef169f4badf71f73e57772b53c2e11a23",
+          "upstream_git_blob_sha": "94c9e5c98a5400025787ee302fdb36f51c2129d3",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/nonprofit-990-scan/SKILL.md",
+          "bundled_sha256": "bafd3fde308c02d1a8a1211e936ca73aaa8934b151fc3147c9645b8373bee561",
+          "upstream_sha256": "bafd3fde308c02d1a8a1211e936ca73aaa8934b151fc3147c9645b8373bee561",
+          "upstream_git_blob_sha": "c13ff63b44511e189efe6ff7e2d379a783242afb",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "rx-utilization",
+      "upstream_repository": "hh-health-AI/rx-utilization",
+      "upstream_branch": "main",
+      "upstream_commit": "1fa181902455addfb91ede50cd4170086939bed1",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".DS_Store",
+          "bundled_sha256": null,
+          "upstream_sha256": "22be11f13844e6b76506abf1d422049fe534f4f206234e7d10c49895d9006075",
+          "upstream_git_blob_sha": "2e459ad615cc37407128e5f2b0dc0332f555a2ef",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Upstream Finder metadata is omitted from the bundled research scope."
+        },
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": ".github/workflows/tests.yml",
+          "bundled_sha256": null,
+          "upstream_sha256": "21306f3d13ce01e372e5b96e1c1b0bd588b3d1e910fe3fdf9ba1a1c489cd4cf0",
+          "upstream_git_blob_sha": "a2fd0affc8915f14b565d4965a3af6ea07e346bf",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone Rx Utilization CI configuration is omitted; flagship research-suite CI runs the same bundled module tests."
+        },
+        {
+          "path": ".gitignore",
+          "bundled_sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+          "upstream_sha256": "6feaded4e28ea86e001a6751b4e3d960e8b7c31b9616ff9936b79297086e809b",
+          "upstream_git_blob_sha": "43ae0e2a6c6d8fca34872506ca0f2e64194fec7c",
+          "comparison": "identical"
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "696df0ebbe68b53c44f1a8ec95b265d63dc6aae119604d70720b501c2a35753a",
+          "upstream_sha256": "696df0ebbe68b53c44f1a8ec95b265d63dc6aae119604d70720b501c2a35753a",
+          "upstream_git_blob_sha": "33024b9de36c19f184424d8522044ce9158434ba",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "68df4c7d52b74b2957e239118848634746a681a69e479b770791231a209f52ef",
+          "upstream_sha256": "d2b89405e3b9c0509278da00a04dc7aedcbdecf76cc0a5bfbcc0bd777e0405a8",
+          "upstream_git_blob_sha": "bbfef4dbe9d0d2ebec16b0067beb987fc0ab0c66",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/rx-utilization-watcher.md",
+          "bundled_sha256": "160bd316c73b7893414e8acd8b2a4cbbeaaa14602daf3485c918bfdb8262d18d",
+          "upstream_sha256": "160bd316c73b7893414e8acd8b2a4cbbeaaa14602daf3485c918bfdb8262d18d",
+          "upstream_git_blob_sha": "5ad7c86768b9324367d1ac008d2f38cdbe2f2631",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_pagination.py",
+          "bundled_sha256": "65e2653d3c702f6d114387e56727a14171a07e49128a5612cf3d1e0db6685edf",
+          "upstream_sha256": "65e2653d3c702f6d114387e56727a14171a07e49128a5612cf3d1e0db6685edf",
+          "upstream_git_blob_sha": "15b5891c8c29ebdd10458f19d75c86e8fba3f76b",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "734bfd5621a7191bd482f77dda4b69527fe8df7efa326aabf9646a9c032b4cad",
+          "upstream_sha256": "734bfd5621a7191bd482f77dda4b69527fe8df7efa326aabf9646a9c032b4cad",
+          "upstream_git_blob_sha": "a260069719d8b946a2a00ae20c6c3cf865ac4ec9",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/mcp_launch.sh",
+          "bundled_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_git_blob_sha": "53e74cc69a96be0b509209707916ad4b2c7974de",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/open_payments.py",
+          "bundled_sha256": "daefe817ba6dc1e427210ecbbbb1644b13c5823eead8aaf0ab9d0148d17656f3",
+          "upstream_sha256": "daefe817ba6dc1e427210ecbbbb1644b13c5823eead8aaf0ab9d0148d17656f3",
+          "upstream_git_blob_sha": "1b99c6b6f9a704b4d0ce2fc9e0a15c8364bcfa7d",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/partd_prescribers.py",
+          "bundled_sha256": "0dafef094934844a9a5f3d4687340804d51792639ccce0b6bc6e04e6147a69c7",
+          "upstream_sha256": "0dafef094934844a9a5f3d4687340804d51792639ccce0b6bc6e04e6147a69c7",
+          "upstream_git_blob_sha": "eb7d252ea16371965ba64a0e4840123fa6411cc7",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/sdud_query.py",
+          "bundled_sha256": "1ffb1a48211358b5d233f0fae9e977cb3e6dac1e8f0fe5535e3291b05d6a9927",
+          "upstream_sha256": "1ffb1a48211358b5d233f0fae9e977cb3e6dac1e8f0fe5535e3291b05d6a9927",
+          "upstream_git_blob_sha": "8149eb6467a97de19234c88605ef0ed7e7f22337",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/gross-to-net-bridge/SKILL.md",
+          "bundled_sha256": "ef8d4ce5c3b8086a137d81d4b9b1c3a18b85aef91479306c8fb0ea62432cdec3",
+          "upstream_sha256": "ef8d4ce5c3b8086a137d81d4b9b1c3a18b85aef91479306c8fb0ea62432cdec3",
+          "upstream_git_blob_sha": "7f602ee5e9ec8c5691338b77ae329783c9082d86",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/open-payments-launch/SKILL.md",
+          "bundled_sha256": "226cf1fbee1c994c8c4c9622395d09e01eb35a82240860aab5443c9d06b60a1b",
+          "upstream_sha256": "226cf1fbee1c994c8c4c9622395d09e01eb35a82240860aab5443c9d06b60a1b",
+          "upstream_git_blob_sha": "f4a036ad0a67684f08e82f247162c7e4c923b971",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/partd-prescriber-share/SKILL.md",
+          "bundled_sha256": "cdf22c68d3cd814f05ed502698a8e20211f3fd9cf3f13a418a579eee70367d6c",
+          "upstream_sha256": "cdf22c68d3cd814f05ed502698a8e20211f3fd9cf3f13a418a579eee70367d6c",
+          "upstream_git_blob_sha": "8728bae8642a2333c2f1b0bf48f2f2c8552580db",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/sdud-trx-proxy/SKILL.md",
+          "bundled_sha256": "59cb37b075674e254873b360fa053c1953e1aba2a04bf1977eb47fd58152e556",
+          "upstream_sha256": "59cb37b075674e254873b360fa053c1953e1aba2a04bf1977eb47fd58152e556",
+          "upstream_git_blob_sha": "55f9a02c79ff8f95f396f44cae20860dcf4c3012",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/sdud-trx-proxy/references/sdud-mechanics.md",
+          "bundled_sha256": "83ea41db5e266fc0053daf3e02f72f15d567cc0e819b42ad7a8ccc46aa3d4357",
+          "upstream_sha256": "83ea41db5e266fc0053daf3e02f72f15d567cc0e819b42ad7a8ccc46aa3d4357",
+          "upstream_git_blob_sha": "45cc8e16bb38523463bfa0236bed1f82f0afcd02",
+          "comparison": "identical"
+        },
+        {
+          "path": "tests/test_pagination.py",
+          "bundled_sha256": "52d539ef3e385ba7732e26ded37f34fcb8f09c7437fe96f4db579205bd0d4870",
+          "upstream_sha256": "52d539ef3e385ba7732e26ded37f34fcb8f09c7437fe96f4db579205bd0d4870",
+          "upstream_git_blob_sha": "4f19df8b148fc3509d8a2b93cf5f55f1e136a82a",
+          "comparison": "identical"
+        }
+      ]
+    },
+    {
+      "name": "sec-forensics",
+      "upstream_repository": "hh-health-AI/sec-forensics",
+      "upstream_branch": "main",
+      "upstream_commit": "1217bf0cfcd116c217a37e0ef8bf1106fe045c00",
+      "observed_at": "2026-10-08",
+      "comparison_scope": "Entire tracked upstream file inventory and entire bundled directory, including documented repository-level omissions.",
+      "files": [
+        {
+          "path": ".gitattributes",
+          "bundled_sha256": null,
+          "upstream_sha256": "1a1dbe176bc233b499d35a57db7513f2941c99ab9759f177830c9149be99005b",
+          "upstream_git_blob_sha": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone repository Git attributes are omitted from the bundled directory."
+        },
+        {
+          "path": "CLAUDE.md",
+          "bundled_sha256": "4890dcdfc22e205e642761614b47d2e70f25f10ceddb8974bf02fdaeb42ec26d",
+          "upstream_sha256": "4890dcdfc22e205e642761614b47d2e70f25f10ceddb8974bf02fdaeb42ec26d",
+          "upstream_git_blob_sha": "ab9a1e132b0f1dec698984c9bccf41924b83bd97",
+          "comparison": "identical"
+        },
+        {
+          "path": "LICENSE",
+          "bundled_sha256": null,
+          "upstream_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+          "upstream_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+          "comparison": "upstream-file-omitted",
+          "difference_reason": "Standalone license file is omitted; the flagship and plugin retain the MIT license. No executable or instruction content is excluded."
+        },
+        {
+          "path": "README.md",
+          "bundled_sha256": "e6a4d446ba5f475f5f7d3690238485720305bfa3c84d23fd34a136e855362117",
+          "upstream_sha256": "da491a3e91fd95fa3560d2b2a3dc77765417e36b16ad5b002bab1270de1f076e",
+          "upstream_git_blob_sha": "a56ef5c197ddf3840c41f845040ca6c2af2c9fb6",
+          "comparison": "documented-adaptation",
+          "difference_reason": "Bundled README retains its concise module heading and omits the standalone promotional/search-positioning prefix; the operational body is unchanged."
+        },
+        {
+          "path": "agents/filing-watcher.md",
+          "bundled_sha256": "b74353e63ff85643c8b36dcc98ea18e586ae67d72ccfd7700d3eb12f33dadc34",
+          "upstream_sha256": "b74353e63ff85643c8b36dcc98ea18e586ae67d72ccfd7700d3eb12f33dadc34",
+          "upstream_git_blob_sha": "92a727a5de4f65943120414792e17960da128fd0",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/auditability.md",
+          "bundled_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_sha256": "f1919236df56bf43ce1d91539537f4499325e343fb8b476656207df647415a5e",
+          "upstream_git_blob_sha": "07fba090816d754ac6f3c40447e633f9bfa590ec",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/evidence-brief.md",
+          "bundled_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_sha256": "df5bc62e8885755089b859d2465bbbebba0be3e550d3979c031d8ed5b5e31c94",
+          "upstream_git_blob_sha": "ccbe809fffc3c2632578ca7158b5dc16c9d98533",
+          "comparison": "identical"
+        },
+        {
+          "path": "references/mcp-setup.md",
+          "bundled_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_sha256": "546489cfa7ef605f46cb82993f4f6400c0a7a055774d238dda22be91ebc3ad64",
+          "upstream_git_blob_sha": "9eaf0c532a9a25af1a97dc47c1c003c8c398219c",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/_ua.py",
+          "bundled_sha256": "4a8606cf3e62ac73b3fc25999b38de10b57c6846c6baf89bf196ec6dc13f220a",
+          "upstream_sha256": "4a8606cf3e62ac73b3fc25999b38de10b57c6846c6baf89bf196ec6dc13f220a",
+          "upstream_git_blob_sha": "41518df81dc8e60377fd762fc13184234f1a45be",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/edgar_client.py",
+          "bundled_sha256": "a5f84eb41ab1e88351ca189815f6c34080a4ffa2f5478f2edbcb2f3fbd2623f4",
+          "upstream_sha256": "a5f84eb41ab1e88351ca189815f6c34080a4ffa2f5478f2edbcb2f3fbd2623f4",
+          "upstream_git_blob_sha": "9cbb5a0364e83b435a2f60419368597872eaa050",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/forensic_ratios.py",
+          "bundled_sha256": "c8525049000f17e43985499cd78b9797ef357d0e1ae590e48b4bb5af3a8be748",
+          "upstream_sha256": "c8525049000f17e43985499cd78b9797ef357d0e1ae590e48b4bb5af3a8be748",
+          "upstream_git_blob_sha": "e4e664096c9032f765d0f38bedba85e18a5a9f6b",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/form4_clusters.py",
+          "bundled_sha256": "cc2595143053ceec7fcd8eebc33b20d0b463629c9ea11e2719f0530cc62b13ce",
+          "upstream_sha256": "cc2595143053ceec7fcd8eebc33b20d0b463629c9ea11e2719f0530cc62b13ce",
+          "upstream_git_blob_sha": "479df3561bcf8f0371865bb526a0d6e9436aaec9",
+          "comparison": "identical"
+        },
+        {
+          "path": "scripts/mcp_launch.sh",
+          "bundled_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_sha256": "10c3cdbc54e61c8a79f6f21af8819eb2511206252f15a5d1f10ba0add439b7cf",
+          "upstream_git_blob_sha": "53e74cc69a96be0b509209707916ad4b2c7974de",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/edgar-forensics/SKILL.md",
+          "bundled_sha256": "3cd3eb431233fc0f4a2c8da04ca2e66a863f94477e2059fd99ba50d15e4580c6",
+          "upstream_sha256": "3cd3eb431233fc0f4a2c8da04ca2e66a863f94477e2059fd99ba50d15e4580c6",
+          "upstream_git_blob_sha": "5a0363bf8e73926397d5def979d72d13268e45fc",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/edgar-forensics/references/healthcare-red-flags.md",
+          "bundled_sha256": "49a68b43dd184642eedcc392f9a0e53495a4022aa2902ef31140b2559c890156",
+          "upstream_sha256": "49a68b43dd184642eedcc392f9a0e53495a4022aa2902ef31140b2559c890156",
+          "upstream_git_blob_sha": "2d3d72e2cf31121095c71862948c40353b2dff3b",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/insider-catalyst-patterns/SKILL.md",
+          "bundled_sha256": "166e32c667fdab8be03e7f06de79c90886129c66222da2421d3402a62229b64d",
+          "upstream_sha256": "166e32c667fdab8be03e7f06de79c90886129c66222da2421d3402a62229b64d",
+          "upstream_git_blob_sha": "0ea55bdee46f5573365f5592d9bab87b0797fa91",
+          "comparison": "identical"
+        },
+        {
+          "path": "skills/ownership-crowding/SKILL.md",
+          "bundled_sha256": "bd4e00db1191658c5de5a99cbc886df440453875461bfd27cd90efadb6831748",
+          "upstream_sha256": "bd4e00db1191658c5de5a99cbc886df440453875461bfd27cd90efadb6831748",
+          "upstream_git_blob_sha": "eff509b7cf30ffc5509167ebd3373713df5e0c3a",
+          "comparison": "identical"
+        }
+      ]
+    }
+  ]
+}
