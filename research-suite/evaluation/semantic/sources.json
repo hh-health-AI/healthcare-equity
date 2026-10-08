@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "url": "https://clinicaltrials.gov/api/v2/studies/NCT04280705",
+      "retrieved_at": "2026-10-08T10:12:37.061508+00:00",
+      "response_sha256": "e52c21eee5f60c6781e5d471d6b3fb4ad4c475d730a8393065d373441df242e9",
+      "bytes": 212807,
+      "id": "CTG-ACTT1",
+      "title": "ClinicalTrials.gov ACTT-1 NCT04280705",
+      "source_vintage": "Registry current response; last update posted 2022-03-14",
+      "human_url": "https://clinicaltrials.gov/study/NCT04280705",
+      "checksum_scope": "SHA-256 of exact original HTTP response bytes retrieved; original bytes not redistributed",
+      "passage_transform": "Short source-faithful author paraphrases; no verbatim excerpts",
+      "locators": [
+        "protocolSection.designModule.designInfo",
+        "protocolSection.designModule.enrollmentInfo",
+        "protocolSection.designModule.enrollmentInfo; descriptionModule.detailedDescription",
+        "protocolSection.statusModule.primaryCompletionDateStruct"
+      ]
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=32445440&retmode=xml",
+      "retrieved_at": "2026-10-08T10:12:37.091361+00:00",
+      "response_sha256": "59d0b1e46503494ecb4cdf78e6cd4f92960b77536a38f0aaa7391b8446b1d408",
+      "bytes": 152794,
+      "id": "PMID-32445440",
+      "title": "Beigel et al., Remdesivir for the Treatment of Covid-19 — Final Report",
+      "source_vintage": "2020-11-05; electronic publication 2020-10-08; DOI 10.1056/NEJMoa2007764",
+      "human_url": "https://pubmed.ncbi.nlm.nih.gov/32445440/",
+      "checksum_scope": "SHA-256 of exact original HTTP response bytes retrieved; original bytes not redistributed",
+      "passage_transform": "Short source-faithful author paraphrases; no verbatim excerpts",
+      "locators": [
+        "MedlineCitation/Article/Abstract/AbstractText[@Label=\"METHODS\"]",
+        "MedlineCitation/Article/Abstract/AbstractText[@Label=\"RESULTS\"]"
+      ]
+    },
+    {
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-covid-19",
+      "retrieved_at": "2026-10-08T10:12:37.609782+00:00",
+      "response_sha256": "29a7b8a6c7c2de74d3d8ce882e167aecd6b8d0e14f8cb55346dcecaae398685a",
+      "bytes": 40807,
+      "id": "FDA-20201022",
+      "title": "FDA Approves First Treatment for COVID-19",
+      "source_vintage": "2020-10-22 historical announcement",
+      "human_url": "https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-covid-19",
+      "checksum_scope": "SHA-256 of exact original HTTP response bytes retrieved; original bytes not redistributed",
+      "passage_transform": "Short source-faithful author paraphrases; no verbatim excerpts",
+      "locators": [
+        "Opening paragraph and pediatric EUA paragraph",
+        "Opening paragraph, FDA news release dated 2020-10-22",
+        "Opening paragraph, administration-setting sentence",
+        "Opening paragraph, historical release date 2020-10-22"
+      ]
+    },
+    {
+      "url": "https://www.sec.gov/Archives/edgar/data/1703057/000170305726000012/abcl-20251231.htm",
+      "retrieved_at": "2026-10-08T10:13:53.699754+00:00",
+      "response_sha256": "f916a80bfd08cd583e200875bc23803289bef9dde3dc46991b85b057899f4547",
+      "bytes": 2128473,
+      "id": "ABCL-2025-10K",
+      "title": "AbCellera Biologics Inc. Form 10-K for year ended 2025-12-31",
+      "source_vintage": "Filed 2026-02-24, accession 0001703057-26-000012",
+      "human_url": "https://www.sec.gov/Archives/edgar/data/1703057/000170305726000012/abcl-20251231.htm",
+      "checksum_scope": "SHA-256 of exact original HTTP response bytes retrieved; original bytes not redistributed",
+      "passage_transform": "Short source-faithful author paraphrases; no verbatim excerpts",
+      "locators": [
+        "Item 7, Financial Position table, December 31 2025 column; amounts in USD thousands",
+        "Item 8, Consolidated Statements of Loss and Comprehensive Loss, F-6; 2025 column; amounts in USD thousands"
+      ]
+    }
+  ]
+}

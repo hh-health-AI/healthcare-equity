@@ -2,9 +2,9 @@ name: Healthcare research suite
 
 on:
   push:
-    paths: ["research-suite/**", "modules/rx-utilization/**", ".github/workflows/research-suite.yml"]
+    paths: ["research-suite/**", "modules/rx-utilization/**", "examples/research-cases/**", "skills/model-valuation/references/case-*.md", "skills/model-valuation/references/case-sources.json", "scripts/validate_repository.py", "README.md", ".github/workflows/research-suite.yml"]
   pull_request:
-    paths: ["research-suite/**", "modules/rx-utilization/**", ".github/workflows/research-suite.yml"]
+    paths: ["research-suite/**", "modules/rx-utilization/**", "examples/research-cases/**", "skills/model-valuation/references/case-*.md", "skills/model-valuation/references/case-sources.json", "scripts/validate_repository.py", "README.md", ".github/workflows/research-suite.yml"]
   workflow_dispatch:
 
 permissions:
@@ -29,6 +29,7 @@ jobs:
       - run: python scripts/run_demo.py
       - run: python scripts/validate_package.py
       - run: python scripts/evaluate_reliability.py
+      - run: python ../scripts/validate_repository.py
       - run: python -m unittest discover -s ../modules/rx-utilization/tests -v
 
   live-smoke:

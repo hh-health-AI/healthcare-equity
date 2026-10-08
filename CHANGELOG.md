@@ -2,6 +2,15 @@
 
 This public repository is maintained on GitHub. Historical entries below describe earlier packaging; current installation and maintenance instructions are in README.md.
 
+## 2026-10-08
+
+- Add three dated primary-source research cases: HELIOS-B approval-gate rNPV, Intuitive Surgical procedure-driven revenue and UnitedHealth medical-cost-ratio earnings sensitivity. Separate source observations from illustrative assumptions and provide reproducible models.
+- Complete scoped review of the 24-case source ledger, correcting statistical, period and denominator definitions. Record the evidence checked and remaining uncertainty rather than certifying whole-company valuations.
+- Add a 24-claim semantic development set, archived session review, external prediction scorer and regression tests. Keep structural reliability and assistant agreement separate from independent clinical accuracy.
+- Align installation guidance for portable skills, Python CLI/local MCP and the skills-only workspace plugin. Preserve plugin identity and historical packaging provenance.
+- Add pinned module snapshots, reviewed plugin adaptation records and automated drift/integrity checks with maintenance instructions.
+- Link the cases, evaluation and consolidated validation from the repository entry page.
+
 ## [0.2.2] — 2026-08-26
 
 - Workflow chart embedded in `CLAUDE.md` as a runtime **Workflow map**: the four-stage analyst lifecycle (Discover → Underwrite → Decide → Monitor) as routing guidance — enter at the node matching the question, offer the downstream node when a skill completes, engine briefs and the evidence ledger feed the investable-view capstone, and sell-discipline lessons loop back into thesis. Includes show-on-request behavior for "how does this plugin work".

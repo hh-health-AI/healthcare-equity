@@ -1,0 +1,148 @@
+{
+  "case_id": "ISRG_PROCEDURES_REVENUE_2026Q2",
+  "information_cutoff": "2026-07-16",
+  "forecast_period": "FY2026",
+  "classification": "analyst_sensitivity_not_company_guidance_or_live_recommendation",
+  "calibration": {
+    "assumed_ion_revenue_per_procedure_usd": 1250,
+    "calibrated_da_vinci_revenue_per_procedure_usd": 1851.8157310497938,
+    "assumed_ion_baseline_ia_revenue_usd": 180125000,
+    "calibrated_da_vinci_baseline_ia_revenue_usd": 5838775000,
+    "reconciled_baseline_ia_revenue_usd": 6018900000
+  },
+  "reported_revenue_reconciliation": {
+    "fy2025_sum_usd": 10064700000,
+    "q2_2026_sum_usd": 2892300000
+  },
+  "scenarios": {
+    "bear": {
+      "forecast_da_vinci_procedures": 3468300.0000000005,
+      "forecast_ion_procedures": 172920.0,
+      "assumed_da_vinci_revenue_per_procedure_usd": 1796.2612591183,
+      "assumed_ion_revenue_per_procedure_usd": 1250.0,
+      "instruments_accessories_revenue_usd": 6446122925.0,
+      "instruments_accessories_growth": 0.0709802330990712,
+      "systems_revenue_usd": 2597385000.0,
+      "service_revenue_usd": 1729310000.0000002,
+      "total_revenue_usd": 10772817925.0,
+      "total_revenue_growth": 0.07035658539251055,
+      "ia_revenue_delta_vs_base_usd": -473436950.0,
+      "illustrative_operating_profit_delta_vs_base_usd": -284062170.0
+    },
+    "base": {
+      "forecast_da_vinci_procedures": 3610185.0,
+      "forecast_ion_procedures": 187330.0,
+      "assumed_da_vinci_revenue_per_procedure_usd": 1851.8157310497938,
+      "assumed_ion_revenue_per_procedure_usd": 1250.0,
+      "instruments_accessories_revenue_usd": 6919559875.0,
+      "instruments_accessories_growth": 0.14963861752147412,
+      "systems_revenue_usd": 2770544000.0000005,
+      "service_revenue_usd": 1807914999.9999998,
+      "total_revenue_usd": 11498018875.0,
+      "total_revenue_growth": 0.1424104916192237,
+      "ia_revenue_delta_vs_base_usd": 0.0,
+      "illustrative_operating_profit_delta_vs_base_usd": 0.0
+    },
+    "bull": {
+      "forecast_da_vinci_procedures": 3720540.0,
+      "forecast_ion_procedures": 201740.0,
+      "assumed_da_vinci_revenue_per_procedure_usd": 1888.8520456707897,
+      "assumed_ion_revenue_per_procedure_usd": 1250.0,
+      "instruments_accessories_revenue_usd": 7279724590.0,
+      "instruments_accessories_growth": 0.2094775772981774,
+      "systems_revenue_usd": 2918966000.0,
+      "service_revenue_usd": 1886520000.0,
+      "total_revenue_usd": 12085210590.0,
+      "total_revenue_growth": 0.2007521923157174,
+      "ia_revenue_delta_vs_base_usd": 360164715.0,
+      "illustrative_operating_profit_delta_vs_base_usd": 216098829.0
+    }
+  },
+  "growth_and_mix_sensitivity": [
+    {
+      "da_vinci_procedure_growth": 0.135,
+      "da_vinci_revenue_per_procedure_change": -0.03,
+      "ia_revenue_usd": 6662361836.25,
+      "total_revenue_usd": 11240820836.25
+    },
+    {
+      "da_vinci_procedure_growth": 0.135,
+      "da_vinci_revenue_per_procedure_change": 0.0,
+      "ia_revenue_usd": 6861172125.0,
+      "total_revenue_usd": 11439631125.0
+    },
+    {
+      "da_vinci_procedure_growth": 0.135,
+      "da_vinci_revenue_per_procedure_change": 0.03,
+      "ia_revenue_usd": 7059982413.75,
+      "total_revenue_usd": 11638441413.75
+    },
+    {
+      "da_vinci_procedure_growth": 0.145,
+      "da_vinci_revenue_per_procedure_change": -0.03,
+      "ia_revenue_usd": 6718997953.75,
+      "total_revenue_usd": 11297456953.75
+    },
+    {
+      "da_vinci_procedure_growth": 0.145,
+      "da_vinci_revenue_per_procedure_change": 0.0,
+      "ia_revenue_usd": 6919559875.0,
+      "total_revenue_usd": 11498018875.0
+    },
+    {
+      "da_vinci_procedure_growth": 0.145,
+      "da_vinci_revenue_per_procedure_change": 0.03,
+      "ia_revenue_usd": 7120121796.25,
+      "total_revenue_usd": 11698580796.25
+    },
+    {
+      "da_vinci_procedure_growth": 0.155,
+      "da_vinci_revenue_per_procedure_change": -0.03,
+      "ia_revenue_usd": 6775634071.25,
+      "total_revenue_usd": 11354093071.25
+    },
+    {
+      "da_vinci_procedure_growth": 0.155,
+      "da_vinci_revenue_per_procedure_change": 0.0,
+      "ia_revenue_usd": 6977947625.0,
+      "total_revenue_usd": 11556406625.0
+    },
+    {
+      "da_vinci_procedure_growth": 0.155,
+      "da_vinci_revenue_per_procedure_change": 0.03,
+      "ia_revenue_usd": 7180261178.75,
+      "total_revenue_usd": 11758720178.75
+    }
+  ],
+  "platform_allocation_sensitivity": [
+    {
+      "assumed_ion_baseline_revenue_per_procedure_usd": 750,
+      "ia_revenue_usd": 6908392125.0,
+      "reconciled_baseline_ia_revenue_usd": 6018900000
+    },
+    {
+      "assumed_ion_baseline_revenue_per_procedure_usd": 1250,
+      "ia_revenue_usd": 6919559875.0,
+      "reconciled_baseline_ia_revenue_usd": 6018900000
+    },
+    {
+      "assumed_ion_baseline_revenue_per_procedure_usd": 1750,
+      "ia_revenue_usd": 6930727625.0,
+      "reconciled_baseline_ia_revenue_usd": 6018900000
+    }
+  ],
+  "marginal_sensitivities": {
+    "one_percentage_point_da_vinci_growth_ia_revenue_usd": 58387750.0,
+    "one_percent_da_vinci_rpp_change_ia_revenue_usd_at_base_growth": 66853973.75,
+    "one_percentage_point_da_vinci_growth_illustrative_operating_profit_usd": 35032650.0
+  },
+  "market_expectations": {
+    "status": "NEEDS_MARKET_INPUTS",
+    "required": [
+      "dated enterprise value",
+      "explicit assumed forward EV/sales multiple"
+    ],
+    "no_market_quote_or_consensus_used": true
+  },
+  "utilization_status": "NOT_CALCULATED: matching average active platform installed bases are not used in this model"
+}

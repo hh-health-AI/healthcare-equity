@@ -1,16 +1,16 @@
 # cms-reimbursement
 
-Access-and-payment evidence engine for buy-side healthcare equity research. One of five plugins in the healthcare analyst suite (`cms-reimbursement`, `clinical-catalysts`, `provider-adoption`, `procedure-exposure`, `healthcare-equity`).
+Access and payment evidence workflows for healthcare equity research. This directory is the flagship's integrated `cms-reimbursement` module; the [standalone source](https://github.com/hh-health-AI/cms-reimbursement) remains available.
 
 Answers: **will Medicare pay for it, at what rate, and what is changing** — and converts the answer into model variables via a standard evidence brief that the `healthcare-equity` plugin assembles into an investable view.
 
-Built to institutional investor standards: rigorous and auditable. 
+Instructions organize source evidence and explicit model implications; their output requires researcher appraisal.
 
 ## Components
 
 | Type | Name | Purpose |
 |---|---|---|
-| MCP server | CMS Coverage (hosted) | Medicare Coverage Database — NCDs, LCDs, coverage articles |
+| Optional connector | CMS Coverage | Medicare Coverage Database — NCDs, LCDs, coverage articles |
 | Skill | coverage-check | Coverage status for a drug/device/procedure, cited to policy text |
 | Skill | reimbursement-impact | CMS rule change → per-procedure dollar delta → revenue impact |
 | Skill | ma-bid-cycle | MA rate notice / Stars → payor implications by name |
@@ -62,24 +62,35 @@ flowchart TD
 
 ## Installation
 
-The runnable Python package is maintained in [hh-health-AI/healthcare-equity](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite). Python 3.10+:
+Choose one of three routes. The [flagship installation guide](https://github.com/hh-health-AI/healthcare-equity#installation) describes their separate scope.
+
+| Route | What you get | Instructions |
+|---|---|---|
+| Portable instruction skills | The skills in this repository, read directly or copied into a host-configured location | Your host discovers `SKILL.md` files; browsing and data tools remain separate |
+| Python CLI and optional local MCP | The flagship's broader biomedical retrieval, comparison and calculation utilities | [Python quickstart](https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/README.md#quickstart) and [local MCP guide](https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/docs/mcp.md); not every connector in this module's workflow is supplied by that runtime |
+| Workspace instruction plugin | Thirteen adapted skills with guides for twelve evidence modules | [GitHub marketplace import](https://github.com/hh-health-AI/healthcare-equity/blob/main/plugins/README.md); this skills-only edition does not import every module subskill or deploy data connections |
+
+For the separate Python package, use Python 3.10+:
 
 ```sh
 git clone https://github.com/hh-health-AI/healthcare-equity.git
 cd healthcare-equity/research-suite
-python -m venv .venv
+python3 -m venv .venv
+# macOS / Linux; Windows PowerShell: .venv\Scripts\Activate.ps1
 . .venv/bin/activate
 python -m pip install .
 python scripts/run_demo.py
 ```
 
-The demo writes nine synthetic reports to `outputs/`. See the [package README](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite) for CLI commands, optional MCP setup, and copying skills into a host. The instructions in this repository can also be read directly. Marketplace installation is not advertised: the required marketplace manifests are not shipped here.
-
+The demo writes nine synthetic reports to `outputs/demo/`. The optional local MCP uses stdio and supplies no hosted URL. Configure source-required contact identity or credentials in the runtime environment; upstream documents `HH_CONTACT`, `NCBI_API_KEY` and `OPENFDA_API_KEY`. These values do not belong in prompts or committed files. Installation does not start monitoring jobs.
 
 ## Setup
 
-- No environment variables. The CMS Coverage server is a hosted connector (`hcls.mcp.claude.com`).
-- Install alongside the other four suite plugins. Each hosted connector is declared in exactly one suite plugin — uninstall the old `healthcare`, `cms-coverage`, `npi-registry`, and deprecated `pubmed` plugins to avoid duplicate servers.
+Medicare Coverage Database research can use a supported CMS Coverage connector, public CMS policy pages or supplied policy files. Configure any connector in your actual host and verify its policy vintage; importing the aggregate instruction plugin does not create that connection.
+
+Other evidence modules can be used when the research question needs them; installing all five original suite plugins is not required. Keep any useful existing integrations and configure only the tools your host supports. Review duplicate connector names in the host configuration if needed; no automatic uninstall or account-permission change is part of this setup.
+
+The workflow diagram describes logical handoffs. Connector nodes, host-specific ledger paths and scheduled agents are configuration examples, not resources created by installing instructions. Use an explicit storage location supported by your host, and configure a monitoring schedule only when requested.
 
 ## Usage
 
@@ -94,4 +105,4 @@ The demo writes nine synthetic reports to `outputs/`. See the [package README](h
 
 Ask: **"Is transcatheter aortic valve replacement covered by Medicare, and under what conditions?"**
 Pass: the answer cites NCD/LCD policy IDs with openable Medicare Coverage Database links, states the retrieval date and policy vintage, and ends with an EVIDENCE BRIEF (including the Coverage line). The brief must document a model implication (accessible population / paid conversion), not merely inform.
-Fail tell: an answer with no policy IDs or openable links means the CMS Coverage connector was not called.
+Fail: an answer without policy IDs, policy vintage or openable source links is not reviewable, regardless of the retrieval route.

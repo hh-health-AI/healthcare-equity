@@ -45,5 +45,14 @@
     "interpretation": "Known limitation: citation presence and valid schema do not establish claim support. Semantic accuracy is NOT MEASURED."
   },
   "live_endpoint_accuracy": "NOT_MEASURED",
-  "clinical_accuracy": "NOT_MEASURED"
+  "clinical_accuracy": "NOT_MEASURED",
+  "semantic_development_set": {
+    "record": "semantic/review.json",
+    "instructions": "semantic/README.md",
+    "measurement": "Separate assistant agreement on 24 author-paraphrased primary-source claims; original 27 structural regressions remain unchanged",
+    "source_original_document_entailment": "NOT_MEASURED",
+    "deployed_system_accuracy": "NOT_MEASURED",
+    "independent_human_clinical_adjudication": "NOT_PERFORMED",
+    "exact_model_revision": "UNAVAILABLE"
+  }
 }

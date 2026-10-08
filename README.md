@@ -1,48 +1,28 @@
-# Healthcare Equity Research Platform — Biotech, Pharma, Medtech, Managed Care & Healthcare Investing
+# Healthcare Equity Research Platform
 
-## New: nine-tool Healthcare Research Suite
+Connect primary healthcare evidence to explicit revenue assumptions, valuation scenarios, catalysts and falsifiable investment views.
 
-The [Healthcare Research Suite](research-suite/README.md) adds portable biomedical skills and agent workflows, runnable public-data clients, trial and claim audits, literature worklists, catalyst monitoring, rNPV scenarios, conference triage and journal-club briefings.
-
-[Start with the quickstart](research-suite/README.md#quickstart) · [Explore all nine projects](research-suite/README.md#nine-projects) · [See worked examples](research-suite/examples/outputs/)
-
+[Research cases](examples/research-cases/README.md) · [Run the demo](research-suite/README.md#quickstart) · [Choose an installation route](#installation) · [Semantic evaluation](research-suite/evaluation/semantic/README.md) · [Validate the repository](#validate-the-repository)
 
 <!-- geo:start -->
-## Open-source healthcare equity research for investors and AI agents
-
-This repository is an integrated **healthcare equity research platform** for **biotech, pharmaceuticals, medtech, life sciences tools, managed care, healthcare services, diagnostics, and digital health**.
-
-It connects scientific and clinical evidence to commercial assumptions and valuation:
-
-**clinical trials → regulatory probability → epidemiology → utilization → reimbursement → revenue → margins → DCF / rNPV / scenario analysis → investment thesis**
-
-Use it for questions such as:
-- How should a Phase 2 or Phase 3 readout change probability of success and rNPV?
-- What do FDA, CMS, FAERS, Medicare Part D, provider, procedure, epidemiology, or SEC data imply for a healthcare stock?
-- How do reimbursement, market access, LOE, provider adoption, safety, or utilization change revenue forecasts?
-- How can public healthcare data be turned into auditable buy-side investment research?
-- How can AI research agents support institutional-quality healthcare due diligence?
-
-**Primary research entities:** ClinicalTrials.gov, FDA, EMA, CMS, Medicare, Medicaid, NPI Registry, CDC, NIH, SEC EDGAR, Orange Book, Purple Book, NICE, NMPA, and public company filings.
-
-**Core methods:** fundamental equity research, clinical-trial interpretation, catalyst analysis, market sizing, revenue forecasting, DCF, rNPV, scenario analysis, valuation, long/short research, and evidence synthesis.
-
-Start with the module map below or visit the [HH Health AI profile](https://github.com/hh-health-AI).
-
+The platform covers **biotech, pharma, medtech, life sciences tools, managed care, healthcare services, diagnostics and digital health**. Its twelve evidence modules organize clinical, regulatory, utilization, reimbursement, provider, safety, epidemiology, exclusivity, international-access and financial research. The [Healthcare Research Suite](research-suite/README.md) adds nine biomedical workflows and Python utilities for retrieval, comparisons and calculations.
 <!-- geo:end -->
 
 <!-- institutional-positioning:start -->
-## Institutional-quality AI research workflows
-
-These **AI agents, AI skills, and AI research workflows** are designed for **institutional-quality investment research**. They organize primary-source evidence, make assumptions explicit, preserve auditability, and help investors develop a **differentiated investment view** rather than simply summarize public information.
-
-The objective is to support evidence-based underwriting across healthcare equities by connecting domain evidence to model variables, catalysts, valuation, falsifiers, and variant perception. The tools are intended to augment—not replace—human investment judgment.
-
+Research outputs distinguish source facts, inference, model implications and unresolved questions. Python checks validate structure and calculations; the AI host or researcher reads and appraises the evidence. Clinical accuracy, universal host compatibility and investment performance are not claimed.
 <!-- institutional-positioning:end -->
 
-Flagship monorepo for buy-side healthcare equity research: a synthesis engine plus modular evidence pipelines spanning clinical/regulatory catalysts, utilization, reimbursement, provider adoption/economics, procedure exposure, IP/LOE, safety, epidemiology, international access, evidence/KOL signals, and SEC forensics.
+## Start here
 
-The repository is organized as a **monorepo**. Permanent research capabilities live under `modules/`; Git branches are reserved for temporary feature, fix, refactor, and experiment work. The original standalone repositories remain available during migration, but this repository is the canonical integration point.
+| Goal | Entry point | What to expect |
+|---|---|---|
+| Review a healthcare investment case | [Research cases](examples/research-cases/README.md) | Dated evidence, assumptions, scenarios and research limits |
+| Try the runnable utilities | [Python quickstart](research-suite/README.md#quickstart) | Nine synthetic reports; no API key or LLM needed for the demo |
+| Use an AI research workflow | [Skills](skills/) and [nine biomedical projects](research-suite/README.md#nine-projects) | Instructions loaded by your host; tools depend on your host setup |
+| Import the workspace plugin | [GitHub marketplace guide](plugins/README.md) | Thirteen adapted instruction skills; runtime and data access are separate |
+| Assess reliability | [Structural evaluation](research-suite/evaluation/README.md) and [semantic evaluation](research-suite/evaluation/semantic/README.md) | Measured scope, reproducible checks and known failure boundaries |
+
+This monorepo is the canonical integration point. Permanent evidence capabilities live under `modules/`; original standalone repositories remain available during migration. The packaged plugin is an adaptation with its own reviewed source record, not a complete copy of every module.
 
 ## Monorepo modules
 
@@ -63,7 +43,6 @@ The repository is organized as a **monorepo**. Permanent research capabilities l
 
 These evidence modules feed the core synthesis layer in this repository: models, theses, scenario analysis, portfolio framing, and the investable-view capstone.
 
-Built to institutional investor standards: rigorous and auditable. 
 ## Components
 
 | Type | Name | Purpose (prompt IDs carried) |
@@ -87,36 +66,36 @@ Built to institutional investor standards: rigorous and auditable.
 ```mermaid
 flowchart TD
     subgraph DISC["1 · Discover"]
-        ST["screen-themes"] --> IN["initiate<br/>scoping → memo → sub-sector layers"]
+        ST["screen-themes"] --> IN["initiate"]
     end
-    subgraph ENG["Evidence engines (co-installed plugins)"]
+    subgraph ENG["Evidence modules and available sources"]
         E1["cms-reimbursement"]
         E2["clinical-catalysts"]
         E3["provider-adoption"]
         E4["procedure-exposure"]
     end
-    FIN[("Financial layer<br/>filings & transcripts · Quartr / EDGAR")]
+    FIN[("Filings and transcripts")]
     subgraph UW["2 · Underwrite"]
-        MV["model-valuation<br/>economic unit → formula → scenarios"] <--> TH["thesis<br/>variant perception · steel-man · pre-mortem"]
-        ME["meetings-experts<br/>1-on-1s · expert calls, MNPI-safe"] --> TH
-        INTL["international<br/>HTA · Japan · China · UK"] --> MV
+        MV["model-valuation"] <--> TH["thesis"]
+        ME["meetings-experts"] --> TH
+        INTL["international"] --> MV
         ESG["esg-stewardship"] --> TH
     end
     IN --> MV
     ENG -->|EVIDENCE BRIEFS| IV
     FIN --> IV
-    LEDGER[("evidence ledger<br/>briefs from all five plugins")] --> IV
-    EA["evidence-assembler agent<br/>runs the engines end-to-end for a ticker"] -.-> IV
-    MV --> IV["investable-view capstone<br/>6 layers → scenario matrix → price-implied<br/>→ falsifiable underwriting statement"]
+    LEDGER[("Reviewed evidence ledger")] --> IV
+    EA["evidence-assembler agent"] -.-> IV
+    MV --> IV["investable-view capstone"]
     TH --> IV
     subgraph DEC["3 · Decide & communicate"]
-        CO["comms-compliance<br/>IC memo · MNPI scrub · disclosures"]
-        PO["portfolio<br/>sizing · catalyst concentration · pairs"]
+        CO["comms-compliance"]
+        PO["portfolio"]
     end
     IV --> CO
     IV --> PO
     subgraph MON["4 · Monitor & learn"]
-        EARN["earnings<br/>preview → live triage → post-print"] --> SD["sell-discipline<br/>scorecards · watchlists · post-mortems"]
+        EARN["earnings"] --> SD["sell-discipline"]
     end
     PO --> EARN
     IV -->|falsifiers & early signals| SD
@@ -137,26 +116,56 @@ flowchart TD
 
 *Blue = skills · green = data sources & stores · amber (dashed) = agents · pink = evidence outputs · violet = suite handoffs.*
 
+The detailed skills above supply scoping, expert questions, valuation formulas, thesis challenges and portfolio review. The evidence assembler coordinates available tools on request; installation does not start it or any monitoring job.
+
 ## Installation
 
-The runnable Python package is maintained in [hh-health-AI/healthcare-equity](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite). Python 3.10+:
+Choose the route that matches what you want to run. None activates background monitoring or supplies paid data.
+
+| Route | Includes | Setup and limits |
+|---|---|---|
+| Portable instruction skills | Top-level investment skills and nine biomedical skills | Read a `SKILL.md` directly or copy selected directories into your host's configured skill location. Host discovery and available tools are separate. |
+| Python CLI and optional local MCP | Retrieval, deterministic validation, comparisons and valuation utilities | Python 3.10+; optional MCP runs over local stdio with 13 tools. There is no hosted server URL or bundled model provider. |
+| GitHub-managed workspace plugin | Thirteen adapted instruction skills and twelve module guides | A workspace administrator imports the repository marketplace. This skills-only package does not install the Python CLI/MCP or create data-source connections. |
+
+### Portable skills
+
+Read [investment skills](skills/) or [biomedical skill instructions](research-suite/README.md#nine-projects) directly. After cloning the repository, this command copies one biomedical skill to an explicit directory:
+
+```sh
+python3 research-suite/scripts/install_skills.py --target ./my-host-skills --skill clinical-trial-analyst
+```
+
+The installer does not overwrite existing directories. Configure your host to scan the chosen location; copying instructions does not add browsing or data connectors.
+
+### Python CLI and local MCP
+
+Python 3.10+, from a fresh checkout:
 
 ```sh
 git clone https://github.com/hh-health-AI/healthcare-equity.git
 cd healthcare-equity/research-suite
-python -m venv .venv
+python3 -m venv .venv
+# macOS / Linux; Windows PowerShell: .venv\Scripts\Activate.ps1
 . .venv/bin/activate
 python -m pip install .
+hh-research --help
 python scripts/run_demo.py
 ```
 
-The demo writes nine synthetic reports to `outputs/`. See the [package README](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite) for CLI commands, optional MCP setup, and copying skills into a host. The instructions in this repository can also be read directly. Marketplace installation is not advertised: the required marketplace manifests are not shipped here.
+The demo writes nine synthetic reports to `outputs/demo/`. See the [suite README](research-suite/README.md) for live-data commands and [local MCP configuration](research-suite/docs/mcp.md) for the optional `python -m pip install '.[mcp]'` setup. Retrieval sends requests to the named public services; samples and capped results retain their coverage limits.
+
+### Workspace plugin
+
+The marketplace catalog is shipped at `.agents/plugins/marketplace.json`; the plugin compatibility manifest is at `plugins/hh-health-ai-research/.codex-plugin/plugin.json`. Follow the [workspace import guide](plugins/README.md) using source `https://github.com/hh-health-AI/healthcare-equity` and the repository root as the marketplace location.
+
+Repository files alone do not authorize access or install the plugin in a workspace. GitHub sync distributes committed package changes after import; edits to upstream modules or suite skills do not automatically regenerate their packaged adaptations. The guide explains this distinction and the required workspace administration.
 
 
 ## Setup
 
-- **Synthesis instructions** — these can use separately configured evidence connectors; the Python research suite includes an optional MCP server. This workflow consumes the engines' connectors, the Quartr connector for transcripts/filings, and web/EDGAR. Optional depth layer: the Rhizome AI connector for FDA/EMA primary-document research (routed via the CLAUDE.md connector map); the breadth-vs-depth buying taxonomy lives in `references/data-stack-map.md`.
-- Excel builds hand off to model-builder / financial-analysis; earnings model updates to earnings-reviewer.
+- **Synthesis instructions** can use separately configured evidence connectors and browsing. The [connector map](CLAUDE.md#connector-routing-map) describes conditional routing; it does not install or guarantee any named tool. The [data-stack map](references/data-stack-map.md) discusses optional paid data sources.
+- Excel builds and earnings model updates can use suitable artifact or finance tools when available in the host. See the [handoff guidance](CLAUDE.md#handoffs-to-generic-finance-plugins).
 
 
 ## Usage
@@ -170,7 +179,19 @@ Every evidence update must document a model implication: CHANGE, NO_CHANGE, UNCE
 
 ## Reviewable evidence and reliability
 
+- [Research cases](examples/research-cases/README.md): evidence-to-assumption examples with dates and limitations.
 - [24-case source audit](skills/model-valuation/references/case-source-audit.md): explicit verified scope and outstanding checks.
-- [Reliability evaluation](research-suite/evaluation/README.md): reproducible checks and known failure boundaries.
+- [Structural reliability evaluation](research-suite/evaluation/README.md): reproducible checks and known failure boundaries.
+- [Semantic evaluation](research-suite/evaluation/semantic/README.md): source passages, answer keys and evaluation scope; a structural pass does not establish claim accuracy.
 - [Model implication contract and NO_CHANGE example](docs/MODEL_IMPLICATIONS.md).
 - [Maintenance and module provenance](docs/MAINTENANCE.md).
+
+## Validate the repository
+
+From the repository root, run the [consolidated validation entry](scripts/validate_repository.py):
+
+```sh
+python3 scripts/validate_repository.py
+```
+
+Validation checks repository and package consistency within its documented scope. It does not substitute for a live workspace installation test, independent clinical appraisal or a market-data check. See the [suite validation record](research-suite/docs/validation.md) and [plugin validation scope](plugins/hh-health-ai-research/VALIDATION.md) for the separate runtime and instruction-package evidence.

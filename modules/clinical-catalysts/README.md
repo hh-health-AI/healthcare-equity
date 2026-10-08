@@ -1,17 +1,17 @@
 # clinical-catalysts
 
-Science, trials, and FDA evidence engine for buy-side healthcare equity research. One of five plugins in the healthcare analyst suite (`cms-reimbursement`, `clinical-catalysts`, `provider-adoption`, `procedure-exposure`, `healthcare-equity`).
+Science, trials and FDA evidence workflows for healthcare equity research. This directory is the flagship's integrated `clinical-catalysts` module; the [standalone source](https://github.com/hh-health-AI/clinical-catalysts) remains available.
 
 Answers: **does the science work, will FDA/EMA allow it, when is the binary event, and who else is coming** — delivered as evidence briefs the `healthcare-equity` plugin assembles into an investable view.
 
-Built to institutional investor standards: rigorous and auditable. 
+Instructions organize source evidence and explicit model implications; their output requires researcher appraisal.
 
 ## Components
 
 | Type | Name | Purpose |
 |---|---|---|
-| MCP server | Clinical Trials (hosted) | ClinicalTrials.gov search, trial details, endpoints, sponsors, investigators |
-| MCP server | PubMed (hosted) | Biomedical literature search and metadata |
+| Optional connector | Clinical Trials | ClinicalTrials.gov search, trial details, endpoints, sponsors, investigators |
+| Optional connector | PubMed | Biomedical literature search and metadata |
 | Skill | catalyst-calendar | Readouts, PDUFA dates, AdComs → ranked 6-month event list |
 | Skill | readout-handicap | Trial-design audit, base rates, PoS decomposition, outcome scenarios |
 | Skill | adcom-label | AdCom preparation and 48-hour post-approval label-delta analysis |
@@ -76,25 +76,35 @@ flowchart TD
 
 ## Installation
 
-The runnable Python package is maintained in [hh-health-AI/healthcare-equity](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite). Python 3.10+:
+Choose one of three routes. The [flagship installation guide](https://github.com/hh-health-AI/healthcare-equity#installation) describes their separate scope.
+
+| Route | What you get | Instructions |
+|---|---|---|
+| Portable instruction skills | The skills in this repository, read directly or copied into a host-configured location | Your host discovers `SKILL.md` files; browsing and data tools remain separate |
+| Python CLI and optional local MCP | The flagship's broader biomedical retrieval, comparison and calculation utilities | [Python quickstart](https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/README.md#quickstart) and [local MCP guide](https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/docs/mcp.md); not every connector in this module's workflow is supplied by that runtime |
+| Workspace instruction plugin | Thirteen adapted skills with guides for twelve evidence modules | [GitHub marketplace import](https://github.com/hh-health-AI/healthcare-equity/blob/main/plugins/README.md); this skills-only edition does not import every module subskill or deploy data connections |
+
+For the separate Python package, use Python 3.10+:
 
 ```sh
 git clone https://github.com/hh-health-AI/healthcare-equity.git
 cd healthcare-equity/research-suite
-python -m venv .venv
+python3 -m venv .venv
+# macOS / Linux; Windows PowerShell: .venv\Scripts\Activate.ps1
 . .venv/bin/activate
 python -m pip install .
 python scripts/run_demo.py
 ```
 
-The demo writes nine synthetic reports to `outputs/`. See the [package README](https://github.com/hh-health-AI/healthcare-equity/tree/main/research-suite) for CLI commands, optional MCP setup, and copying skills into a host. The instructions in this repository can also be read directly. Marketplace installation is not advertised: the required marketplace manifests are not shipped here.
-
+The demo writes nine synthetic reports to `outputs/demo/`. The optional local MCP uses stdio and supplies no hosted URL. Configure source-required contact identity or credentials in the runtime environment; upstream documents `HH_CONTACT`, `NCBI_API_KEY` and `OPENFDA_API_KEY`. These values do not belong in prompts or committed files. Installation does not start monitoring jobs.
 
 ## Setup
 
-- No environment variables; both servers are hosted connectors.
-- Install alongside the other four suite plugins; uninstall the old `healthcare`, `cms-coverage`, `npi-registry`, and deprecated/standalone `pubmed` + `clinical-trials` plugins so each connector registers once.
-- Optional depth layer: install the **Rhizome AI** connector from the claude.ai connector directory — skills prefer it for FDA/EMA primary-document research (reviews, CRLs, predicates, designations) and fall back to web when absent.
+ClinicalTrials.gov and PubMed retrieval can use your host's supported connectors, public-source browsing or user-supplied records. An optional regulatory-document connector can add depth when already configured; its availability and permissions depend on the host.
+
+Other evidence modules can be used when the research question needs them; installing all five original suite plugins is not required. Keep any useful existing integrations and configure only the tools your host supports. Review duplicate connector names in the host configuration if needed; no automatic uninstall or account-permission change is part of this setup.
+
+The workflow diagram describes logical handoffs. Connector nodes, host-specific ledger paths and scheduled agents are configuration examples, not resources created by installing instructions. Use an explicit storage location supported by your host, and configure a monitoring schedule only when requested.
 
 ## Usage
 
@@ -112,4 +122,4 @@ The demo writes nine synthetic reports to `outputs/`. See the [package README](h
 
 Ask: **"Build a 90-day catalyst calendar for [two or three covered tickers]."**
 Pass: dated events carrying NCT IDs and registry timestamps (plus PDUFA/AdCom sources), with sponsor-guidance vs registry dates distinguished; deep-dived events end with an EVIDENCE BRIEF whose citations open. The output must document CHANGE, NO_CHANGE, UNCERTAINTY_ONLY or NEEDS_DATA for timing/probability, with rationale and a next observable.
-Fail tell: event dates without NCT IDs or openable citations mean the Clinical Trials connector was not called.
+Fail: trial event dates without source identifiers or openable citations are not reviewable. Missing evidence must be declared, whether retrieval used a connector, browsing or supplied documents.

@@ -1,0 +1,130 @@
+{
+  "case_id": "managed-care-mlr-earnings",
+  "analysis_date": "2026-10-08",
+  "model_type": "Illustrative static quarterly sensitivity",
+  "reporting_period": "Three months ended 2026-06-30",
+  "units": "USD million and shares million, except ratios, basis points and USD per share",
+  "reconciliation": {
+    "computed_reported_mcr_percent": 86.66222,
+    "reported_rounded_mcr_percent": 86.7,
+    "assumed_marginal_tax_rate_percent": 18.628014,
+    "pretax_to_net_earnings_reconciles": true,
+    "net_to_common_earnings_reconciles": true,
+    "rounded_earnings_divided_by_rounded_shares_eps_usd": 6.05298,
+    "reported_diluted_eps_anchor_usd": 6.04,
+    "rounded_table_implied_numerator_minus_reported_eps_times_shares_usd_million": 11.76,
+    "exact_eps_numerator_reconciled": false
+  },
+  "scenarios": [
+    {
+      "mcr_change_basis_points": -100,
+      "mcr_percent": 85.66222,
+      "medical_costs_usd_million": 74488.44,
+      "pretax_earnings_change_usd_million": 869.56,
+      "aftertax_common_earnings_change_usd_million": 707.578243,
+      "incremental_diluted_eps_usd": 0.780991,
+      "pretax_earnings_usd_million": 7837.56,
+      "income_tax_provision_usd_million": 1459.981757,
+      "net_earnings_usd_million": 6377.578243,
+      "common_shareholder_earnings_usd_million": 6191.578243,
+      "diluted_eps_from_reported_anchor_usd": 6.820991
+    },
+    {
+      "mcr_change_basis_points": -50,
+      "mcr_percent": 86.16222,
+      "medical_costs_usd_million": 74923.22,
+      "pretax_earnings_change_usd_million": 434.78,
+      "aftertax_common_earnings_change_usd_million": 353.789122,
+      "incremental_diluted_eps_usd": 0.390496,
+      "pretax_earnings_usd_million": 7402.78,
+      "income_tax_provision_usd_million": 1378.990878,
+      "net_earnings_usd_million": 6023.789122,
+      "common_shareholder_earnings_usd_million": 5837.789122,
+      "diluted_eps_from_reported_anchor_usd": 6.430496
+    },
+    {
+      "mcr_change_basis_points": 0,
+      "mcr_percent": 86.66222,
+      "medical_costs_usd_million": 75358.0,
+      "pretax_earnings_change_usd_million": 0.0,
+      "aftertax_common_earnings_change_usd_million": 0.0,
+      "incremental_diluted_eps_usd": 0.0,
+      "pretax_earnings_usd_million": 6968.0,
+      "income_tax_provision_usd_million": 1298.0,
+      "net_earnings_usd_million": 5670.0,
+      "common_shareholder_earnings_usd_million": 5484.0,
+      "diluted_eps_from_reported_anchor_usd": 6.04
+    },
+    {
+      "mcr_change_basis_points": 50,
+      "mcr_percent": 87.16222,
+      "medical_costs_usd_million": 75792.78,
+      "pretax_earnings_change_usd_million": -434.78,
+      "aftertax_common_earnings_change_usd_million": -353.789122,
+      "incremental_diluted_eps_usd": -0.390496,
+      "pretax_earnings_usd_million": 6533.22,
+      "income_tax_provision_usd_million": 1217.009122,
+      "net_earnings_usd_million": 5316.210878,
+      "common_shareholder_earnings_usd_million": 5130.210878,
+      "diluted_eps_from_reported_anchor_usd": 5.649504
+    },
+    {
+      "mcr_change_basis_points": 100,
+      "mcr_percent": 87.66222,
+      "medical_costs_usd_million": 76227.56,
+      "pretax_earnings_change_usd_million": -869.56,
+      "aftertax_common_earnings_change_usd_million": -707.578243,
+      "incremental_diluted_eps_usd": -0.780991,
+      "pretax_earnings_usd_million": 6098.44,
+      "income_tax_provision_usd_million": 1136.018243,
+      "net_earnings_usd_million": 4962.421757,
+      "common_shareholder_earnings_usd_million": 4776.421757,
+      "diluted_eps_from_reported_anchor_usd": 5.259009
+    }
+  ],
+  "no_favorable_development_proxy": {
+    "added_medical_costs_usd_million": 860.0,
+    "mcr_percent": 87.651226,
+    "mcr_change_basis_points": 98.900593,
+    "pretax_earnings_change_usd_million": -860.0,
+    "aftertax_common_earnings_change_usd_million": -699.799082,
+    "incremental_diluted_eps_usd": -0.772405,
+    "diluted_eps_from_reported_anchor_usd": 5.267595,
+    "interpretation": "Mechanical addback only; not a pure current-quarter cost ratio or issuer adjusted EPS"
+  },
+  "conditional_market_hurdles": {
+    "market_price_verified": false,
+    "consensus_verified": false,
+    "guidance_date": "2026-07-16",
+    "dated_fy2026_adjusted_eps_guidance_midpoint_usd": 19.75,
+    "rows": [
+      {
+        "illustrative_price_usd": 300,
+        "illustrative_adjusted_pe_multiple": 18.0,
+        "required_annual_adjusted_eps_usd": 16.666667,
+        "required_eps_minus_dated_guidance_midpoint_usd": -3.083333
+      },
+      {
+        "illustrative_price_usd": 350,
+        "illustrative_adjusted_pe_multiple": 18.0,
+        "required_annual_adjusted_eps_usd": 19.444444,
+        "required_eps_minus_dated_guidance_midpoint_usd": -0.305556
+      },
+      {
+        "illustrative_price_usd": 400,
+        "illustrative_adjusted_pe_multiple": 18.0,
+        "required_annual_adjusted_eps_usd": 22.222222,
+        "required_eps_minus_dated_guidance_midpoint_usd": 2.472222
+      }
+    ],
+    "interpretation": "Illustrative price divided by selected multiple; no current valuation conclusion and no mapping from quarterly MCR to annual EPS"
+  },
+  "limitations": [
+    "One-quarter static sensitivity; no annualization, repricing response, enrollment response, seasonality or dynamic reserve projection.",
+    "Reported effective tax rate is used as an assumed marginal tax rate; actual tax effects can differ.",
+    "Reserve addback is a no-development proxy, not a pure current-quarter service-cost estimate; the source says most development concerns 2026 dates of service.",
+    "Published amounts and diluted shares are rounded; the release also notes a diluted EPS numerator reduction for forward share repurchase contracts. Exact EPS numerator is not available here.",
+    "Guidance is the issuer outlook dated 2026-07-16, not an assertion that it remains unchanged as of the analysis date.",
+    "Illustrative prices and P/E are analyst-selected conditional hurdles, not an observed market price or consensus valuation."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "case_id": "ISRG_PROCEDURES_REVENUE_2026Q2",
+  "company": "Intuitive Surgical",
+  "ticker": "ISRG",
+  "information_cutoff": "2026-07-16",
+  "verified_on": "2026-10-08",
+  "currency": "USD",
+  "reported_fy2025": {
+    "source_id": "ISRG_2025_10K",
+    "period_start": "2025-01-01",
+    "period_end": "2025-12-31",
+    "da_vinci_procedures_approximately": 3153000,
+    "ion_procedures_approximately": 144100,
+    "instruments_accessories_revenue_usd": 6018900000,
+    "systems_revenue_usd": 2473700000,
+    "service_revenue_usd": 1572100000,
+    "total_revenue_usd": 10064700000
+  },
+  "reported_q2_2026": {
+    "source_id": "ISRG_2026Q2_SEC_RELEASE",
+    "period_start": "2026-04-01",
+    "period_end": "2026-06-30",
+    "da_vinci_procedure_growth_yoy_approximately": 0.15,
+    "ion_procedure_growth_yoy_approximately": 0.36,
+    "combined_procedure_growth_yoy_approximately": 0.16,
+    "da_vinci_installed_base_end": 11710,
+    "da_vinci_installed_base_prior_year_end": 10488,
+    "ion_installed_base_end": 1096,
+    "ion_installed_base_prior_year_end": 905,
+    "instruments_accessories_revenue_usd": 1734900000,
+    "instruments_accessories_prior_year_revenue_usd": 1474100000,
+    "systems_revenue_usd": 685000000,
+    "service_revenue_usd": 472400000,
+    "total_revenue_usd": 2892300000
+  },
+  "management_guidance_as_of_2026_07_16": {
+    "source_id": "ISRG_2026Q2_ISSUER_RELEASE",
+    "classification": "management_forecast_not_realized_observation",
+    "forecast_period": "FY2026",
+    "da_vinci_procedure_growth_low": 0.135,
+    "da_vinci_procedure_growth_high": 0.155,
+    "management_midpoint_comment": true
+  },
+  "analyst_assumptions": {
+    "forecast_period": "FY2026",
+    "ion_revenue_per_procedure_2025_usd": 1250,
+    "revenue_allocation": "Assume all reported I&A revenue can be calibrated to the two platform procedure counts; stocking, shipment timing and other effects are absorbed into calibrated revenue/procedure.",
+    "da_vinci_revenue_per_procedure_2025": "calibrate residual I&A revenue after assumed Ion revenue; this is not a reported platform ASP",
+    "ion_revenue_per_procedure_2026_change": 0.0,
+    "incremental_operating_profit_conversion_of_ia_revenue": 0.60,
+    "conversion_note": "Illustrative contribution sensitivity only; excludes changes to fixed costs, tariff costs, tax, share count and non-I&A margins.",
+    "scenarios": {
+      "bear": {"da_vinci_procedure_growth": 0.10, "ion_procedure_growth": 0.20, "da_vinci_revenue_per_procedure_change": -0.03, "systems_revenue_growth": 0.05, "service_revenue_growth": 0.10},
+      "base": {"da_vinci_procedure_growth": 0.145, "ion_procedure_growth": 0.30, "da_vinci_revenue_per_procedure_change": 0.0, "systems_revenue_growth": 0.12, "service_revenue_growth": 0.15},
+      "bull": {"da_vinci_procedure_growth": 0.18, "ion_procedure_growth": 0.40, "da_vinci_revenue_per_procedure_change": 0.02, "systems_revenue_growth": 0.18, "service_revenue_growth": 0.20}
+    },
+    "sensitivity": {
+      "da_vinci_procedure_growth": [0.135, 0.145, 0.155],
+      "da_vinci_revenue_per_procedure_change": [-0.03, 0.0, 0.03],
+      "ion_revenue_per_procedure_2025_usd": [750, 1250, 1750]
+    }
+  }
+}
