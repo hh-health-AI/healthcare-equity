@@ -4,9 +4,19 @@
 
 Ask a medical question, compare a trial with its press release, audit citations, monitor a watchlist, or build an explicit biotech valuation. Keep the sources, assumptions, coverage limits and calculations available for review.
 
-[Quickstart](#quickstart) · [Nine projects](#nine-projects) · [Example outputs](examples/outputs/) · [MCP integration](docs/mcp.md) · [Validation](docs/validation.md)
+[Quickstart](#quickstart) · [Nine projects](#nine-projects) · [Research cases](../examples/research-cases/README.md) · [Example outputs](examples/outputs/) · [Semantic evaluation](evaluation/semantic/README.md) · [Validation](docs/validation.md)
 
 **Status: v0.1.0 research preview.** The Python utilities run data retrieval, comparisons, validation and calculations. The skills and agent workflows use your AI host for reading, appraisal and interpretation. No model provider is called by the Python package; no background jobs are activated by installation.
+
+## Choose an installation route
+
+| Route | Includes | Go to |
+|---|---|---|
+| Portable skills | Nine biomedical instruction workflows; host discovery and tools are configured separately | [Use the skills with your AI host](#use-the-skills-with-your-ai-host) |
+| Python CLI and optional local MCP | Public-data clients, deterministic utilities and 13 optional local stdio tools | [Quickstart](#quickstart) and [MCP configuration](docs/mcp.md) |
+| Workspace plugin | Thirteen adapted skills spanning biomedical workflows and healthcare investment research; no bundled Python runtime or data connections | [GitHub marketplace guide](../plugins/README.md) |
+
+The workspace plugin is maintained as a separate adaptation. GitHub sync can distribute committed package files after import; it does not automatically turn changes here into new packaged skills.
 
 ## See what it does
 
@@ -149,9 +159,11 @@ This suite lives alongside the existing [healthcare-equity platform](../README.m
 - rNPV probabilities and forecasts are assumptions, not validated clinical-success predictions.
 - Journal Club exports Markdown, not a PPTX file.
 
-The design supports inspectable research. **Independent clinical validation, universal host compatibility and investment performance are not claimed.** See [validation](docs/validation.md) for the exact checks performed.
+The design supports inspectable research. **Independent clinical validation, universal host compatibility and investment performance are not claimed.** See the [validation record](docs/validation.md), [structural evaluation](evaluation/README.md) and [semantic evaluation](evaluation/semantic/README.md) for their distinct checks and limits. The [research cases](../examples/research-cases/README.md) illustrate how evidence reaches an assumption or remains unresolved.
 
 ## Develop and contribute
+
+The repository-wide entry point is [scripts/validate_repository.py](../scripts/validate_repository.py), run from the repository root as `python3 scripts/validate_repository.py`. For suite-specific checks, run from this directory:
 
 ```bash
 python -m pip install '.[dev,mcp]'

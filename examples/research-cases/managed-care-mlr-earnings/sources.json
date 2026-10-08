@@ -1,0 +1,46 @@
+{
+  "case_id": "managed-care-mlr-earnings",
+  "retrieved_at": "2026-10-08",
+  "verified_scope": "Selected UnitedHealth Q2 2026 release facts and arithmetic reconciliations only",
+  "sources": [
+    {
+      "id": "UNH-Q2-2026",
+      "title": "UnitedHealth Group Reports Second Quarter 2026 Results",
+      "publisher": "UnitedHealth Group",
+      "source_type": "Primary issuer earnings release, unaudited financial tables",
+      "url": "https://www.unitedhealthgroup.com/content/dam/UHG/PDF/investors/2026/unh-reports-second-quarter-2026-results.pdf",
+      "published_at": "2026-07-16",
+      "retrieved_at": "2026-10-08",
+      "retrieval_method": "Opened live primary PDF with web retrieval; financial rows read from the extracted document",
+      "pages": 17,
+      "page_number_convention": "One-based physical PDF pages; the statements-of-operations table is page 10",
+      "reporting_period": "Three months ended June 30, 2026 unless explicitly labeled full-year guidance",
+      "financial_table_units": "USD millions and shares millions, except percentages and per-share data"
+    }
+  ],
+  "statements": [
+    {"id": "UNH-Q2-2026-01", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, Condensed Consolidated Statements of Operations, Premiums row, three months ended June 30, 2026 column", "value": 86956, "unit": "USD million", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-02", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, Condensed Consolidated Statements of Operations, Medical costs row, Q2 2026 column", "value": 75358, "unit": "USD million", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-03", "source_id": "UNH-Q2-2026", "locator": "PDF p.1, Second Quarter 2026 Key Performance Metrics, medical care ratio bullet; also p.3, UnitedHealth Group Financial Performance, third bullet", "value": 86.7, "unit": "percent", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-04", "source_id": "UNH-Q2-2026", "locator": "PDF p.1, medical care ratio bullet; p.3, Financial Performance, third bullet", "value": 860, "unit": "USD million net favorable development", "status": "VERIFIED_SCOPE_ONLY", "qualification": "The majority relates to 2026 dates of service; do not label all of this prior-year development."},
+    {"id": "UNH-Q2-2026-05", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Earnings before income taxes row, Q2 2026 column", "value": 6968, "unit": "USD million", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-06", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Provision for income taxes row, Q2 2026 column", "value": 1298, "unit": "USD million expense magnitude", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-07", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Net earnings row, Q2 2026 column", "value": 5670, "unit": "USD million", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-08", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Earnings attributable to noncontrolling interests row, Q2 2026 column", "value": 186, "unit": "USD million deduction magnitude", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-09", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Net earnings attributable to common shareholders row, Q2 2026 column", "value": 5484, "unit": "USD million", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-10", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Diluted weighted-average common shares outstanding row, Q2 2026 column", "value": 906, "unit": "million shares", "status": "VERIFIED_SCOPE_ONLY"},
+    {"id": "UNH-Q2-2026-11", "source_id": "UNH-Q2-2026", "locator": "PDF p.10, statements of operations, Diluted earnings per share row and footnote (a), Q2 2026 column", "value": 6.04, "unit": "USD per diluted share", "status": "VERIFIED_SCOPE_ONLY", "qualification": "Footnote (a) identifies an immaterial numerator reduction for forward share repurchase contracts; the published rounded earnings and shares do not reproduce the exact EPS."},
+    {"id": "UNH-FY-2026-01", "source_id": "UNH-Q2-2026", "locator": "PDF p.6, UnitedHealth Group 2026 Outlook table, Adjusted Earnings per Share row, As of July 16, 2026 column", "value": [19.5, 20.0], "unit": "USD per diluted share full-year adjusted guidance", "status": "VERIFIED_SCOPE_ONLY", "qualification": "Dated guidance; not verified as the latest outlook on 2026-10-08."}
+  ],
+  "reconciliations": [
+    {"check": "medical_costs / consolidated_premiums", "expected": "86.662220 percent, rounds to reported 86.7 percent", "scope": "Matching consolidated costs and premium revenue; neither total consolidated revenue nor segment revenue is the denominator."},
+    {"check": "pretax_earnings - income_tax_provision = net_earnings", "expected": "6968 - 1298 = 5670 USD million"},
+    {"check": "net_earnings - noncontrolling_earnings = common_shareholder_earnings", "expected": "5670 - 186 = 5484 USD million"},
+    {"check": "common_shareholder_earnings / rounded_diluted_shares versus reported EPS", "expected": "5484 / 906 = 6.052980 USD versus reported 6.04 USD", "resolution": "Do not claim exact numerator reconciliation. Anchor scenario EPS to reported 6.04 and apply incremental earnings per rounded 906m shares; footnote (a) and rounded figures limit precision."}
+  ],
+  "review": {
+    "method": "Primary-document inspection and deterministic arithmetic checks",
+    "human_independent_review": false,
+    "cross_document_financial_audit": false
+  }
+}

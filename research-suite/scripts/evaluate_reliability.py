@@ -33,7 +33,16 @@ def evaluate():
     probe['claims'] = [{'id': 'FALSE', 'text': 'The treatment reduced mortality by 90% and proved a survival benefit.', 'verdict': 'supported', 'source_ids': ['S1'], 'rationale': 'Deliberately wrong researcher judgment for a boundary test.'}]
     # Expected to pass schema validation despite an unsupported substantive assertion.
     evidence.validate(probe)
-    return {'benchmark_version': 1, 'dataset': 'Small author-designed synthetic regression set; not held out or independently adjudicated', 'groups': groups, 'trial_field_exact_match': {'passed': sum(checks.values()), 'total': len(checks), 'fields': checks}, 'claim_entailment_probe': {'false_claims': 1, 'accepted_by_structural_validator': 1, 'interpretation': 'Known limitation: citation presence and valid schema do not establish claim support. Semantic accuracy is NOT MEASURED.'}, 'live_endpoint_accuracy': 'NOT_MEASURED', 'clinical_accuracy': 'NOT_MEASURED'}
+    return {'benchmark_version': 1, 'dataset': 'Small author-designed synthetic regression set; not held out or independently adjudicated', 'groups': groups, 'trial_field_exact_match': {'passed': sum(checks.values()), 'total': len(checks), 'fields': checks}, 'claim_entailment_probe': {'false_claims': 1, 'accepted_by_structural_validator': 1, 'interpretation': 'Known limitation: citation presence and valid schema do not establish claim support. Semantic accuracy is NOT MEASURED.'}, 'live_endpoint_accuracy': 'NOT_MEASURED', 'clinical_accuracy': 'NOT_MEASURED',
+            'semantic_development_set': {
+                'record': 'semantic/review.json',
+                'instructions': 'semantic/README.md',
+                'measurement': 'Separate assistant agreement on 24 author-paraphrased primary-source claims; original 27 structural regressions remain unchanged',
+                'source_original_document_entailment': 'NOT_MEASURED',
+                'deployed_system_accuracy': 'NOT_MEASURED',
+                'independent_human_clinical_adjudication': 'NOT_PERFORMED',
+                'exact_model_revision': 'UNAVAILABLE',
+            }}
 
 
 if __name__ == '__main__':

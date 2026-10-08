@@ -1,0 +1,49 @@
+{
+  "verification_date": "2026-10-08",
+  "verification_method": "Opened exact primary documents using web retrieval and checked the identified tables and sections. No company KPI was taken from third-party commentary.",
+  "sources": [
+    {
+      "id": "ISRG_2025_10K",
+      "title": "Intuitive Surgical FY2025 Form 10-K",
+      "publisher": "Intuitive Surgical",
+      "document_date": "2026-02-03",
+      "url": "https://isrg.intuitive.com/static-files/f684d492-5169-48b5-9723-8ebcaa05c098",
+      "locators": [
+        {"printed_page": 68, "section": "2025 Operational and Financial Highlights", "fields": ["FY2025 da Vinci procedures", "FY2025 Ion procedures"]},
+        {"printed_page": 76, "section": "Results of Operations; revenue table, amounts in millions; 2025 column", "fields": ["I&A revenue", "systems revenue", "service revenue", "total revenue"]}
+      ],
+      "unit_conversion": "Revenue table USD millions multiplied by 1,000,000; procedure counts are approximate whole procedures.",
+      "scope": "Annual 2025 consolidated revenue and platform-specific annual procedure counts only. Platform revenue allocation is not supplied by this table."
+    },
+    {
+      "id": "ISRG_2026Q2_SEC_RELEASE",
+      "title": "Intuitive Announces Second Quarter Earnings; Form 8-K Exhibit 99.1",
+      "publisher": "Intuitive Surgical / SEC EDGAR",
+      "document_date": "2026-07-16",
+      "url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000047/q226ex-991earningsrelease.htm",
+      "locators": [
+        {"section": "Q2 Highlights", "position": "first procedure-growth bullet and installed-base bullet", "fields": ["combined procedure growth", "da Vinci procedure growth", "Ion procedure growth", "ending installed bases", "prior-year ending installed bases"]},
+        {"section": "Unaudited Quarterly Condensed Consolidated Statements of Income", "position": "Revenue rows; June 30, 2026 and June 30, 2025 columns", "fields": ["I&A", "systems", "services", "total revenue"]}
+      ],
+      "unit_conversion": "Revenue table USD millions multiplied by 1,000,000; Q2 is three months, not six months.",
+      "scope": "Q2 2026 reported historical KPIs; ending installed base cannot establish utilization per average active system."
+    },
+    {
+      "id": "ISRG_2026Q2_ISSUER_RELEASE",
+      "title": "Intuitive Announces Second Quarter Earnings",
+      "publisher": "Intuitive Surgical",
+      "document_date": "2026-07-16",
+      "url": "https://investor.intuitivesurgical.com/news-releases/news-release-details/intuitive-announces-second-quarter-earnings-6",
+      "locators": [
+        {"section": "2026 Financial Outlook", "position": "first bullet", "fields": ["FY2026 worldwide da Vinci procedure growth guidance", "midpoint commentary"]}
+      ],
+      "scope": "Management guidance as of release date, not realized growth or consensus. Issuer release matches SEC release for checked Q2 revenue and installed-base values; these are copies of the same release, not independent corroboration."
+    }
+  ],
+  "audit_reopening": [
+    "Restatement or amended filing changes a used number.",
+    "New period replaces the declared information cutoff.",
+    "Platform-level revenue disclosure changes the assumed allocation.",
+    "Average active installed-base data becomes available for a matching period and platform."
+  ]
+}

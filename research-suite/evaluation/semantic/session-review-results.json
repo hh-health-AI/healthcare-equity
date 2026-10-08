@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "scored_at": "2026-10-08T10:20:47.926235+00:00",
+  "benchmark_id": "hh-healthcare-passage-entailment-v1",
+  "corpus_sha256": "f8aeeff09af5bfd883919b0558f5505f8f3e6843ed5b871afb56bc2482a3c456",
+  "answer_key_sha256": "67fa894688c3d18a73b96d3f771ec8d5adafec60fa2af12291fc50e0b3f9745a",
+  "prediction_sha256": "c1ad1837f21250f891897e29f9136304de224dfd2be4c653deef2657107afa94",
+  "run": {
+    "run_id": "session-review-2026-10-08",
+    "benchmark_id": "hh-healthcare-passage-entailment-v1",
+    "evaluation_kind": "session_ai_review",
+    "system_name": "ChatGPT Work Codex session assistant",
+    "system_version": "2026-10-08 development session",
+    "provider": "OpenAI",
+    "model_id": "Session assistant; exact model revision unavailable",
+    "prompt_version": "v1",
+    "prompt_sha256": "04f93caf2da792527c1900a7c49c9eb453bedb739f43c9a14503172ef2bd839b",
+    "corpus_sha256": "f8aeeff09af5bfd883919b0558f5505f8f3e6843ed5b871afb56bc2482a3c456",
+    "generated_at": "2026-10-08T10:18:33.584905+00:00",
+    "generation_method": "Separate assistant passage-only assessment manually archived before viewing the answer key. No external API invocation; no human expert adjudication; shared development-session context, not held-out performance.",
+    "answer_key_accessed": false,
+    "prompt_archive": "session-review-prompt.md",
+    "response_archive": "session-review-response.json"
+  },
+  "measurement_interpretation": "Separate-session assistant label review on a public author-designed set; no independent human clinical adjudication, exact model-revision assurance or deployed-system accuracy claim",
+  "scope": "Passage-level entailment on a small public development set; no end-to-end retrieval, clinical validation, investment performance or held-out generalization claim",
+  "run_provenance": "Generation metadata and answer-key isolation are submitter declarations, not independently verified by this scorer",
+  "metrics": {
+    "total": 24,
+    "correct": 24,
+    "accuracy": 1.0,
+    "abstained": 0,
+    "abstention_rate": 0.0,
+    "coverage": 1.0,
+    "selective_accuracy": 1.0,
+    "false_support_count": 0,
+    "false_support_rate": 0.0,
+    "per_class": {
+      "supported": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_count": 8,
+        "predicted_count": 8
+      },
+      "contradicted": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_count": 8,
+        "predicted_count": 8
+      },
+      "insufficient": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "true_count": 8,
+        "predicted_count": 8
+      }
+    }
+  },
+  "confusion": {
+    "supported": {
+      "supported": 8,
+      "contradicted": 0,
+      "insufficient": 0,
+      "abstain": 0
+    },
+    "contradicted": {
+      "supported": 0,
+      "contradicted": 8,
+      "insufficient": 0,
+      "abstain": 0
+    },
+    "insufficient": {
+      "supported": 0,
+      "contradicted": 0,
+      "insufficient": 8,
+      "abstain": 0
+    }
+  },
+  "by_domain": {
+    "financial": {
+      "total": 6,
+      "correct": 6,
+      "abstained": 0,
+      "accuracy": 1.0
+    },
+    "publication": {
+      "total": 6,
+      "correct": 6,
+      "abstained": 0,
+      "accuracy": 1.0
+    },
+    "registry": {
+      "total": 6,
+      "correct": 6,
+      "abstained": 0,
+      "accuracy": 1.0
+    },
+    "regulatory": {
+      "total": 6,
+      "correct": 6,
+      "abstained": 0,
+      "accuracy": 1.0
+    }
+  },
+  "errors": [],
+  "archive_verification": {
+    "status": "local_archive_integrity_checked",
+    "prompt_sha256": "04f93caf2da792527c1900a7c49c9eb453bedb739f43c9a14503172ef2bd839b",
+    "response_sha256": "956e0113cd4e9fbb9474e74ecfa2412be1dbf0172644cee16c866866eaab16f7",
+    "scope": "Task prompt and submitted response only; no model execution, answer-key isolation or full-session reconstruction assurance"
+  }
+}

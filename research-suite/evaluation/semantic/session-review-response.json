@@ -1,0 +1,141 @@
+{
+  "run": {
+    "run_id": "session-review-2026-10-08",
+    "benchmark_id": "hh-healthcare-passage-entailment-v1",
+    "evaluation_kind": "session_ai_review",
+    "system_name": "ChatGPT Work Codex session assistant",
+    "system_version": "2026-10-08 development session",
+    "provider": "OpenAI",
+    "model_id": "Session assistant; exact model revision unavailable",
+    "prompt_version": "v1",
+    "prompt_sha256": "04f93caf2da792527c1900a7c49c9eb453bedb739f43c9a14503172ef2bd839b",
+    "corpus_sha256": "f8aeeff09af5bfd883919b0558f5505f8f3e6843ed5b871afb56bc2482a3c456",
+    "generated_at": "2026-10-08T10:18:33.584905+00:00",
+    "generation_method": "Separate assistant passage-only assessment manually archived before viewing the answer key. No external API invocation; no human expert adjudication; shared development-session context, not held-out performance.",
+    "answer_key_accessed": false,
+    "prompt_archive": "session-review-prompt.md",
+    "response_archive": "session-review-response.json"
+  },
+  "predictions": [
+    {
+      "id": "REG-01",
+      "label": "supported",
+      "rationale": "The actual enrollment field is explicitly 1,062."
+    },
+    {
+      "id": "REG-02",
+      "label": "contradicted",
+      "rationale": "572 is the initial projection; the actual field is 1,062."
+    },
+    {
+      "id": "REG-03",
+      "label": "supported",
+      "rationale": "Randomized allocation and masking of both named groups are explicit."
+    },
+    {
+      "id": "REG-04",
+      "label": "contradicted",
+      "rationale": "Double masking conflicts with the open-label claim."
+    },
+    {
+      "id": "REG-05",
+      "label": "insufficient",
+      "rationale": "Primary completion does not supply a sponsor publication date."
+    },
+    {
+      "id": "REG-06",
+      "label": "insufficient",
+      "rationale": "Design information contains no mortality results."
+    },
+    {
+      "id": "PUB-01",
+      "label": "supported",
+      "rationale": "The reported medians differ by 15 minus 10, or five days."
+    },
+    {
+      "id": "PUB-02",
+      "label": "contradicted",
+      "rationale": "The claim reverses the treatment and placebo medians."
+    },
+    {
+      "id": "PUB-03",
+      "label": "supported",
+      "rationale": "HR is below one and the interval extends above one."
+    },
+    {
+      "id": "PUB-04",
+      "label": "contradicted",
+      "rationale": "The interval 0.52 to 1.03 includes the null value one."
+    },
+    {
+      "id": "PUB-05",
+      "label": "insufficient",
+      "rationale": "An adult inpatient study does not establish efficacy in children at home."
+    },
+    {
+      "id": "PUB-06",
+      "label": "insufficient",
+      "rationale": "Recovery medians contain no one-year long-COVID outcome."
+    },
+    {
+      "id": "FDA-01",
+      "label": "supported",
+      "rationale": "Age 12 and weight 40 kg meet both stated original thresholds."
+    },
+    {
+      "id": "FDA-02",
+      "label": "contradicted",
+      "rationale": "The broader pediatric group had EUA coverage, not the stated full approval."
+    },
+    {
+      "id": "FDA-03",
+      "label": "supported",
+      "rationale": "A healthcare setting with inpatient-equivalent acute care is expressly included."
+    },
+    {
+      "id": "FDA-04",
+      "label": "contradicted",
+      "rationale": "The announcement imposes an acute-care capability requirement."
+    },
+    {
+      "id": "FDA-05",
+      "label": "insufficient",
+      "rationale": "A dated 2020 announcement cannot establish an unchanged 2026 label."
+    },
+    {
+      "id": "FDA-06",
+      "label": "insufficient",
+      "rationale": "The passage records FDA action, with no EMA action."
+    },
+    {
+      "id": "FIN-01",
+      "label": "supported",
+      "rationale": "75,128 thousand USD equals 75.128 million USD."
+    },
+    {
+      "id": "FIN-02",
+      "label": "contradicted",
+      "rationale": "The amount is a net loss, not net profit."
+    },
+    {
+      "id": "FIN-03",
+      "label": "supported",
+      "rationale": "128,513 plus 405,313 equals 533,826 thousand USD."
+    },
+    {
+      "id": "FIN-04",
+      "label": "contradicted",
+      "rationale": "533.826 million includes securities; cash alone is 128.513 million."
+    },
+    {
+      "id": "FIN-05",
+      "label": "insufficient",
+      "rationale": "A balance without future spend and financing assumptions does not establish runway."
+    },
+    {
+      "id": "FIN-06",
+      "label": "insufficient",
+      "rationale": "Historical 2025 results contain no 2026 revenue guarantee."
+    }
+  ]
+}

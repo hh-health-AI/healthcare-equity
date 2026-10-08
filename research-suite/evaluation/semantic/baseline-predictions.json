@@ -1,0 +1,139 @@
+{
+  "run": {
+    "run_id": "all-abstain-v1",
+    "benchmark_id": "hh-healthcare-passage-entailment-v1",
+    "evaluation_kind": "deterministic_baseline",
+    "system_name": "Always abstain baseline",
+    "system_version": "1",
+    "provider": "NONE",
+    "model_id": "NONE",
+    "prompt_version": "passage-entailment-v1 (not executed by a model)",
+    "prompt_sha256": "25ed65d368e188a292b81cb67d06dc3358f684223e028a4cc4516f8cce425cc1",
+    "corpus_sha256": "f8aeeff09af5bfd883919b0558f5505f8f3e6843ed5b871afb56bc2482a3c456",
+    "generated_at": "2026-10-08T10:17:07.657341+00:00",
+    "generation_method": "Deterministic construction of abstain for every corpus item without reading answer-key labels",
+    "answer_key_accessed": false
+  },
+  "predictions": [
+    {
+      "id": "REG-01",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "REG-02",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "REG-03",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "REG-04",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "REG-05",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "REG-06",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "PUB-01",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "PUB-02",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "PUB-03",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "PUB-04",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "PUB-05",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "PUB-06",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FDA-01",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FDA-02",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FDA-03",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FDA-04",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FDA-05",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FDA-06",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FIN-01",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FIN-02",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FIN-03",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FIN-04",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FIN-05",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    },
+    {
+      "id": "FIN-06",
+      "label": "abstain",
+      "rationale": "Non-AI smoke baseline deliberately makes no semantic assessment."
+    }
+  ]
+}

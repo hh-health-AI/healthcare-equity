@@ -18,8 +18,8 @@ python -m pip install '.[mcp]'
 hh-healthcare-mcp
 ```
 
-This is stdio transport, not a hosted URL or an HTTP listener. No server is deployed or registered by the private workflow plugin. Host-specific connection steps require the actual target client's current documentation and a verified runtime. A running local process is not evidence of a successful ChatGPT connection.
+This is stdio transport, not a hosted URL or an HTTP listener. No server is deployed or registered by the skills-only workflow plugin. Host-specific connection steps require the actual target client's current documentation and a verified runtime. A running local process is not evidence of a successful ChatGPT connection.
 
 The reviewed upstream README describes thirteen read-only data/analytical MCP tools and Python utilities for evidence packets, trial/claim comparisons, literature worklists, fixed-watchlist diffs, rNPV calculations, conference briefs and Markdown journal clubs. None of these executable tools is copied into this archive. The Python package does not call an LLM to determine clinical truth. Synthetic demos are formatting/calculation examples, not clinical evidence.
 
-Source: https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/README.md (reviewed 2026-10-04). Optional keys belong in the user's secure environment, never in plugin files, prompts or committed source. Local setup, live API behavior and end-to-end host connectivity were not tested as part of this skills-only package.
+Source: https://github.com/hh-health-AI/healthcare-equity/blob/main/research-suite/README.md (reviewed 2026-10-04). The separate runtime documents `HH_CONTACT`, `NCBI_API_KEY` and `OPENFDA_API_KEY`. Keep source-required contact identity and optional keys in the user's secure environment, never in plugin files, prompts or committed source. Local setup, live API behavior and end-to-end host connectivity were not tested as part of this skills-only package.

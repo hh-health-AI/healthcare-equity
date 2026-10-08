@@ -1,0 +1,375 @@
+{
+  "schema_version": 1,
+  "scored_at": "2026-10-08T10:20:47.958783+00:00",
+  "benchmark_id": "hh-healthcare-passage-entailment-v1",
+  "corpus_sha256": "f8aeeff09af5bfd883919b0558f5505f8f3e6843ed5b871afb56bc2482a3c456",
+  "answer_key_sha256": "67fa894688c3d18a73b96d3f771ec8d5adafec60fa2af12291fc50e0b3f9745a",
+  "prediction_sha256": "769d091a30cb0db8338fba0739817ff7b3fa3ac7b8a60223dbe61b097119729d",
+  "run": {
+    "run_id": "all-abstain-v1",
+    "benchmark_id": "hh-healthcare-passage-entailment-v1",
+    "evaluation_kind": "deterministic_baseline",
+    "system_name": "Always abstain baseline",
+    "system_version": "1",
+    "provider": "NONE",
+    "model_id": "NONE",
+    "prompt_version": "passage-entailment-v1 (not executed by a model)",
+    "prompt_sha256": "25ed65d368e188a292b81cb67d06dc3358f684223e028a4cc4516f8cce425cc1",
+    "corpus_sha256": "f8aeeff09af5bfd883919b0558f5505f8f3e6843ed5b871afb56bc2482a3c456",
+    "generated_at": "2026-10-08T10:17:07.657341+00:00",
+    "generation_method": "Deterministic construction of abstain for every corpus item without reading answer-key labels",
+    "answer_key_accessed": false
+  },
+  "measurement_interpretation": "Non-AI scorer smoke test; not semantic model performance",
+  "scope": "Passage-level entailment on a small public development set; no end-to-end retrieval, clinical validation, investment performance or held-out generalization claim",
+  "run_provenance": "Generation metadata and answer-key isolation are submitter declarations, not independently verified by this scorer",
+  "metrics": {
+    "total": 24,
+    "correct": 0,
+    "accuracy": 0.0,
+    "abstained": 24,
+    "abstention_rate": 1.0,
+    "coverage": 0.0,
+    "selective_accuracy": null,
+    "false_support_count": 0,
+    "false_support_rate": 0.0,
+    "per_class": {
+      "supported": {
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_count": 8,
+        "predicted_count": 0
+      },
+      "contradicted": {
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_count": 8,
+        "predicted_count": 0
+      },
+      "insufficient": {
+        "precision": null,
+        "recall": 0.0,
+        "f1": 0.0,
+        "true_count": 8,
+        "predicted_count": 0
+      }
+    }
+  },
+  "confusion": {
+    "supported": {
+      "supported": 0,
+      "contradicted": 0,
+      "insufficient": 0,
+      "abstain": 8
+    },
+    "contradicted": {
+      "supported": 0,
+      "contradicted": 0,
+      "insufficient": 0,
+      "abstain": 8
+    },
+    "insufficient": {
+      "supported": 0,
+      "contradicted": 0,
+      "insufficient": 0,
+      "abstain": 8
+    }
+  },
+  "by_domain": {
+    "financial": {
+      "total": 6,
+      "correct": 0,
+      "abstained": 6,
+      "accuracy": 0.0
+    },
+    "publication": {
+      "total": 6,
+      "correct": 0,
+      "abstained": 6,
+      "accuracy": 0.0
+    },
+    "registry": {
+      "total": 6,
+      "correct": 0,
+      "abstained": 6,
+      "accuracy": 0.0
+    },
+    "regulatory": {
+      "total": 6,
+      "correct": 0,
+      "abstained": 6,
+      "accuracy": 0.0
+    }
+  },
+  "errors": [
+    {
+      "id": "REG-01",
+      "domain": "registry",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "The registry reports 1,062 as the actual enrollment.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The structured enrollment field is explicitly actual; the older narrative number is a projection.",
+      "source_id": "CTG-ACTT1",
+      "locator": "protocolSection.designModule.enrollmentInfo"
+    },
+    {
+      "id": "REG-02",
+      "domain": "registry",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "ACTT-1 enrolled exactly 572 participants according to its actual-enrollment field.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "572 is the initial projection, whereas the actual-enrollment field is 1,062.",
+      "source_id": "CTG-ACTT1",
+      "locator": "protocolSection.designModule.enrollmentInfo; descriptionModule.detailedDescription"
+    },
+    {
+      "id": "REG-03",
+      "domain": "registry",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "ACTT-1 used randomized allocation and masked both participants and investigators.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "Both allocation and the listed masked roles support the claim.",
+      "source_id": "CTG-ACTT1",
+      "locator": "protocolSection.designModule.designInfo"
+    },
+    {
+      "id": "REG-04",
+      "domain": "registry",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "The registry describes ACTT-1 as an open-label trial.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "Double masking with masked participant and investigator roles contradicts open-label design.",
+      "source_id": "CTG-ACTT1",
+      "locator": "protocolSection.designModule.designInfo"
+    },
+    {
+      "id": "REG-05",
+      "domain": "registry",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "The sponsor publicly released the final ACTT-1 results on 21 May 2020.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "Completion of primary-outcome collection does not identify when final results were publicly disclosed.",
+      "source_id": "CTG-ACTT1",
+      "locator": "protocolSection.statusModule.primaryCompletionDateStruct"
+    },
+    {
+      "id": "REG-06",
+      "domain": "registry",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "Remdesivir reduced 29-day mortality by a statistically significant amount.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "A trial-design passage provides no mortality outcomes or statistical uncertainty.",
+      "source_id": "CTG-ACTT1",
+      "locator": "protocolSection.designModule.designInfo"
+    },
+    {
+      "id": "PUB-01",
+      "domain": "publication",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "Median recovery was five days shorter with remdesivir than with placebo.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "Subtracting the comparator medians, 15 minus 10, yields five days.",
+      "source_id": "PMID-32445440",
+      "locator": "MedlineCitation/Article/Abstract/AbstractText[@Label=\"RESULTS\"]"
+    },
+    {
+      "id": "PUB-02",
+      "domain": "publication",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "Placebo patients recovered in a median 10 days and remdesivir patients in 15.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The claim reverses the treatment and comparator medians.",
+      "source_id": "PMID-32445440",
+      "locator": "MedlineCitation/Article/Abstract/AbstractText[@Label=\"RESULTS\"]"
+    },
+    {
+      "id": "PUB-03",
+      "domain": "publication",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "The mortality hazard-ratio point estimate favored remdesivir, but its 95% interval included 1.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The point estimate is below the null of one and the stated interval spans one.",
+      "source_id": "PMID-32445440",
+      "locator": "MedlineCitation/Article/Abstract/AbstractText[@Label=\"RESULTS\"]"
+    },
+    {
+      "id": "PUB-04",
+      "domain": "publication",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "The reported mortality interval excluded 1, establishing conventional two-sided 5% statistical significance.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The upper confidence limit is 1.03, so the interval includes the null of one.",
+      "source_id": "PMID-32445440",
+      "locator": "MedlineCitation/Article/Abstract/AbstractText[@Label=\"RESULTS\"]"
+    },
+    {
+      "id": "PUB-05",
+      "domain": "publication",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "These data establish efficacy for children receiving remdesivir at home.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The passage does not provide outcomes in children or a home-treatment population; absence of evidence is not evidence of inefficacy.",
+      "source_id": "PMID-32445440",
+      "locator": "MedlineCitation/Article/Abstract/AbstractText[@Label=\"METHODS\"]"
+    },
+    {
+      "id": "PUB-06",
+      "domain": "publication",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "The trial established a statistically significant reduction in long-COVID symptoms at one year.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "Short-term recovery medians and their P value cannot establish a different endpoint at one year.",
+      "source_id": "PMID-32445440",
+      "locator": "MedlineCitation/Article/Abstract/AbstractText[@Label=\"RESULTS\"]"
+    },
+    {
+      "id": "FDA-01",
+      "domain": "regulatory",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "The original announced approval covered a hospitalized 12-year-old weighing 40 kg.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The age and weight meet both stated inclusive thresholds, and the patient is hospitalized.",
+      "source_id": "FDA-20201022",
+      "locator": "Opening paragraph, FDA news release dated 2020-10-22"
+    },
+    {
+      "id": "FDA-02",
+      "domain": "regulatory",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "FDA granted full approval in October 2020 for every hospitalized child weighing at least 3.5 kg.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The broader pediatric population was separately authorized under EUA, not included in the announced full approval.",
+      "source_id": "FDA-20201022",
+      "locator": "Opening paragraph and pediatric EUA paragraph"
+    },
+    {
+      "id": "FDA-03",
+      "domain": "regulatory",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "The announcement permitted administration in an acute-care-equivalent healthcare setting outside a hospital.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The setting restriction expressly allows another healthcare setting with comparable acute-care capability.",
+      "source_id": "FDA-20201022",
+      "locator": "Opening paragraph, administration-setting sentence"
+    },
+    {
+      "id": "FDA-04",
+      "domain": "regulatory",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "The October 2020 announcement allowed administration in any setting, with no acute-care capability requirement.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The passage imposes a specific acute-care-equivalence restriction.",
+      "source_id": "FDA-20201022",
+      "locator": "Opening paragraph, administration-setting sentence"
+    },
+    {
+      "id": "FDA-05",
+      "domain": "regulatory",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "The current October 2026 US label still has exactly these age and hospitalization restrictions.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "A historical approval announcement cannot establish the label six years later.",
+      "source_id": "FDA-20201022",
+      "locator": "Opening paragraph, historical release date 2020-10-22"
+    },
+    {
+      "id": "FDA-06",
+      "domain": "regulatory",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "EMA granted an identical approval on 22 October 2020.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The cited US FDA announcement supplies neither an EMA decision date nor the European label.",
+      "source_id": "FDA-20201022",
+      "locator": "Opening paragraph, historical release date 2020-10-22"
+    },
+    {
+      "id": "FIN-01",
+      "domain": "financial",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "AbCellera reported 2025 total revenue of $75.128 million.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "75,128 thousand dollars equals $75.128 million.",
+      "source_id": "ABCL-2025-10K",
+      "locator": "Item 8, Consolidated Statements of Loss and Comprehensive Loss, F-6; 2025 column; amounts in USD thousands"
+    },
+    {
+      "id": "FIN-02",
+      "domain": "financial",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "AbCellera earned $146.412 million of GAAP net profit in 2025.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The financial statement identifies the amount as a net loss, not a profit.",
+      "source_id": "ABCL-2025-10K",
+      "locator": "Item 8, Consolidated Statements of Loss and Comprehensive Loss, F-6; 2025 column; amounts in USD thousands"
+    },
+    {
+      "id": "FIN-03",
+      "domain": "financial",
+      "expected": "supported",
+      "predicted": "abstain",
+      "claim": "Cash, equivalents and marketable securities totaled $533.826 million at year-end 2025.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "The combined line states 533,826 thousand US dollars; the components also sum to that amount.",
+      "source_id": "ABCL-2025-10K",
+      "locator": "Item 7, Financial Position table, December 31 2025 column; amounts in USD thousands"
+    },
+    {
+      "id": "FIN-04",
+      "domain": "financial",
+      "expected": "contradicted",
+      "predicted": "abstain",
+      "claim": "Cash and cash equivalents alone were $533.826 million at year-end 2025.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "That figure includes marketable securities; the cash-and-equivalents component alone is $128.513 million.",
+      "source_id": "ABCL-2025-10K",
+      "locator": "Item 7, Financial Position table, December 31 2025 column; amounts in USD thousands"
+    },
+    {
+      "id": "FIN-05",
+      "domain": "financial",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "This balance proves the company can fund all activities through 2030 without further financing.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "A balance-sheet amount alone does not establish future operating burn, capital spending or financing requirements.",
+      "source_id": "ABCL-2025-10K",
+      "locator": "Item 7, Financial Position table, December 31 2025 column; amounts in USD thousands"
+    },
+    {
+      "id": "FIN-06",
+      "domain": "financial",
+      "expected": "insufficient",
+      "predicted": "abstain",
+      "claim": "AbCellera will report at least $100 million of revenue in 2026.",
+      "prediction_rationale": "Non-AI smoke baseline deliberately makes no semantic assessment.",
+      "answer_rationale": "Historical results do not establish a later year revenue outcome or forecast.",
+      "source_id": "ABCL-2025-10K",
+      "locator": "Item 8, Consolidated Statements of Loss and Comprehensive Loss, F-6; 2025 column; amounts in USD thousands"
+    }
+  ],
+  "archive_verification": {
+    "status": "not_applicable_non_ai_baseline"
+  }
+}
