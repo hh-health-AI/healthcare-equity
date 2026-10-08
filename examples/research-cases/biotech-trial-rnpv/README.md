@@ -126,4 +126,3 @@ The fastest way to break the commercial hypothesis is to find payer barriers, we
 Next diligence: review full trial/SAP and FDA documents; obtain indication-specific access, paid patient-year and net-price evidence; replace normalized assumptions with sourced forecasts; complete the company valuation bridge before comparing with market price.
 
 **Confidence: 0.95 on the narrowly stated primary-source observations and reproduced arithmetic; 0.40 on economic applicability until commercial inputs are verified.** Scope is limited to this evidence-to-assumption exercise. No efficacy prediction, investment performance claim or buy/sell recommendation is supplied.
-
