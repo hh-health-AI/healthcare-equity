@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "hh-healthcare-passage-entailment-v1",
+  "label_author": "Coding assistant; domain expert independence not claimed",
+  "answers": [
+    {
+      "id": "REG-01",
+      "label": "supported",
+      "rationale": "The structured enrollment field is explicitly actual; the older narrative number is a projection.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "REG-02",
+      "label": "contradicted",
+      "rationale": "572 is the initial projection, whereas the actual-enrollment field is 1,062.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "REG-03",
+      "label": "supported",
+      "rationale": "Both allocation and the listed masked roles support the claim.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "REG-04",
+      "label": "contradicted",
+      "rationale": "Double masking with masked participant and investigator roles contradicts open-label design.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "REG-05",
+      "label": "insufficient",
+      "rationale": "Completion of primary-outcome collection does not identify when final results were publicly disclosed.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "REG-06",
+      "label": "insufficient",
+      "rationale": "A trial-design passage provides no mortality outcomes or statistical uncertainty.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "PUB-01",
+      "label": "supported",
+      "rationale": "Subtracting the comparator medians, 15 minus 10, yields five days.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "PUB-02",
+      "label": "contradicted",
+      "rationale": "The claim reverses the treatment and comparator medians.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "PUB-03",
+      "label": "supported",
+      "rationale": "The point estimate is below the null of one and the stated interval spans one.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "PUB-04",
+      "label": "contradicted",
+      "rationale": "The upper confidence limit is 1.03, so the interval includes the null of one.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "PUB-05",
+      "label": "insufficient",
+      "rationale": "The passage does not provide outcomes in children or a home-treatment population; absence of evidence is not evidence of inefficacy.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "PUB-06",
+      "label": "insufficient",
+      "rationale": "Short-term recovery medians and their P value cannot establish a different endpoint at one year.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FDA-01",
+      "label": "supported",
+      "rationale": "The age and weight meet both stated inclusive thresholds, and the patient is hospitalized.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FDA-02",
+      "label": "contradicted",
+      "rationale": "The broader pediatric population was separately authorized under EUA, not included in the announced full approval.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FDA-03",
+      "label": "supported",
+      "rationale": "The setting restriction expressly allows another healthcare setting with comparable acute-care capability.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FDA-04",
+      "label": "contradicted",
+      "rationale": "The passage imposes a specific acute-care-equivalence restriction.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FDA-05",
+      "label": "insufficient",
+      "rationale": "A historical approval announcement cannot establish the label six years later.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FDA-06",
+      "label": "insufficient",
+      "rationale": "The cited US FDA announcement supplies neither an EMA decision date nor the European label.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FIN-01",
+      "label": "supported",
+      "rationale": "75,128 thousand dollars equals $75.128 million.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FIN-02",
+      "label": "contradicted",
+      "rationale": "The financial statement identifies the amount as a net loss, not a profit.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FIN-03",
+      "label": "supported",
+      "rationale": "The combined line states 533,826 thousand US dollars; the components also sum to that amount.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FIN-04",
+      "label": "contradicted",
+      "rationale": "That figure includes marketable securities; the cash-and-equivalents component alone is $128.513 million.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FIN-05",
+      "label": "insufficient",
+      "rationale": "A balance-sheet amount alone does not establish future operating burn, capital spending or financing requirements.",
+      "adjudication": "author_assistant"
+    },
+    {
+      "id": "FIN-06",
+      "label": "insufficient",
+      "rationale": "Historical results do not establish a later year revenue outcome or forecast.",
+      "adjudication": "author_assistant"
+    }
+  ]
+}

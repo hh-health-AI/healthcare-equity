@@ -1,0 +1,358 @@
+{
+  "case_id": "BIO-HELIOS-B-2025",
+  "valuation_date": "2025-03-20",
+  "currency": "USD",
+  "value_units": "millions",
+  "evidence_status": "REAL_CLINICAL_AND_APPROVAL_OBSERVATIONS",
+  "economic_input_status": "ILLUSTRATIVE_NOT_COMPANY_FORECASTS",
+  "clinical_readout_only_implication": "UNCERTAINTY_ONLY: no mechanically calibrated gate change from hazard ratios",
+  "realized_approval_implication": "CHANGE: illustrative predecision gate to realized US approval gate 1.00",
+  "approval_gate_before": 0.6,
+  "approval_gate_after": 1,
+  "scenarios": [
+    {
+      "scenario": "bear",
+      "commercial_weight_conditional_on_approval": 0.25,
+      "discount_rate": 0.14,
+      "upfront_launch_investment_m": 35,
+      "conditional_operating_pv_m": 237.985274,
+      "before_asset_rnpv_m": 107.791165,
+      "after_asset_rnpv_m": 202.985274,
+      "approval_gate_change_m": 95.19411,
+      "cashflow_audit": [
+        {
+          "period_end": "2026-12-31",
+          "years_from_valuation": 1.782341,
+          "paid_patient_years": 500.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 40.0,
+          "conditional_after_tax_unlevered_fcf_m": 10.0,
+          "conditional_operating_pv_m": 7.917283,
+          "before_probability_weighted_operating_pv_m": 4.75037,
+          "after_probability_weighted_operating_pv_m": 7.917283
+        },
+        {
+          "period_end": "2027-12-31",
+          "years_from_valuation": 2.781656,
+          "paid_patient_years": 1250.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 100.0,
+          "conditional_after_tax_unlevered_fcf_m": 25.0,
+          "conditional_operating_pv_m": 17.364019,
+          "before_probability_weighted_operating_pv_m": 10.418412,
+          "after_probability_weighted_operating_pv_m": 17.364019
+        },
+        {
+          "period_end": "2028-12-31",
+          "years_from_valuation": 3.78371,
+          "paid_patient_years": 2500.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 200.0,
+          "conditional_after_tax_unlevered_fcf_m": 50.0,
+          "conditional_operating_pv_m": 30.454997,
+          "before_probability_weighted_operating_pv_m": 18.272998,
+          "after_probability_weighted_operating_pv_m": 30.454997
+        },
+        {
+          "period_end": "2029-12-31",
+          "years_from_valuation": 4.783025,
+          "paid_patient_years": 4000.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 320.0,
+          "conditional_after_tax_unlevered_fcf_m": 80.0,
+          "conditional_operating_pv_m": 42.747689,
+          "before_probability_weighted_operating_pv_m": 25.648613,
+          "after_probability_weighted_operating_pv_m": 42.747689
+        },
+        {
+          "period_end": "2030-12-31",
+          "years_from_valuation": 5.782341,
+          "paid_patient_years": 5000.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 400.0,
+          "conditional_after_tax_unlevered_fcf_m": 100.0,
+          "conditional_operating_pv_m": 46.87667,
+          "before_probability_weighted_operating_pv_m": 28.126002,
+          "after_probability_weighted_operating_pv_m": 46.87667
+        },
+        {
+          "period_end": "2031-12-31",
+          "years_from_valuation": 6.781656,
+          "paid_patient_years": 6000.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 480.0,
+          "conditional_after_tax_unlevered_fcf_m": 120.0,
+          "conditional_operating_pv_m": 49.348289,
+          "before_probability_weighted_operating_pv_m": 29.608973,
+          "after_probability_weighted_operating_pv_m": 49.348289
+        },
+        {
+          "period_end": "2032-12-31",
+          "years_from_valuation": 7.78371,
+          "paid_patient_years": 6000.0,
+          "annual_net_revenue_per_patient_usd": 80000.0,
+          "revenue_m": 480.0,
+          "conditional_after_tax_unlevered_fcf_m": 120.0,
+          "conditional_operating_pv_m": 43.276327,
+          "before_probability_weighted_operating_pv_m": 25.965796,
+          "after_probability_weighted_operating_pv_m": 43.276327
+        }
+      ]
+    },
+    {
+      "scenario": "base",
+      "commercial_weight_conditional_on_approval": 0.5,
+      "discount_rate": 0.12,
+      "upfront_launch_investment_m": 25,
+      "conditional_operating_pv_m": 919.585905,
+      "before_asset_rnpv_m": 526.751543,
+      "after_asset_rnpv_m": 894.585905,
+      "approval_gate_change_m": 367.834362,
+      "cashflow_audit": [
+        {
+          "period_end": "2026-12-31",
+          "years_from_valuation": 1.782341,
+          "paid_patient_years": 1000,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 100.0,
+          "conditional_after_tax_unlevered_fcf_m": 35.0,
+          "conditional_operating_pv_m": 28.598599,
+          "before_probability_weighted_operating_pv_m": 17.159159,
+          "after_probability_weighted_operating_pv_m": 28.598599
+        },
+        {
+          "period_end": "2027-12-31",
+          "years_from_valuation": 2.781656,
+          "paid_patient_years": 2500,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 250.0,
+          "conditional_after_tax_unlevered_fcf_m": 87.5,
+          "conditional_operating_pv_m": 63.841109,
+          "before_probability_weighted_operating_pv_m": 38.304666,
+          "after_probability_weighted_operating_pv_m": 63.841109
+        },
+        {
+          "period_end": "2028-12-31",
+          "years_from_valuation": 3.78371,
+          "paid_patient_years": 5000,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 500.0,
+          "conditional_after_tax_unlevered_fcf_m": 175.0,
+          "conditional_operating_pv_m": 113.975455,
+          "before_probability_weighted_operating_pv_m": 68.385273,
+          "after_probability_weighted_operating_pv_m": 113.975455
+        },
+        {
+          "period_end": "2029-12-31",
+          "years_from_valuation": 4.783025,
+          "paid_patient_years": 8000,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 800.0,
+          "conditional_after_tax_unlevered_fcf_m": 280.0,
+          "conditional_operating_pv_m": 162.834709,
+          "before_probability_weighted_operating_pv_m": 97.700825,
+          "after_probability_weighted_operating_pv_m": 162.834709
+        },
+        {
+          "period_end": "2030-12-31",
+          "years_from_valuation": 5.782341,
+          "paid_patient_years": 10000,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 1000.0,
+          "conditional_after_tax_unlevered_fcf_m": 350.0,
+          "conditional_operating_pv_m": 181.749264,
+          "before_probability_weighted_operating_pv_m": 109.049558,
+          "after_probability_weighted_operating_pv_m": 181.749264
+        },
+        {
+          "period_end": "2031-12-31",
+          "years_from_valuation": 6.781656,
+          "paid_patient_years": 12000,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 1200.0,
+          "conditional_after_tax_unlevered_fcf_m": 420.0,
+          "conditional_operating_pv_m": 194.74646,
+          "before_probability_weighted_operating_pv_m": 116.847876,
+          "after_probability_weighted_operating_pv_m": 194.74646
+        },
+        {
+          "period_end": "2032-12-31",
+          "years_from_valuation": 7.78371,
+          "paid_patient_years": 12000,
+          "annual_net_revenue_per_patient_usd": 100000,
+          "revenue_m": 1200.0,
+          "conditional_after_tax_unlevered_fcf_m": 420.0,
+          "conditional_operating_pv_m": 173.840309,
+          "before_probability_weighted_operating_pv_m": 104.304185,
+          "after_probability_weighted_operating_pv_m": 173.840309
+        }
+      ]
+    },
+    {
+      "scenario": "bull",
+      "commercial_weight_conditional_on_approval": 0.25,
+      "discount_rate": 0.1,
+      "upfront_launch_investment_m": 20,
+      "conditional_operating_pv_m": 2159.491315,
+      "before_asset_rnpv_m": 1275.694789,
+      "after_asset_rnpv_m": 2139.491315,
+      "approval_gate_change_m": 863.796526,
+      "cashflow_audit": [
+        {
+          "period_end": "2026-12-31",
+          "years_from_valuation": 1.782341,
+          "paid_patient_years": 1500.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 165.0,
+          "conditional_after_tax_unlevered_fcf_m": 74.25,
+          "conditional_operating_pv_m": 62.649929,
+          "before_probability_weighted_operating_pv_m": 37.589957,
+          "after_probability_weighted_operating_pv_m": 62.649929
+        },
+        {
+          "period_end": "2027-12-31",
+          "years_from_valuation": 2.781656,
+          "paid_patient_years": 3750.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 412.5,
+          "conditional_after_tax_unlevered_fcf_m": 185.625,
+          "conditional_operating_pv_m": 142.395492,
+          "before_probability_weighted_operating_pv_m": 85.437295,
+          "after_probability_weighted_operating_pv_m": 142.395492
+        },
+        {
+          "period_end": "2028-12-31",
+          "years_from_valuation": 3.78371,
+          "paid_patient_years": 7500.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 825.0,
+          "conditional_after_tax_unlevered_fcf_m": 371.25,
+          "conditional_operating_pv_m": 258.850229,
+          "before_probability_weighted_operating_pv_m": 155.310138,
+          "after_probability_weighted_operating_pv_m": 258.850229
+        },
+        {
+          "period_end": "2029-12-31",
+          "years_from_valuation": 4.783025,
+          "paid_patient_years": 12000.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 1320.0,
+          "conditional_after_tax_unlevered_fcf_m": 594.0,
+          "conditional_operating_pv_m": 376.533988,
+          "before_probability_weighted_operating_pv_m": 225.920393,
+          "after_probability_weighted_operating_pv_m": 376.533988
+        },
+        {
+          "period_end": "2030-12-31",
+          "years_from_valuation": 5.782341,
+          "paid_patient_years": 15000.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 1650.0,
+          "conditional_after_tax_unlevered_fcf_m": 742.5,
+          "conditional_operating_pv_m": 427.907446,
+          "before_probability_weighted_operating_pv_m": 256.744467,
+          "after_probability_weighted_operating_pv_m": 427.907446
+        },
+        {
+          "period_end": "2031-12-31",
+          "years_from_valuation": 6.781656,
+          "paid_patient_years": 18000.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 1980.0,
+          "conditional_after_tax_unlevered_fcf_m": 891.0,
+          "conditional_operating_pv_m": 466.838576,
+          "before_probability_weighted_operating_pv_m": 280.103146,
+          "after_probability_weighted_operating_pv_m": 466.838576
+        },
+        {
+          "period_end": "2032-12-31",
+          "years_from_valuation": 7.78371,
+          "paid_patient_years": 18000.0,
+          "annual_net_revenue_per_patient_usd": 110000.0,
+          "revenue_m": 1980.0,
+          "conditional_after_tax_unlevered_fcf_m": 891.0,
+          "conditional_operating_pv_m": 424.315655,
+          "before_probability_weighted_operating_pv_m": 254.589393,
+          "after_probability_weighted_operating_pv_m": 424.315655
+        }
+      ]
+    }
+  ],
+  "conditional_commercial_weighted_before_asset_rnpv_m": 609.24726,
+  "conditional_commercial_weighted_after_asset_rnpv_m": 1032.9121,
+  "weighted_approval_gate_change_m": 423.66484,
+  "base_sensitivity": [
+    {
+      "discount_rate": 0.1,
+      "approval_gate": 0.4,
+      "asset_rnpv_m": 382.176814
+    },
+    {
+      "discount_rate": 0.1,
+      "approval_gate": 0.6,
+      "asset_rnpv_m": 585.76522
+    },
+    {
+      "discount_rate": 0.1,
+      "approval_gate": 0.8,
+      "asset_rnpv_m": 789.353627
+    },
+    {
+      "discount_rate": 0.1,
+      "approval_gate": 1,
+      "asset_rnpv_m": 992.942034
+    },
+    {
+      "discount_rate": 0.12,
+      "approval_gate": 0.4,
+      "asset_rnpv_m": 342.834362
+    },
+    {
+      "discount_rate": 0.12,
+      "approval_gate": 0.6,
+      "asset_rnpv_m": 526.751543
+    },
+    {
+      "discount_rate": 0.12,
+      "approval_gate": 0.8,
+      "asset_rnpv_m": 710.668724
+    },
+    {
+      "discount_rate": 0.12,
+      "approval_gate": 1,
+      "asset_rnpv_m": 894.585905
+    },
+    {
+      "discount_rate": 0.14,
+      "approval_gate": 0.4,
+      "asset_rnpv_m": 308.179384
+    },
+    {
+      "discount_rate": 0.14,
+      "approval_gate": 0.6,
+      "asset_rnpv_m": 474.769076
+    },
+    {
+      "discount_rate": 0.14,
+      "approval_gate": 0.8,
+      "asset_rnpv_m": 641.358769
+    },
+    {
+      "discount_rate": 0.14,
+      "approval_gate": 1,
+      "asset_rnpv_m": 807.948461
+    }
+  ],
+  "market_implied_result": null,
+  "equity_value_and_per_share": null,
+  "equity_bridge_status": "NEEDS_DATA: company net cash, other assets, overhead, dilution and verified market price missing",
+  "formula": "asset rNPV = approval_gate * sum(conditional_after_tax_unlevered_FCF / (1+r)^t) - upfront_launch_investment",
+  "limits": [
+    "No clinical hazard ratio, p-value or confidence interval is converted into a success probability.",
+    "Approval risk is applied once; commercial scenario weights describe a separate conditional uncertainty.",
+    "Same valuation date and operating inputs isolate the approval gate; this is not historical P&L.",
+    "No terminal value, other indications, financing, future US label risk or company balance sheet."
+  ],
+  "input_sha256": "7c21b513a0c2fba245a9090b0106f901529cee3bd53a6efcc3813dc70047cb1e",
+  "source_ledger_sha256": "73f3edfb5870a29956cbfef4ed83c4d6c08bd57a17febdc51784214e2f05d7c8"
+}

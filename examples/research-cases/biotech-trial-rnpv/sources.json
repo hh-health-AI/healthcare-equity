@@ -1,0 +1,180 @@
+{
+  "case_id": "BIO-HELIOS-B-2025",
+  "linked_audit_case": "C03",
+  "evidence_access_date": "2026-10-08",
+  "scope": "Retrospective HELIOS-B/US ATTR-CM approval case; clinical observations real; commercial inputs illustrative; not a company valuation.",
+  "sources": [
+    {
+      "id": "S1",
+      "type": "trial_registry",
+      "title": "HELIOS-B: A Phase 3, Randomized, Double-blind, Placebo-controlled, Multicenter Study to Evaluate the Efficacy and Safety of Vutrisiran in Patients With Transthyretin Amyloidosis With Cardiomyopathy (ATTR Amyloidosis With Cardiomyopathy)",
+      "url": "https://clinicaltrials.gov/study/NCT04153149",
+      "document_id": "NCT04153149",
+      "retrieved_date": "2026-10-08",
+      "source_vintage": "2026-01-12",
+      "access_method": "ClinicalTrials.gov get_trial_details connector",
+      "locators": [
+        "study.enrollment_count",
+        "study.phases",
+        "study.design",
+        "study.outcomes[0:2]",
+        "study.primary_completion_date"
+      ],
+      "coverage": "Requested trial identity and needed enrollment/design/two primary endpoint fields inspected. Other outcomes, locations and bibliography were truncated; no completeness claim is made for those unused fields.",
+      "verified_observations": {
+        "enrollment": 655,
+        "phase": "PHASE3",
+        "allocation": "RANDOMIZED",
+        "masking": "QUADRUPLE",
+        "primary_completion": "2024-05-08",
+        "overall_primary_endpoint": "All-cause mortality plus recurrent cardiovascular events",
+        "primary_endpoint_population": "Overall population and monotherapy subgroup",
+        "primary_endpoint_timeframe": "Up to Month 36"
+      },
+      "historical_limit": "This is a later sponsor-updated record, not an archived registry snapshot available on the valuation date."
+    },
+    {
+      "id": "S2",
+      "type": "peer_reviewed_trial_publication_abstract",
+      "title": "Vutrisiran in Patients with Transthyretin Amyloidosis with Cardiomyopathy.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39213194/",
+      "document_id": "PMID:39213194; DOI:10.1056/NEJMoa2409134",
+      "source_vintage": "2025 Jan 02",
+      "retrieved_date": "2026-10-08",
+      "access_method": "PubMed get_articles connector; exact PMID, abstract inspected",
+      "locators": [
+        "Abstract, METHODS",
+        "Abstract, RESULTS"
+      ],
+      "coverage": "Abstract and publication metadata; full text, protocol and statistical analysis plan not reviewed.",
+      "verified_observations": {
+        "randomized_total": 655,
+        "vutrisiran_randomized": 326,
+        "placebo_randomized": 329,
+        "dose_mg": 25,
+        "dosing_interval_weeks": 12,
+        "overall_composite_hr": 0.72,
+        "overall_composite_ci95": [
+          0.56,
+          0.93
+        ],
+        "overall_composite_p": 0.01,
+        "monotherapy_composite_hr": 0.67,
+        "monotherapy_composite_ci95": [
+          0.49,
+          0.93
+        ],
+        "monotherapy_composite_p": 0.02,
+        "all_cause_mortality_through_42_months_hr": 0.65,
+        "all_cause_mortality_ci95": [
+          0.46,
+          0.9
+        ],
+        "all_cause_mortality_p": 0.01,
+        "serious_adverse_events_pct": {
+          "vutrisiran": 62,
+          "placebo": 67
+        },
+        "funding": "Alnylam Pharmaceuticals"
+      },
+      "interpretation_limits": [
+        "The overall composite hazard ratio is not a mortality-only effect.",
+        "The mortality hazard ratio is not an absolute risk reduction.",
+        "This comparison does not establish superiority over tafamidis; monotherapy participants were not on tafamidis at baseline.",
+        "Similar reported adverse-event frequency does not establish absence of safety risk."
+      ]
+    },
+    {
+      "id": "S3",
+      "type": "regulator_approval_record",
+      "title": "FDA Orphan Drug Designations and Approvals: vutrisiran",
+      "url": "https://www.accessdata.fda.gov/scripts/opdlisting/oopd/detailedIndex.cfm?cfgridkey=637618",
+      "document_id": "FDA OOPD cfgridkey=637618",
+      "source_vintage": "Historical approval event 2025-03-20 in currently accessible record",
+      "retrieved_date": "2026-10-08",
+      "access_method": "Web open; FDA primary record inspected",
+      "locators": [
+        "Marketing approved, entry 2: Marketing Approval Date",
+        "Marketing approved, entry 2: Approved Labeled Indication"
+      ],
+      "verified_observations": {
+        "us_attr_cm_approval_date": "2025-03-20",
+        "indication": "Adults with wild-type or hereditary ATTR cardiomyopathy; cardiovascular mortality, cardiovascular hospitalizations and urgent heart-failure visits."
+      },
+      "coverage": "Approval date and indication in FDA approval record; detailed FDA clinical review, approval letter and full prescribing information not reviewed."
+    },
+    {
+      "id": "S4",
+      "type": "issuer_sec_filing",
+      "title": "Alnylam Form 8-K: AMVUTTRA ATTR-CM approval",
+      "url": "https://www.sec.gov/Archives/edgar/data/1178670/000117867025000038/alny-20250320.htm",
+      "document_id": "SEC accession 0001178670-25-000038",
+      "source_vintage": "Event 2025-03-20; signed 2025-03-21",
+      "retrieved_date": "2026-10-08",
+      "access_method": "Web open; SEC primary filing inspected",
+      "locators": [
+        "Item 8.01, Other Events, first paragraph"
+      ],
+      "verified_observations": {
+        "us_attr_cm_approval_announced": "2025-03-20"
+      },
+      "coverage": "Approval announcement cross-check only. Exhibit, earnings, balance sheet, paid patient counts, net price and market data not used."
+    }
+  ],
+  "claim_audit": [
+    {
+      "id": "F1",
+      "kind": "observation",
+      "claim": "HELIOS-B enrolled/randomized 655 participants in a Phase 3 placebo-controlled trial.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "status": "VERIFIED_SCOPE_ONLY"
+    },
+    {
+      "id": "F2",
+      "kind": "observation",
+      "claim": "Published overall composite HR is 0.72 (95% CI 0.56-0.93); mortality through 42 months is a separate endpoint, HR 0.65 (0.46-0.90).",
+      "source_ids": [
+        "S2"
+      ],
+      "status": "VERIFIED_SCOPE_ONLY"
+    },
+    {
+      "id": "F3",
+      "kind": "observation",
+      "claim": "The US ATTR-CM indication was approved March 20, 2025.",
+      "source_ids": [
+        "S3",
+        "S4"
+      ],
+      "status": "VERIFIED_SCOPE_ONLY"
+    },
+    {
+      "id": "I1",
+      "kind": "inference",
+      "claim": "The realized US approval decision removes uncertainty over whether that historical decision occurred, while leaving launch economics uncertain.",
+      "source_ids": [
+        "S3",
+        "S4"
+      ],
+      "status": "ANALYST_INFERENCE"
+    },
+    {
+      "id": "A1",
+      "kind": "assumption",
+      "claim": "The illustrative predecision approval gate is 0.60; no trial hazard ratio or p-value calibrates this probability.",
+      "source_ids": [],
+      "status": "ILLUSTRATIVE_NOT_EMPIRICALLY_ESTIMATED"
+    }
+  ],
+  "outstanding_evidence": [
+    "Full NEJM paper, protocol and SAP",
+    "Detailed FDA review and label restrictions",
+    "Current competitive trial evidence",
+    "Verified commercial conversion, payer access, net price and incremental contribution",
+    "Company cash, debt, dilution, other assets, market price and consensus"
+  ],
+  "existing_case_reconciliation": "C03's broader Q2-2026 commercial scope is not verified here. The retrieved NEJM abstract reports mortality HR 0.65, equivalent to a 35% relative hazard reduction for that analysis. Any 36% claim requires its own document, time point and analysis population; do not silently substitute one estimate for the other."
+}

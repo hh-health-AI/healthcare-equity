@@ -1,0 +1,75 @@
+name: Source and package provenance
+
+on:
+  push:
+    paths:
+      - "modules/**"
+      - "plugins/**"
+      - "provenance/**"
+      - "skills/investable-view/SKILL.md"
+      - "research-suite/skills/**"
+      - "research-suite/README.md"
+      - "README.md"
+      - "CLAUDE.md"
+      - "LICENSE"
+      - ".agents/plugins/marketplace.json"
+      - "scripts/check_source_sync.py"
+      - "tests/test_source_sync.py"
+      - ".github/workflows/source-sync.yml"
+  pull_request:
+    paths:
+      - "modules/**"
+      - "plugins/**"
+      - "provenance/**"
+      - "skills/investable-view/SKILL.md"
+      - "research-suite/skills/**"
+      - "research-suite/README.md"
+      - "README.md"
+      - "CLAUDE.md"
+      - "LICENSE"
+      - ".agents/plugins/marketplace.json"
+      - "scripts/check_source_sync.py"
+      - "tests/test_source_sync.py"
+      - ".github/workflows/source-sync.yml"
+  workflow_dispatch:
+    inputs:
+      live_upstream:
+        description: "Compare public specialist main HEADs and Git blobs; report new upstream changes as failures"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  frozen-provenance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m unittest discover -s tests -p 'test_source_sync.py' -v
+      - run: python scripts/check_source_sync.py --report outputs/source-sync.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: frozen-source-provenance
+          path: outputs/source-sync.json
+          if-no-files-found: error
+
+  live-upstream:
+    if: github.event_name == 'workflow_dispatch' && inputs.live_upstream
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/check_source_sync.py --live-upstream --report outputs/live-upstream-sync.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-upstream-provenance
+          path: outputs/live-upstream-sync.json
+          if-no-files-found: error

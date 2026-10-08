@@ -1,0 +1,769 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-10-08",
+  "package_path": "plugins/hh-health-ai-research",
+  "marketplace_path": ".agents/plugins/marketplace.json",
+  "original_packaging_date": "2026-10-04",
+  "original_retrieval_atomic": false,
+  "source_repository": "https://github.com/hh-health-AI/healthcare-equity",
+  "observation_basis": "Original source Git blobs preserved from packaging provenance; current local bytes frozen separately. Historical packaging is an adapted workflow edition, not a generated mirror.",
+  "excluded_packaging_documents": [
+    "README.md",
+    "NOTICE.md",
+    "VALIDATION.md",
+    "provenance.json",
+    "validation-report.json",
+    "tests/smoke-cases.json",
+    "tests/validate_static.py"
+  ],
+  "exclusion_reason": "Packaging/publication documentation and static validation helpers are maintained directly, not generated from source instructions. Manifests are validated structurally for consistent identity.",
+  "sources": [
+    {
+      "path": "README.md",
+      "packaged_source_git_blob_sha": "ea4b2da4d034e0badd85de516ef933950e3ff794",
+      "frozen_git_blob_sha": "f66df4be6ffd828ac5ed502c2fbb82beacf2539b",
+      "frozen_sha256": "898e568c720347af03481cd6a3ed0031fb072b336817988f5373e5d9150bdccb",
+      "use": "Canonical module and investment workflow map",
+      "difference_reason": "Reviewed 2026-10-08 documentation change: installation routes and runtime limits clarified, showcase/evaluation links added, and presentation wording simplified. Original packaging blob is preserved. Individual workflow skill source instructions are unchanged; no skill regeneration or byte-equivalence is claimed.",
+      "review_status": "reviewed-documentation-change"
+    },
+    {
+      "path": "CLAUDE.md",
+      "packaged_source_git_blob_sha": "9d0326f9d0282d42c90f8f66eca7524f9f2b4f3f",
+      "frozen_git_blob_sha": "9d0326f9d0282d42c90f8f66eca7524f9f2b4f3f",
+      "frozen_sha256": "140f38c1becbac38bbdf6a848ecec08a8698905d3cb0bd99c765338392758dfe",
+      "use": "Standing evidence rules; host-specific persistence and permission instructions not ported"
+    },
+    {
+      "path": "LICENSE",
+      "packaged_source_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+      "frozen_git_blob_sha": "8f8e23e315c834042c6a7e6d15989d8d9051f954",
+      "frozen_sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769",
+      "use": "Original MIT copyright and permission notice retained"
+    },
+    {
+      "path": "skills/investable-view/SKILL.md",
+      "packaged_source_git_blob_sha": "89db5a3ad050c7ad9143acb2695a4c9271f3b79b",
+      "frozen_git_blob_sha": "89db5a3ad050c7ad9143acb2695a4c9271f3b79b",
+      "frozen_sha256": "d23a7415d52fb6045a9dc96c9cb775b4cca1ce13d45160160a1dfde2410a939c",
+      "use": "Adapted capstone"
+    },
+    {
+      "path": "research-suite/README.md",
+      "packaged_source_git_blob_sha": "54604fcac27234c46df40385f8ac1d82c709a9b5",
+      "frozen_git_blob_sha": "787501e75b600c1612ac4631be1817db390af308",
+      "frozen_sha256": "748cac3dfdaa4b2e61d474c08503617d955088d56a739463e5da16892ad7ae9e",
+      "use": "Suite scope, runtime distinction and limits",
+      "difference_reason": "Reviewed 2026-10-08 documentation change: installation routes and runtime limits clarified, showcase/evaluation links added, and presentation wording simplified. Original packaging blob is preserved. Individual workflow skill source instructions are unchanged; no skill regeneration or byte-equivalence is claimed.",
+      "review_status": "reviewed-documentation-change"
+    },
+    {
+      "path": "research-suite/skills/medical-evidence-skills/SKILL.md",
+      "packaged_source_git_blob_sha": "6188ea956cb4c86ecefb66d9cfd3cbc8b7a26d13",
+      "frozen_git_blob_sha": "6188ea956cb4c86ecefb66d9cfd3cbc8b7a26d13",
+      "frozen_sha256": "1962d65ec4337725f5dece442ffe8f676855b518d4ff945a4235c9501b45e555",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/clinical-trial-analyst/SKILL.md",
+      "packaged_source_git_blob_sha": "1ebbafe36702b64925604aa6d37b89d2d6877d6b",
+      "frozen_git_blob_sha": "1ebbafe36702b64925604aa6d37b89d2d6877d6b",
+      "frozen_sha256": "d04b81ec437d6725d904e130de34715cf2391a031fbdb534cf7769df3fefa85d",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/biomedical-claim-checker/SKILL.md",
+      "packaged_source_git_blob_sha": "ec0cfd44cb64aed4f2bcec50f901b73258a64cfe",
+      "frozen_git_blob_sha": "ec0cfd44cb64aed4f2bcec50f901b73258a64cfe",
+      "frozen_sha256": "37568257438295b7bfbbf67ec8e31cf28be49dfe952f5bcdb9bb353f92dd4804",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/biotech-catalyst-radar/SKILL.md",
+      "packaged_source_git_blob_sha": "0ef0a11b4392f2e89ce22de593c5ddc1c1cbac08",
+      "frozen_git_blob_sha": "0ef0a11b4392f2e89ce22de593c5ddc1c1cbac08",
+      "frozen_sha256": "a01968d3caa041430544d77f8a1f50ac7637f2a28cf1e8fc3e3439666917dd31",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/literature-review-assistant/SKILL.md",
+      "packaged_source_git_blob_sha": "c78a45dd0f284b0b8ae4c32a6890521a4a8de06c",
+      "frozen_git_blob_sha": "c78a45dd0f284b0b8ae4c32a6890521a4a8de06c",
+      "frozen_sha256": "dfe963b41a010fdc3d1d1f727cea12a9a4270387115696336614c0fc32a3a3a4",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/healthcare-public-data/SKILL.md",
+      "packaged_source_git_blob_sha": "c4ae7558850fe656d39868ea11675cc3832ad83a",
+      "frozen_git_blob_sha": "c4ae7558850fe656d39868ea11675cc3832ad83a",
+      "frozen_sha256": "327dd96adc579a00d0b0942f50dbdf098d08c3e61e5c5bf2a5282ea9a9c5221a",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/biotech-rnpv-modeler/SKILL.md",
+      "packaged_source_git_blob_sha": "ce2c364483c9e95f11cfd197ddaf419f4bc0a9d1",
+      "frozen_git_blob_sha": "ce2c364483c9e95f11cfd197ddaf419f4bc0a9d1",
+      "frozen_sha256": "17a0f8023f59489a8d48fd16051dfb2bae44d2d1b384e0a32e12dc410849ae94",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/conference-evidence-agent/SKILL.md",
+      "packaged_source_git_blob_sha": "2d4593b9299bcd1dffb0b7924e8e44b60fc8343f",
+      "frozen_git_blob_sha": "2d4593b9299bcd1dffb0b7924e8e44b60fc8343f",
+      "frozen_sha256": "ce8eda1be41bd88354490218284ca67214b6942d0421e3296a58ab4280aee715",
+      "use": "Adapted individual workflow"
+    },
+    {
+      "path": "research-suite/skills/journal-club-agent/SKILL.md",
+      "packaged_source_git_blob_sha": "4b92ea73c3304700188374fe7c85720ab93efa96",
+      "frozen_git_blob_sha": "4b92ea73c3304700188374fe7c85720ab93efa96",
+      "frozen_sha256": "3c650a2a304377295726f3ba700c6a547310baa031ecb331525897b10e93e04c",
+      "use": "Adapted individual workflow"
+    }
+  ],
+  "adaptations": [
+    {
+      "skill": "hh-health-ai",
+      "source_paths": [
+        "README.md",
+        "CLAUDE.md",
+        "research-suite/README.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/hh-health-ai/SKILL.md",
+          "sha256": "9c6893da06c02b57c203dec862fccd898da4beb174c135cb69ca8ee4e3266cd0"
+        },
+        {
+          "path": "skills/hh-health-ai/agents/openai.yaml",
+          "sha256": "ae612ce39079d238b05c1294e7c90234b81856174577f232d9efbca575d88c26"
+        },
+        {
+          "path": "skills/hh-health-ai/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/hh-health-ai/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/hh-health-ai/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/hh-health-ai/references/source-notes.md",
+          "sha256": "a787272f9c0cf0f1e8c1079283ca3dfd3a655c567c9c17fd34a872808a65d39f"
+        }
+      ]
+    },
+    {
+      "skill": "healthcare-equity",
+      "source_paths": [
+        "README.md",
+        "CLAUDE.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/healthcare-equity/SKILL.md",
+          "sha256": "1b6bf95618ec45ffd8cc2f489379c1f1773a8228a78b9c18427943cac60803aa"
+        },
+        {
+          "path": "skills/healthcare-equity/agents/openai.yaml",
+          "sha256": "057e2e6c08c2d853dd314f78b6c65a96514b470f7901a6eb1b69d75211cf62e9"
+        },
+        {
+          "path": "skills/healthcare-equity/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/healthcare-equity/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/healthcare-equity/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/healthcare-equity/references/investment-workflows.md",
+          "sha256": "0f0bb02a93dfea0f14cf3d6d1e7d0221b0e2f11f1e465c258ce3d8bb4247cf82"
+        },
+        {
+          "path": "skills/healthcare-equity/references/source-notes.md",
+          "sha256": "146b0126febc8d347b2d82d8e33b272cf32db7c3c83a9829321275edde6d7203"
+        }
+      ]
+    },
+    {
+      "skill": "investable-view",
+      "source_paths": [
+        "skills/investable-view/SKILL.md",
+        "CLAUDE.md",
+        "README.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/investable-view/SKILL.md",
+          "sha256": "1f999f43a130b5a7547a30ab21b01a5e3b5b56e398d6238257d2e20cabe00580"
+        },
+        {
+          "path": "skills/investable-view/agents/openai.yaml",
+          "sha256": "d519c93d54e500cf46ffb6224d1b30e45eb0f4a18df32e0ca096d475263b1433"
+        },
+        {
+          "path": "skills/investable-view/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/investable-view/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/investable-view/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/investable-view/references/source-notes.md",
+          "sha256": "672820a4fd9aca57dfe9bd23a21fa749c81eab31564f9462e7929442abd25338"
+        }
+      ]
+    },
+    {
+      "skill": "evidence-modules",
+      "source_paths": [
+        "README.md",
+        "CLAUDE.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/evidence-modules/SKILL.md",
+          "sha256": "faf15efc94d7db897c64cd02cfc7c83024fe9d38f30864ddef44f65d6df90446"
+        },
+        {
+          "path": "skills/evidence-modules/agents/openai.yaml",
+          "sha256": "6610b4d9d559e480edc8e8643ca27c28d32ed0609d39fb89ec3a723016c2e74b"
+        },
+        {
+          "path": "skills/evidence-modules/references/clinical-catalysts.md",
+          "sha256": "70039b85513447051ce16e1251ea98a24eb0571f52d1c73059ce64277af69a15"
+        },
+        {
+          "path": "skills/evidence-modules/references/cms-reimbursement.md",
+          "sha256": "1f5bc5d0d81b02cfa8be2a905abf64abe3fcb94af4843df04d4d6b8b24137256"
+        },
+        {
+          "path": "skills/evidence-modules/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/evidence-modules/references/epi-demand.md",
+          "sha256": "044d14e489c3529fa3070c46ea9a772eba1b93e261b7ad9030930da882f0e924"
+        },
+        {
+          "path": "skills/evidence-modules/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/evidence-modules/references/evidence-catalysts.md",
+          "sha256": "41ff3de40b5dd8d3417431ebddfdbf7c9918b1de900db7d6cfeeae66ea5057f0"
+        },
+        {
+          "path": "skills/evidence-modules/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/evidence-modules/references/fda-safety-signals.md",
+          "sha256": "6a64f49920d91e978894c785e738883f56e3ce077863d98863261e15758d7b01"
+        },
+        {
+          "path": "skills/evidence-modules/references/global-access.md",
+          "sha256": "a106b340dc87191cf4895ae61a1c90924d16a98b408f03cc6469c2657e5c8698"
+        },
+        {
+          "path": "skills/evidence-modules/references/ip-exclusivity.md",
+          "sha256": "74ffcdc2ec6c44a6f7d5ee795b173e30f39e80595d5abe1e26e6f2663a9260aa"
+        },
+        {
+          "path": "skills/evidence-modules/references/procedure-exposure.md",
+          "sha256": "57e397d9cd1bfa4a1a1476c3ef17e71fd7c57b3bfdce0f69cf689e3dc815152f"
+        },
+        {
+          "path": "skills/evidence-modules/references/provider-adoption.md",
+          "sha256": "0114d1fb779c59916505590a4c77326ce2f958ac9753292428d07ba19cd57900"
+        },
+        {
+          "path": "skills/evidence-modules/references/provider-economics.md",
+          "sha256": "92d43512026ebcfd3155dd0cece1855d50fba1d0854f78cc9613855f58e18e52"
+        },
+        {
+          "path": "skills/evidence-modules/references/rx-utilization.md",
+          "sha256": "7bd9f407357b6952a548cec1abb4cf23b6b81d2eec89e3158ff31af249ff7470"
+        },
+        {
+          "path": "skills/evidence-modules/references/sec-forensics.md",
+          "sha256": "761752220ad605fc4ac035a70f68796fcb924d789eb48087411a6b4bba387946"
+        },
+        {
+          "path": "skills/evidence-modules/references/source-notes.md",
+          "sha256": "146b0126febc8d347b2d82d8e33b272cf32db7c3c83a9829321275edde6d7203"
+        }
+      ]
+    },
+    {
+      "skill": "medical-evidence-skills",
+      "source_paths": [
+        "research-suite/skills/medical-evidence-skills/SKILL.md",
+        "research-suite/README.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/medical-evidence-skills/SKILL.md",
+          "sha256": "bbae800d57fe40617658bc370450d89f9161cc2d07605be3042f5497f16d0894"
+        },
+        {
+          "path": "skills/medical-evidence-skills/agents/openai.yaml",
+          "sha256": "5f6644803d1ee348fa3817b80bf296479c330e5bef8c223a0ce894f196afe72e"
+        },
+        {
+          "path": "skills/medical-evidence-skills/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/medical-evidence-skills/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/medical-evidence-skills/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/medical-evidence-skills/references/source-notes.md",
+          "sha256": "adf0a807e94e1a972570318fbbd99c66884adaaa7e771448eaa5a881e97f856c"
+        }
+      ]
+    },
+    {
+      "skill": "clinical-trial-analyst",
+      "source_paths": [
+        "research-suite/skills/clinical-trial-analyst/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/clinical-trial-analyst/SKILL.md",
+          "sha256": "645820ed1593892c299e1ea6875f474810caf04cc07afc0b47b72e25bd6d1fd3"
+        },
+        {
+          "path": "skills/clinical-trial-analyst/agents/openai.yaml",
+          "sha256": "6a156e3c7d78d79cf1ae9db8e511374667ad2175bb9b3738994eb4a97f8a2cad"
+        },
+        {
+          "path": "skills/clinical-trial-analyst/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/clinical-trial-analyst/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/clinical-trial-analyst/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/clinical-trial-analyst/references/source-notes.md",
+          "sha256": "07cf673a55b1327d2e3b0b913e1b56eaaff9389eb6053d91a8e6ddb6b8a1831a"
+        }
+      ]
+    },
+    {
+      "skill": "biomedical-claim-checker",
+      "source_paths": [
+        "research-suite/skills/biomedical-claim-checker/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/biomedical-claim-checker/SKILL.md",
+          "sha256": "dbcea9bc5863309c09b1ae7c84c4f6dbf8494b9ae1c0922f644eec46fc7ba6a7"
+        },
+        {
+          "path": "skills/biomedical-claim-checker/agents/openai.yaml",
+          "sha256": "5fcd993cd80270af6a42b4a9fe7ac7c1c88537bc4b497d5af044d316d6397759"
+        },
+        {
+          "path": "skills/biomedical-claim-checker/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/biomedical-claim-checker/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/biomedical-claim-checker/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/biomedical-claim-checker/references/source-notes.md",
+          "sha256": "886ccb82ac5ebd2c71d4a8dff4c73c8979814dc45839b771accdd98133e148aa"
+        }
+      ]
+    },
+    {
+      "skill": "biotech-catalyst-radar",
+      "source_paths": [
+        "research-suite/skills/biotech-catalyst-radar/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/biotech-catalyst-radar/SKILL.md",
+          "sha256": "8b730955e964b75e18d000358cc0a23f9aad395b01b489255828c7750d1224c6"
+        },
+        {
+          "path": "skills/biotech-catalyst-radar/agents/openai.yaml",
+          "sha256": "314ba68cd2485fb5278e8feac525efbb3214983e322eb6b8579d41045982bfaa"
+        },
+        {
+          "path": "skills/biotech-catalyst-radar/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/biotech-catalyst-radar/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/biotech-catalyst-radar/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/biotech-catalyst-radar/references/source-notes.md",
+          "sha256": "f3e2506c6b7979b21b1b0d90fafaed608d70daf6061e55be52ab7373dd1b9807"
+        }
+      ]
+    },
+    {
+      "skill": "literature-review-assistant",
+      "source_paths": [
+        "research-suite/skills/literature-review-assistant/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/literature-review-assistant/SKILL.md",
+          "sha256": "89437cd093ef32fc586e4b55be88811ffaa4ade3b85bfb4e82c26becdea0f162"
+        },
+        {
+          "path": "skills/literature-review-assistant/agents/openai.yaml",
+          "sha256": "ecf82efb7e656006a8f52efcb8cc350b91894665064dae541150ad4f0f8e4544"
+        },
+        {
+          "path": "skills/literature-review-assistant/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/literature-review-assistant/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/literature-review-assistant/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/literature-review-assistant/references/source-notes.md",
+          "sha256": "7fa55a7e2a59264ab64cb2a87e014600eb2eb72d17c9267d7f8108e4d47cc6e8"
+        }
+      ]
+    },
+    {
+      "skill": "healthcare-public-data",
+      "source_paths": [
+        "research-suite/skills/healthcare-public-data/SKILL.md",
+        "research-suite/README.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/healthcare-public-data/SKILL.md",
+          "sha256": "b8e20a072bb668b45ea02071895148a9ca9443eb269afd478f1debedec59238e"
+        },
+        {
+          "path": "skills/healthcare-public-data/agents/openai.yaml",
+          "sha256": "76a149e6a6d89829c4345f75adf6b5d302dc7364b6872f2e6236df320cf36e50"
+        },
+        {
+          "path": "skills/healthcare-public-data/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/healthcare-public-data/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/healthcare-public-data/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/healthcare-public-data/references/source-notes.md",
+          "sha256": "ad557fa2731d77410d19134a7a931da033e7f93bd94b3f74f730217a231abb04"
+        },
+        {
+          "path": "skills/healthcare-public-data/references/upstream-runtime.md",
+          "sha256": "8e51f13baba38d83536fb6928726e24e15ca410e4f66e11efdb14487be64a8d6",
+          "previous_reviewed_sha256": "7405f32603bbe4920e8083f93ba8755b595fe6ed526dc7c27ffa66b3f73a6c7f",
+          "reviewed_change": "2026-10-08: private-workflow wording corrected to skills-only workflow; runtime/setup behavior unchanged."
+        }
+      ]
+    },
+    {
+      "skill": "biotech-rnpv-modeler",
+      "source_paths": [
+        "research-suite/skills/biotech-rnpv-modeler/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/biotech-rnpv-modeler/SKILL.md",
+          "sha256": "4881a60e3d9bec739fe5b9fa57cb9806c03e580bdffc183a5b6d8d146b1e8d77"
+        },
+        {
+          "path": "skills/biotech-rnpv-modeler/agents/openai.yaml",
+          "sha256": "8882f8274ffdc66220ca5f58595c462f4a2a490d8408f5d845ca5b38442892e8"
+        },
+        {
+          "path": "skills/biotech-rnpv-modeler/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/biotech-rnpv-modeler/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/biotech-rnpv-modeler/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/biotech-rnpv-modeler/references/source-notes.md",
+          "sha256": "7ca03147fcd192c7f377ce3297e358b4578f77e0b7c15d7cc700a7d2caad8465"
+        }
+      ]
+    },
+    {
+      "skill": "conference-evidence-agent",
+      "source_paths": [
+        "research-suite/skills/conference-evidence-agent/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/conference-evidence-agent/SKILL.md",
+          "sha256": "e46c3fd5297e48132914d088426f32889ae0bab58e560e2934aa7bee12408bea"
+        },
+        {
+          "path": "skills/conference-evidence-agent/agents/openai.yaml",
+          "sha256": "2a630fe4fbf69b481429219b7df21c2dfca62ff1917df066275eb0527e6db136"
+        },
+        {
+          "path": "skills/conference-evidence-agent/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/conference-evidence-agent/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/conference-evidence-agent/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/conference-evidence-agent/references/source-notes.md",
+          "sha256": "f06e84c47a2e425179ff3c7f09df31b1bcc7c7933a86f4d7829f956fed96899d"
+        }
+      ]
+    },
+    {
+      "skill": "journal-club-agent",
+      "source_paths": [
+        "research-suite/skills/journal-club-agent/SKILL.md"
+      ],
+      "adaptation_reason": "Intentional concise workflow adaptation with portable relative references, routing to available host tools and declared runtime limits; not byte-equivalent to source instructions. Packaged skill/reference bytes are frozen pending review.",
+      "packaged_files": [
+        {
+          "path": "skills/journal-club-agent/SKILL.md",
+          "sha256": "216b6609c5e89aef094e358006d6aab3cf16427a2dde408055a603053261db24"
+        },
+        {
+          "path": "skills/journal-club-agent/agents/openai.yaml",
+          "sha256": "26e08d755c668c7f2c10b46641c0cf5d23a89bdd680480859311b9052a779545"
+        },
+        {
+          "path": "skills/journal-club-agent/references/connector-routing.md",
+          "sha256": "135fd71812b1be9282da0903afc02a5d0e1b2734736169b9d220e1e30449e61e"
+        },
+        {
+          "path": "skills/journal-club-agent/references/evidence-brief.md",
+          "sha256": "6328c463c7b372a37fa689a7d10419192823b6d55db36c81940f22daff1645cb"
+        },
+        {
+          "path": "skills/journal-club-agent/references/evidence-controls.md",
+          "sha256": "34a9c48a2199400aa1a1b1fc80736065b204dabafbe7ccc3537bdce7dc33a67f"
+        },
+        {
+          "path": "skills/journal-club-agent/references/source-notes.md",
+          "sha256": "7ea65907f44d57411d56e94f24e49d6e08fa9aa711552c2a78fc07709d498a0c"
+        }
+      ]
+    }
+  ],
+  "exact_copies": [
+    {
+      "source_path": "LICENSE",
+      "packaged_path": "LICENSE",
+      "sha256": "e6cfe367fc7dbb19771c81134c729dbe3155e6d9e0524e48d5df84b418b15769"
+    }
+  ],
+  "identity_fields": [
+    "name",
+    "version",
+    "description",
+    "author",
+    "repository",
+    "homepage",
+    "license",
+    "keywords"
+  ],
+  "expected_identity": {
+    "name": "hh-health-ai-research",
+    "version": "0.1.0",
+    "repository": "https://github.com/hh-health-AI/healthcare-equity",
+    "license": "MIT"
+  },
+  "codex_interface_only": {
+    "capabilities": []
+  },
+  "historical_provenance_path": "plugins/hh-health-ai-research/provenance.json",
+  "package_file_inventory": [
+    ".codex-plugin/plugin.json",
+    "LICENSE",
+    "NOTICE.md",
+    "README.md",
+    "VALIDATION.md",
+    "plugin.json",
+    "provenance.json",
+    "skills/biomedical-claim-checker/SKILL.md",
+    "skills/biomedical-claim-checker/agents/openai.yaml",
+    "skills/biomedical-claim-checker/references/connector-routing.md",
+    "skills/biomedical-claim-checker/references/evidence-brief.md",
+    "skills/biomedical-claim-checker/references/evidence-controls.md",
+    "skills/biomedical-claim-checker/references/source-notes.md",
+    "skills/biotech-catalyst-radar/SKILL.md",
+    "skills/biotech-catalyst-radar/agents/openai.yaml",
+    "skills/biotech-catalyst-radar/references/connector-routing.md",
+    "skills/biotech-catalyst-radar/references/evidence-brief.md",
+    "skills/biotech-catalyst-radar/references/evidence-controls.md",
+    "skills/biotech-catalyst-radar/references/source-notes.md",
+    "skills/biotech-rnpv-modeler/SKILL.md",
+    "skills/biotech-rnpv-modeler/agents/openai.yaml",
+    "skills/biotech-rnpv-modeler/references/connector-routing.md",
+    "skills/biotech-rnpv-modeler/references/evidence-brief.md",
+    "skills/biotech-rnpv-modeler/references/evidence-controls.md",
+    "skills/biotech-rnpv-modeler/references/source-notes.md",
+    "skills/clinical-trial-analyst/SKILL.md",
+    "skills/clinical-trial-analyst/agents/openai.yaml",
+    "skills/clinical-trial-analyst/references/connector-routing.md",
+    "skills/clinical-trial-analyst/references/evidence-brief.md",
+    "skills/clinical-trial-analyst/references/evidence-controls.md",
+    "skills/clinical-trial-analyst/references/source-notes.md",
+    "skills/conference-evidence-agent/SKILL.md",
+    "skills/conference-evidence-agent/agents/openai.yaml",
+    "skills/conference-evidence-agent/references/connector-routing.md",
+    "skills/conference-evidence-agent/references/evidence-brief.md",
+    "skills/conference-evidence-agent/references/evidence-controls.md",
+    "skills/conference-evidence-agent/references/source-notes.md",
+    "skills/evidence-modules/SKILL.md",
+    "skills/evidence-modules/agents/openai.yaml",
+    "skills/evidence-modules/references/clinical-catalysts.md",
+    "skills/evidence-modules/references/cms-reimbursement.md",
+    "skills/evidence-modules/references/connector-routing.md",
+    "skills/evidence-modules/references/epi-demand.md",
+    "skills/evidence-modules/references/evidence-brief.md",
+    "skills/evidence-modules/references/evidence-catalysts.md",
+    "skills/evidence-modules/references/evidence-controls.md",
+    "skills/evidence-modules/references/fda-safety-signals.md",
+    "skills/evidence-modules/references/global-access.md",
+    "skills/evidence-modules/references/ip-exclusivity.md",
+    "skills/evidence-modules/references/procedure-exposure.md",
+    "skills/evidence-modules/references/provider-adoption.md",
+    "skills/evidence-modules/references/provider-economics.md",
+    "skills/evidence-modules/references/rx-utilization.md",
+    "skills/evidence-modules/references/sec-forensics.md",
+    "skills/evidence-modules/references/source-notes.md",
+    "skills/healthcare-equity/SKILL.md",
+    "skills/healthcare-equity/agents/openai.yaml",
+    "skills/healthcare-equity/references/connector-routing.md",
+    "skills/healthcare-equity/references/evidence-brief.md",
+    "skills/healthcare-equity/references/evidence-controls.md",
+    "skills/healthcare-equity/references/investment-workflows.md",
+    "skills/healthcare-equity/references/source-notes.md",
+    "skills/healthcare-public-data/SKILL.md",
+    "skills/healthcare-public-data/agents/openai.yaml",
+    "skills/healthcare-public-data/references/connector-routing.md",
+    "skills/healthcare-public-data/references/evidence-brief.md",
+    "skills/healthcare-public-data/references/evidence-controls.md",
+    "skills/healthcare-public-data/references/source-notes.md",
+    "skills/healthcare-public-data/references/upstream-runtime.md",
+    "skills/hh-health-ai/SKILL.md",
+    "skills/hh-health-ai/agents/openai.yaml",
+    "skills/hh-health-ai/references/connector-routing.md",
+    "skills/hh-health-ai/references/evidence-brief.md",
+    "skills/hh-health-ai/references/evidence-controls.md",
+    "skills/hh-health-ai/references/source-notes.md",
+    "skills/investable-view/SKILL.md",
+    "skills/investable-view/agents/openai.yaml",
+    "skills/investable-view/references/connector-routing.md",
+    "skills/investable-view/references/evidence-brief.md",
+    "skills/investable-view/references/evidence-controls.md",
+    "skills/investable-view/references/source-notes.md",
+    "skills/journal-club-agent/SKILL.md",
+    "skills/journal-club-agent/agents/openai.yaml",
+    "skills/journal-club-agent/references/connector-routing.md",
+    "skills/journal-club-agent/references/evidence-brief.md",
+    "skills/journal-club-agent/references/evidence-controls.md",
+    "skills/journal-club-agent/references/source-notes.md",
+    "skills/literature-review-assistant/SKILL.md",
+    "skills/literature-review-assistant/agents/openai.yaml",
+    "skills/literature-review-assistant/references/connector-routing.md",
+    "skills/literature-review-assistant/references/evidence-brief.md",
+    "skills/literature-review-assistant/references/evidence-controls.md",
+    "skills/literature-review-assistant/references/source-notes.md",
+    "skills/medical-evidence-skills/SKILL.md",
+    "skills/medical-evidence-skills/agents/openai.yaml",
+    "skills/medical-evidence-skills/references/connector-routing.md",
+    "skills/medical-evidence-skills/references/evidence-brief.md",
+    "skills/medical-evidence-skills/references/evidence-controls.md",
+    "skills/medical-evidence-skills/references/source-notes.md",
+    "tests/smoke-cases.json",
+    "tests/validate_static.py",
+    "validation-report.json"
+  ],
+  "source_skill_inventory": [
+    {
+      "root": "research-suite/skills",
+      "paths": [
+        "research-suite/skills/biomedical-claim-checker/SKILL.md",
+        "research-suite/skills/biotech-catalyst-radar/SKILL.md",
+        "research-suite/skills/biotech-rnpv-modeler/SKILL.md",
+        "research-suite/skills/clinical-trial-analyst/SKILL.md",
+        "research-suite/skills/conference-evidence-agent/SKILL.md",
+        "research-suite/skills/healthcare-public-data/SKILL.md",
+        "research-suite/skills/journal-club-agent/SKILL.md",
+        "research-suite/skills/literature-review-assistant/SKILL.md",
+        "research-suite/skills/medical-evidence-skills/SKILL.md"
+      ],
+      "scope": "Nine canonical biomedical workflow skill entry points; new or removed skills require source routing/adaptation review."
+    }
+  ]
+}

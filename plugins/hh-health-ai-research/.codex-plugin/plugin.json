@@ -2,7 +2,7 @@
   "interface": {
     "displayName": "HH Health AI Research",
     "shortDescription": "Healthcare evidence to value",
-    "longDescription": "A private workflow edition of the HH Health AI research platform. Thirteen skills coordinate nine biomedical research workflows, twelve healthcare evidence modules, and investment synthesis. Uses the host's available tools and user-provided documents, with source citations, explicit model implications, scenarios and falsifiers. This package does not deploy the upstream Python package or local MCP server, supply paid data, or activate background monitoring.",
+    "longDescription": "A skills-only workflow edition of the HH Health AI research platform. Thirteen skills coordinate nine biomedical research workflows, twelve healthcare evidence modules, and investment synthesis. Uses the host's available tools and user-provided documents, with source citations, explicit model implications, scenarios and falsifiers. This package does not deploy the upstream Python package or local MCP server, supply paid data, or activate background monitoring.",
     "developerName": "HH Health AI",
     "category": "Productivity",
     "defaultPrompt": [

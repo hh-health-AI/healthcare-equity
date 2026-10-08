@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "case_id": "BIO-HELIOS-B-2025",
+  "valuation_date": "2025-03-20",
+  "currency": "USD",
+  "output_units": "millions",
+  "linked_audit_case": "C03",
+  "evidence_scope": "Real trial and approval facts; every economic input below is an illustrative research assumption.",
+  "approval_gate": {
+    "before": 0.6,
+    "after": 1,
+    "before_status": "Illustrative sensitivity anchor, not a historical analyst probability or calibrated prediction",
+    "after_status": "Realized historical US ATTR-CM approval decision, not probability of commercial success",
+    "source_ids": [
+      "S3",
+      "S4"
+    ]
+  },
+  "commercial_schedule": [
+    {
+      "period_end": "2026-12-31",
+      "paid_patient_years": 1000
+    },
+    {
+      "period_end": "2027-12-31",
+      "paid_patient_years": 2500
+    },
+    {
+      "period_end": "2028-12-31",
+      "paid_patient_years": 5000
+    },
+    {
+      "period_end": "2029-12-31",
+      "paid_patient_years": 8000
+    },
+    {
+      "period_end": "2030-12-31",
+      "paid_patient_years": 10000
+    },
+    {
+      "period_end": "2031-12-31",
+      "paid_patient_years": 12000
+    },
+    {
+      "period_end": "2032-12-31",
+      "paid_patient_years": 12000
+    }
+  ],
+  "annual_net_revenue_per_paid_patient_usd": 100000,
+  "scenarios": [
+    {
+      "name": "bear",
+      "weight_conditional_on_approval": 0.25,
+      "patient_year_multiplier": 0.5,
+      "net_price_multiplier": 0.8,
+      "after_tax_fcf_conversion": 0.25,
+      "discount_rate": 0.14,
+      "upfront_launch_investment_m": 35
+    },
+    {
+      "name": "base",
+      "weight_conditional_on_approval": 0.5,
+      "patient_year_multiplier": 1,
+      "net_price_multiplier": 1,
+      "after_tax_fcf_conversion": 0.35,
+      "discount_rate": 0.12,
+      "upfront_launch_investment_m": 25
+    },
+    {
+      "name": "bull",
+      "weight_conditional_on_approval": 0.25,
+      "patient_year_multiplier": 1.5,
+      "net_price_multiplier": 1.1,
+      "after_tax_fcf_conversion": 0.45,
+      "discount_rate": 0.1,
+      "upfront_launch_investment_m": 20
+    }
+  ],
+  "sensitivity": {
+    "approval_gate": [
+      0.4,
+      0.6,
+      0.8,
+      1
+    ],
+    "discount_rate": [
+      0.1,
+      0.12,
+      0.14
+    ]
+  },
+  "assumption_notes": {
+    "paid_patient_years": "Illustrative annual treated-and-paid patient-years for this indication only; not new starts, eligible prevalence or company reported counts.",
+    "price": "Illustrative net realized annual revenue; not list price or observed commercial net price.",
+    "fcf_conversion": "Illustrative after-tax unlevered FCF/revenue after recurring delivery, sales/administration, reinvestment and working capital; those items must not be deducted twice.",
+    "upfront": "Illustrative incremental committed launch expenditure at valuation date, paid regardless of the approval gate. Historical R&D is sunk and excluded.",
+    "discount": "Illustrative discount rates; approval risk is applied once through the explicit gate, not again through a separate clinical PoS multiplier.",
+    "scenario_weights": "Conditional commercial assumptions, independent of the approval gate in this exercise; not empirically estimated probabilities.",
+    "horizon": "Seven annual end-period cash flows only. No terminal value or cash flows beyond 2032; no conclusion about actual exclusivity/patent cliff.",
+    "counterfactual": "Before and after are held at the same valuation date and economic assumptions to isolate the historical approval gate; this is not a return backtest."
+  },
+  "market_implied": {
+    "target_asset_ev_m": null,
+    "market_price_usd": null,
+    "diluted_shares_m": null,
+    "net_cash_m": null,
+    "other_assets_ev_m": null,
+    "status": "NEEDS_DATA; no verified ALNY equity bridge or market price is supplied."
+  }
+}
