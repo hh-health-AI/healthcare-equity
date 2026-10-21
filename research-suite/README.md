@@ -180,3 +180,7 @@ Contribute a reproducible failure case, a reviewed source adapter, a new domain 
 [Agent Skills specification](https://agentskills.io/specification) · [ClinicalTrials.gov API](https://clinicaltrials.gov/data-api/api) · [NCBI E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25501/) · [openFDA API](https://open.fda.gov/apis/) · [CMS developer documentation](https://data.cms.gov/api-docs) · [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk/tree/v1.x)
 
 MIT, under the repository's [license](../LICENSE). Public-source content retains its own terms. HH Health AI is not affiliated with the named agencies or AI platforms. Research support only; outputs require appropriate professional review before clinical, regulatory or investment use.
+
+## Responsible use of AI
+
+Use this suite for research and education with source verification, disclosed AI assistance and qualified human review before consequential use. Protect patient information and preserve uncertainty. These workflows are not validated for patient care, coverage decisions or autonomous trading. Read the [account policy](https://github.com/hh-health-AI/hh-health-AI/blob/main/RESPONSIBLE_AI.md) and the [repository-specific checks](../RESPONSIBLE_AI.md).

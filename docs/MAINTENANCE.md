@@ -80,3 +80,9 @@ python scripts/evaluate_reliability.py
 ```
 
 Fingerprints cover bytes and paths, not executable permission modes; Python cache and virtual-environment directories are excluded. Default CI does not detect changes committed only to specialist repositories; run the explicit upstream comparison for that. Byte provenance and static manifest consistency do not establish citation entailment, clinical correctness, investment performance or end-to-end host compatibility. Those need their own source audit and evaluation evidence.
+
+## Responsible AI documentation — 22 October 2026
+
+The account and repository responsible AI policies add evidence, disclosure, privacy and human-review expectations. Root and research-suite entry points and the package README now surface them. The bundled specialist modules remain the previously recorded frozen snapshots; the new standalone policy and instruction changes are not represented as synchronized into those snapshots. Read the root policy when using bundled modules. Previously installed workflow packages are not updated by these documentation edits.
+
+The source map records only the reviewed README, root CLAUDE.md and research-suite README changes from this update, preserving original packaging observations and identifying the documentation/instruction differences. No clinical validation, model execution or human research approval is inferred from this record.

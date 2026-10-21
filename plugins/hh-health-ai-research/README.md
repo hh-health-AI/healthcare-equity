@@ -66,3 +66,7 @@ Research outputs require appropriate professional judgment. Public data, papers 
 - tests/: reproducible static checks and synthetic acceptance specifications.
 
 Source repository: https://github.com/hh-health-AI/healthcare-equity
+
+## Responsible use of AI
+
+Follow the [HH Health AI responsible AI policy](https://github.com/hh-health-AI/hh-health-AI/blob/main/RESPONSIBLE_AI.md): verify material evidence, disclose AI assistance and review status, protect patient information, and retain human accountability. This skills-only package is for research and education, not validated clinical use or autonomous trading. A policy link does not add runtime enforcement or update previously installed copies; review the installed workflow and host controls before use.

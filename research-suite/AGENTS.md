@@ -8,3 +8,7 @@ This directory contains nine biomedical and healthcare research workflows and th
 - Use synthetic fixtures in offline tests; label examples. Live smoke tests are optional network checks.
 - Run unit tests and package validation for changes; use MCP protocol tests when its optional dependency is installed.
 - Do not install schedules, send messages, make trades, or change user host settings as a development side effect.
+
+## Responsible AI
+
+Apply the [account policy](https://github.com/hh-health-AI/hh-health-AI/blob/main/RESPONSIBLE_AI.md) and [repository-specific checks](../RESPONSIBLE_AI.md). Disclose AI involvement and actual review status, verify material sources and calculations, protect patient information and preserve incomplete-evidence stops. Do not infer human approval from an automated check or use research outputs for individual diagnosis, treatment or coverage decisions.

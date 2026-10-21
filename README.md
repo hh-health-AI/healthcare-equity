@@ -1,5 +1,7 @@
 # Healthcare Equity Research Platform
 
+> **Responsible AI:** Research and education only; verify evidence, protect patient data and retain human oversight. [Policy and project-specific checks](RESPONSIBLE_AI.md).
+
 Connect primary healthcare evidence to explicit revenue assumptions, valuation scenarios, catalysts and falsifiable investment views.
 
 [Research cases](examples/research-cases/README.md) · [Run the demo](research-suite/README.md#quickstart) · [Choose an installation route](#installation) · [Semantic evaluation](research-suite/evaluation/semantic/README.md) · [Validate the repository](#validate-the-repository)

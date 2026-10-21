@@ -7,3 +7,7 @@ For code changes, add a test that addresses the actual failure or coverage risk.
 For skills, include a realistic prompt, required sources, methodology, output contract, missing-data behavior and a bounded completion criterion. Avoid claims of validated clinical accuracy or investment returns without supporting evidence. Distinguish workflows run by an AI host from deterministic utilities.
 
 A useful new example should teach one difficult interpretation issue. Label fictional data plainly. Keep source excerpts short and licensed appropriately. Do not commit model credentials, personal data or bulk copyrighted source content.
+
+## Responsible AI contributions
+
+Follow the [account policy](https://github.com/hh-health-AI/hh-health-AI/blob/main/RESPONSIBLE_AI.md). State material AI assistance, data provenance, checks performed and unresolved limitations. Keep examples public or synthetic, preserve review boundaries and never claim unperformed human validation.

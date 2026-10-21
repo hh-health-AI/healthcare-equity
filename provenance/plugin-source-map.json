@@ -21,18 +21,26 @@
     {
       "path": "README.md",
       "packaged_source_git_blob_sha": "ea4b2da4d034e0badd85de516ef933950e3ff794",
-      "frozen_git_blob_sha": "f66df4be6ffd828ac5ed502c2fbb82beacf2539b",
-      "frozen_sha256": "898e568c720347af03481cd6a3ed0031fb072b336817988f5373e5d9150bdccb",
+      "frozen_git_blob_sha": "e48e52c661e7641a96e613915028c10fbd1cd315",
+      "frozen_sha256": "8735c25ded8134d909cbee13b7e84a3b37e43eedb645180398de07df049488d1",
       "use": "Canonical module and investment workflow map",
-      "difference_reason": "Reviewed 2026-10-08 documentation change: installation routes and runtime limits clarified, showcase/evaluation links added, and presentation wording simplified. Original packaging blob is preserved. Individual workflow skill source instructions are unchanged; no skill regeneration or byte-equivalence is claimed.",
-      "review_status": "reviewed-documentation-change"
+      "difference_reason": "Reviewed 2026-10-22 responsible AI addition: source documents link policy expectations on evidence, disclosure, privacy and human review. Packaged skill instructions remain their earlier adaptations; this source record does not claim those instructions were regenerated or that installed copies enforce the new policy. Original packaging observations are preserved.",
+      "review_status": "reviewed-responsible-ai-documentation-change",
+      "previous_frozen_sha256": "898e568c720347af03481cd6a3ed0031fb072b336817988f5373e5d9150bdccb",
+      "previous_frozen_git_blob_sha": "f66df4be6ffd828ac5ed502c2fbb82beacf2539b",
+      "review_date": "2026-10-22"
     },
     {
       "path": "CLAUDE.md",
       "packaged_source_git_blob_sha": "9d0326f9d0282d42c90f8f66eca7524f9f2b4f3f",
-      "frozen_git_blob_sha": "9d0326f9d0282d42c90f8f66eca7524f9f2b4f3f",
-      "frozen_sha256": "140f38c1becbac38bbdf6a848ecec08a8698905d3cb0bd99c765338392758dfe",
-      "use": "Standing evidence rules; host-specific persistence and permission instructions not ported"
+      "frozen_git_blob_sha": "bba728b3ba1be0d266907d1b60d3a2448137bb00",
+      "frozen_sha256": "b2011db1452014a0468be5f0842410ceeffde8131c7a840007334a8c22246f22",
+      "use": "Standing evidence rules; host-specific persistence and permission instructions not ported",
+      "previous_frozen_sha256": "140f38c1becbac38bbdf6a848ecec08a8698905d3cb0bd99c765338392758dfe",
+      "previous_frozen_git_blob_sha": "9d0326f9d0282d42c90f8f66eca7524f9f2b4f3f",
+      "difference_reason": "Reviewed 2026-10-22 responsible AI addition: source documents link policy expectations on evidence, disclosure, privacy and human review. Packaged skill instructions remain their earlier adaptations; this source record does not claim those instructions were regenerated or that installed copies enforce the new policy. Original packaging observations are preserved.",
+      "review_status": "reviewed-responsible-ai-documentation-change",
+      "review_date": "2026-10-22"
     },
     {
       "path": "LICENSE",
@@ -51,11 +59,14 @@
     {
       "path": "research-suite/README.md",
       "packaged_source_git_blob_sha": "54604fcac27234c46df40385f8ac1d82c709a9b5",
-      "frozen_git_blob_sha": "787501e75b600c1612ac4631be1817db390af308",
-      "frozen_sha256": "748cac3dfdaa4b2e61d474c08503617d955088d56a739463e5da16892ad7ae9e",
+      "frozen_git_blob_sha": "fbe03d72104dc3ef2329a36d8762676409c53fd3",
+      "frozen_sha256": "1f4fcb63d315db58eb9eb7685a2c94b92a3b8bee56bcd0d2b3101713db42624d",
       "use": "Suite scope, runtime distinction and limits",
-      "difference_reason": "Reviewed 2026-10-08 documentation change: installation routes and runtime limits clarified, showcase/evaluation links added, and presentation wording simplified. Original packaging blob is preserved. Individual workflow skill source instructions are unchanged; no skill regeneration or byte-equivalence is claimed.",
-      "review_status": "reviewed-documentation-change"
+      "difference_reason": "Reviewed 2026-10-22 responsible AI addition: source documents link policy expectations on evidence, disclosure, privacy and human review. Packaged skill instructions remain their earlier adaptations; this source record does not claim those instructions were regenerated or that installed copies enforce the new policy. Original packaging observations are preserved.",
+      "review_status": "reviewed-responsible-ai-documentation-change",
+      "previous_frozen_sha256": "748cac3dfdaa4b2e61d474c08503617d955088d56a739463e5da16892ad7ae9e",
+      "previous_frozen_git_blob_sha": "787501e75b600c1612ac4631be1817db390af308",
+      "review_date": "2026-10-22"
     },
     {
       "path": "research-suite/skills/medical-evidence-skills/SKILL.md",
@@ -765,5 +776,14 @@
       ],
       "scope": "Nine canonical biomedical workflow skill entry points; new or removed skills require source routing/adaptation review."
     }
-  ]
+  ],
+  "responsible_ai_documentation_update": {
+    "date": "2026-10-22",
+    "reviewed_paths": [
+      "README.md",
+      "CLAUDE.md",
+      "research-suite/README.md"
+    ],
+    "scope": "Documentation and root host guidance only; original packaging records and frozen specialist modules retained."
+  }
 }
